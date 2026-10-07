@@ -1,0 +1,1821 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-08",
+  "fetchedAt": "2026-10-07T17:21:46.900180+00:00",
+  "source": "OpenAlex",
+  "period": {
+    "start": "2025-10-08",
+    "end": "2026-10-07",
+    "previousStart": "2024-10-08",
+    "previousEnd": "2025-10-07"
+  },
+  "methodology": "Exact-phrase title searches in OpenAlex, type:article, excluding flagged retractions. Topics overlap. Paper selection: up to four most cited matching articles per topic in the current window. Citation counts are a snapshot. Growth measures indexed publication activity, not scientific progress. Recent periods are subject to indexing lag.",
+  "topics": [
+    {
+      "id": "quantum-error",
+      "field": "physics",
+      "name": "양자 오류정정",
+      "query": "quantum error correction",
+      "description": "양자 계산의 오류를 줄이고 논리 큐비트의 안정성을 높이는 연구",
+      "count": 202,
+      "previousCount": 91,
+      "growth": 122.0,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 119
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22quantum+error+correction%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4415198140",
+        "W4417012238",
+        "W4415104221",
+        "W7116702366"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "fusion",
+      "field": "physics",
+      "name": "핵융합 플라스마",
+      "query": "fusion plasma",
+      "description": "플라스마 제어와 안정성을 통해 핵융합 에너지의 가능성을 탐구하는 연구",
+      "count": 78,
+      "previousCount": 47,
+      "growth": 66.0,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 48
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22fusion+plasma%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W7134961515",
+        "W7140117203",
+        "W4415938344",
+        "W7163340173"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "superconductivity",
+      "field": "physics",
+      "name": "초전도체",
+      "query": "superconductivity",
+      "description": "전기저항이 사라지는 물질과 그 작동 원리를 탐구하는 연구",
+      "count": 1218,
+      "previousCount": 914,
+      "growth": 33.3,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 970
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22superconductivity%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4416918562",
+        "W4415208345",
+        "W4416867159",
+        "W4417414884"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "solid-electrolyte",
+      "field": "chemistry",
+      "name": "고체전해질",
+      "query": "solid electrolyte",
+      "description": "전고체전지의 이온 전달과 계면 안정성을 개선하는 소재 연구",
+      "count": 1207,
+      "previousCount": 1228,
+      "growth": -1.7,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 1230
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22solid+electrolyte%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4415668517",
+        "W4417137716",
+        "W4415056350",
+        "W4415946704"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "perovskite",
+      "field": "chemistry",
+      "name": "페로브스카이트 태양전지",
+      "query": "perovskite solar cells",
+      "description": "광전 변환 효율과 장기 안정성을 개선하는 태양전지 연구",
+      "count": 3582,
+      "previousCount": 3531,
+      "growth": 1.4,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 3517
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22perovskite+solar+cells%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4415970745",
+        "W4415988330",
+        "W4415196100",
+        "W4415024922"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "carbon-catalysis",
+      "field": "chemistry",
+      "name": "이산화탄소 전환",
+      "query": "carbon dioxide reduction",
+      "description": "이산화탄소를 유용한 화합물로 바꾸는 촉매와 전기화학 연구",
+      "count": 93,
+      "previousCount": 162,
+      "growth": -42.6,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": 191
+        },
+        {
+          "year": 2025,
+          "count": null
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22carbon+dioxide+reduction%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4415531242",
+        "W4414941470",
+        "W4415266425",
+        "W7128815235"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "protein-design",
+      "field": "biotech",
+      "name": "단백질 설계",
+      "query": "protein design",
+      "description": "단백질의 구조와 기능을 예측하고 새로운 분자를 설계하는 연구",
+      "count": 89,
+      "previousCount": 62,
+      "growth": 43.5,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 68
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22protein+design%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W7158957654",
+        "W7126149934",
+        "W4414988964",
+        "W4413005839"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "gene-editing",
+      "field": "biotech",
+      "name": "유전자 편집",
+      "query": "gene editing",
+      "description": "유전체를 정밀하게 바꾸는 도구와 전달 방법을 개발하는 연구",
+      "count": 833,
+      "previousCount": 753,
+      "growth": 10.6,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 809
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22gene+editing%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4416039232",
+        "W7147145559",
+        "W7147284523",
+        "W7118849114"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "organoid",
+      "field": "biotech",
+      "name": "오가노이드",
+      "query": "organoid",
+      "description": "장기의 구조와 기능을 모사해 발달과 질환을 연구하는 모델",
+      "count": 2974,
+      "previousCount": 2186,
+      "growth": 36.0,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 2360
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22organoid%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W7117963595",
+        "W7127049049",
+        "W4416025668",
+        "W7115709714"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "cancer-immunotherapy",
+      "field": "medicine",
+      "name": "암 면역치료",
+      "query": "cancer immunotherapy",
+      "description": "면역 반응을 활용한 암 치료와 치료 반응 예측 연구",
+      "count": 1359,
+      "previousCount": 1258,
+      "growth": 8.0,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 1317
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22cancer+immunotherapy%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4414932502",
+        "W4416453109",
+        "W7131666946",
+        "W7117128536"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "glp1",
+      "field": "medicine",
+      "name": "GLP-1 치료",
+      "query": "GLP-1 receptor agonist",
+      "description": "대사질환을 중심으로 GLP-1 수용체 작용제의 효과를 평가하는 연구",
+      "count": 1747,
+      "previousCount": 810,
+      "growth": 115.7,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 931
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22GLP-1+receptor+agonist%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W7124314989",
+        "W7147201645",
+        "W4416587673",
+        "W4416427646"
+      ],
+      "historyComplete": false
+    },
+    {
+      "id": "alzheimer",
+      "field": "medicine",
+      "name": "알츠하이머 연구",
+      "query": "Alzheimer",
+      "description": "알츠하이머병의 기전과 진단, 치료 전략을 탐구하는 연구",
+      "count": 1578,
+      "previousCount": 1419,
+      "growth": 11.2,
+      "history": [
+        {
+          "year": 2022,
+          "count": null
+        },
+        {
+          "year": 2023,
+          "count": null
+        },
+        {
+          "year": 2024,
+          "count": null
+        },
+        {
+          "year": 2025,
+          "count": 1407
+        }
+      ],
+      "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22Alzheimer%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
+      "paperIds": [
+        "W4415128167",
+        "W4417122943",
+        "W4417436333",
+        "W4417035402"
+      ],
+      "historyComplete": false
+    }
+  ],
+  "papers": [
+    {
+      "id": "W4415198140",
+      "title": "Demonstration of low-overhead quantum error correction codes",
+      "doi": "https://doi.org/10.1038/s41567-025-03157-4",
+      "date": "2026-01-22",
+      "journal": "Nature Physics",
+      "authors": [
+        "Ke Wang",
+        "Zhide Lu",
+        "Chuanyu Zhang",
+        "Gongyu Liu",
+        "Jiachen Chen"
+      ],
+      "citations": 20,
+      "fwci": 86.7315,
+      "oa": true,
+      "oaUrl": "https://arxiv.org/pdf/2505.09684",
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "quantum-error"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415198140"
+    },
+    {
+      "id": "W4417012238",
+      "title": "Optimizing Quantum Error-Correction Protocols with Erasure Qubits",
+      "doi": "https://doi.org/10.1103/985g-58gd",
+      "date": "2025-10-22",
+      "journal": "PRX Quantum",
+      "authors": [
+        "Shouzhen Gu",
+        "Yotam Vaknin",
+        "Alex Retzker",
+        "Aleksander Kubica"
+      ],
+      "citations": 14,
+      "fwci": 6.6238,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1103/985g-58gd",
+      "license": "cc-by",
+      "abstract": "Erasure qubits offer a promising avenue toward reducing the overhead of quantum error correction (QEC) protocols. However, they require additional operations, such as erasure checks, that may add extra noise and increase the run-time of QEC protocols. To assess the benefits provided by erasure qubits, we focus on the performance of the surface code as a quantum memory. In particular, we analyze various erasure check schedules, find the correctable regions in the phase space of error parameters, and probe the subthreshold scaling of the logical error rate. We then consider a realization of erasure qubits in the superconducting hardware architectures via dual-rail qubits. We use the standard transmon-based implementation of the surface code as the performance benchmark. Our results indicate that QEC protocols with erasure qubits can outperform the ones with state-of-the-art transmons, even in the absence of precise information about the locations of erasure errors.",
+      "retracted": false,
+      "topicIds": [
+        "quantum-error"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417012238"
+    },
+    {
+      "id": "W4415104221",
+      "title": "Quantum Error Correction resilient against Atom Loss",
+      "doi": "https://doi.org/10.22331/q-2025-10-13-1884",
+      "date": "2025-10-13",
+      "journal": "Quantum",
+      "authors": [
+        "Hugo Perrin",
+        "Sven Jandura",
+        "Guido Pupillo"
+      ],
+      "citations": 14,
+      "fwci": 6.6238,
+      "oa": true,
+      "oaUrl": "https://quantum-journal.org/papers/q-2025-10-13-1884/pdf/",
+      "license": "cc-by",
+      "abstract": "We investigate quantum error correction protocols for neutral atoms quantum processors in the presence of atom loss. We complement the surface code with loss detection units (LDU) and analyze its performances by means of circuit-level simulations for two distinct protocols – the standard LDU and a teleportation-based LDU –, focussing on the impact of both atom loss and depolarizing noise on the logical error probability. We introduce and employ a new adaptive decoding procedure that leverages the knowledge of loss locations provided by the LDUs, improving logical error probabilities by nearly three orders of magnitude compared to a naive decoder. For the considered error models, our results demonstrate the existence of an error threshold line that depends linearly on the probabilities of atom loss and of depolarizing errors. For zero depolarizing noise, the atom loss threshold is about 2.6% .",
+      "retracted": false,
+      "topicIds": [
+        "quantum-error"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415104221"
+    },
+    {
+      "id": "W7116702366",
+      "title": "Experimental Quantum Error Correction below the Surface Code Threshold via All-Microwave Leakage Suppression",
+      "doi": "https://doi.org/10.1103/rqkg-dw31",
+      "date": "2025-12-22",
+      "journal": "Physical Review Letters",
+      "authors": [
+        "Tan He",
+        "W. W. Lin",
+        "R. N. Wang",
+        "Yuan Li",
+        "Jiahao Bei"
+      ],
+      "citations": 13,
+      "fwci": 6.1507,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "Quantum error correction (QEC) enables practical quantum computing by encoding logical qubits in many physical qubits, which can exponentially suppress the logical error rate with increasing code size provided that the physical error rate is below a critical threshold. However, the leakage of quantum information from the computational subspace presents a critical challenge to the development of scalable QEC, which creates long-lived, correlated errors that spread across space and time. Here, we demonstrate a quantum memory operating below the threshold by implementing an all-microwave leakage suppression architecture on a distance-7 surface code. We achieve a logical error suppression factor of Λ=1.40(6), definitively reversing the above-threshold scaling (Λ<1) caused by unmitigated leakage. This scheme integrates a hardware-efficient leakage reduction unit for data qubits with a fast, unconditional reset for ancilla qubits, suppressing the average leakage population after 40 cycles by a factor of 72 to 6.4(5)×10^{-4}. Our results demonstrate the viability of all-microwave control architectures for suppressing critical errors at scale, paving the way for more advanced quantum error correction implementations.",
+      "retracted": false,
+      "topicIds": [
+        "quantum-error"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7116702366"
+    },
+    {
+      "id": "W7134961515",
+      "title": "Interface-mediated He+ irradiation tolerance of W–Ni heavy alloys for fusion plasma-facing components: Defect absorption and phase stability",
+      "doi": "https://doi.org/10.1016/j.ijrmhm.2026.107767",
+      "date": "2026-03-11",
+      "journal": "International Journal of Refractory Metals and Hard Materials",
+      "authors": [
+        "Samir F. Samadov",
+        "Mehdi Nasri Nasrabadi",
+        "N. Ismayılova",
+        "N.V.M. Trung",
+        "SH Mussavi Rizi"
+      ],
+      "citations": 6,
+      "fwci": 9.1184,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "fusion"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7134961515"
+    },
+    {
+      "id": "W7140117203",
+      "title": "Uncertainty quantification and sensitivity analysis of the energy and particle sources from hydrogen neutral beam injection in a JET-like fusion plasma",
+      "doi": "https://doi.org/10.1088/1741-4326/ae55b8",
+      "date": "2026-03-23",
+      "journal": "Nuclear Fusion",
+      "authors": [
+        "Ioannis Mavrogiannis",
+        "D. Zarzoso",
+        "Mitra Fouladirad"
+      ],
+      "citations": 2,
+      "fwci": 7.0099,
+      "oa": true,
+      "oaUrl": "https://iopscience.iop.org/article/10.1088/1741-4326/ae55b8/pdf",
+      "license": "cc-by",
+      "abstract": "Abstract The impact of uncertainties in different parameters characterizing the plasma on the power deposition and the particle sources is analyzed and presented. The analysis focuses on the application of uncertainty quantification and sensitivity analysis (SA) to the neutral beam injection (NBI) by performing parametric modeling of the thermal equilibrium and the ionization process of the plasma. The uncertainties are propagated through the TAPaS code (Toroidal Accelerated PArticle Simulator), obtaining various quantities of interest, such as the birth profile of the NBI and the fraction of energy that is transferred to the ions and electrons of the background plasma. A non-intrusive, black-box approach is considered for the model responses through the utilization of a polynomial chaos expansion (PCE) as surrogate model. The global SA using the analytical computation of the Sobol indices from the estimated coefficients of the PCE allows to assign and rank the individual contribution of each uncertain parameter relative to the variation exhibited in the plasma heating. Further contributions from the interactions of different parameter combinations to the variance are also investigated.",
+      "retracted": false,
+      "topicIds": [
+        "fusion"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7140117203"
+    },
+    {
+      "id": "W4415938344",
+      "title": "Investigation of radiated-power for low aspect ratio fusion plasmas",
+      "doi": "https://doi.org/10.1088/1361-6587/ae1bd2",
+      "date": "2025-11-05",
+      "journal": "Plasma Physics and Controlled Fusion",
+      "authors": [
+        "Kajal Shah",
+        "J.W. Berkery",
+        "Jonathan E. Menard",
+        "Luis F. Delgado-Aparicio",
+        "Masayuki Ono"
+      ],
+      "citations": 2,
+      "fwci": 1.0686,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1088/1361-6587/ae1bd2",
+      "license": "cc-by",
+      "abstract": "Abstract Investigating radiated power in fusion plasmas is of utmost importance to understand the effect of undesired impurities, such as metals, in present devices, or also desired impurities, such as noble gasses, to purposefully radiate a large fraction of power in future devices. These studies are especially important for high Z impurities which will play a crucial role in future generation fusion pilot plants. In this work, we have developed a power radiation analysis module, which is used to investigate 2D distributions of impurity densities and radiated power asymmetries caused due to both plasma rotation and the cooling rate dependence on temperature profile for the cases of experimental NSTX plasmas and designed scenarios for the spherical tokamak advanced reactor (STAR), both being low aspect ratio tokamaks. Two different atomic databases have been tested during this work to study their impact on the radiated power distribution, especially for high Z impurities. Also in PRAM, self-consistent calculations of two-dimensional electron, main ion, and impurity ion densities are carried out using one-dimensional input density, temperature, and rotation profiles. In the case of NSTX, discharges with high rotation of ∼ 170 km s, measured with charge exchange recombination spectroscopy, have been investigated. Rotation-induced charge separation, leading to an electrostatic potential, is calculated iteratively to a self-consistent solution while testing high Z impurities to observe any 2D asymmetry in the core radiated power due to centrifugal forces. The STAR design, being much larger ( R = 4 m), is projected to have a much lower rotation, and is shown to have low rotation-induced asymmetries, on the order of ten percent or less, between the low field and high field sides. However, another effect not due to rotation but to the dependence of impurity cooling rates on temperature can lead to radiation peaking off-axis, near the plasma edge. This effect is noticeable for argon in NSTX, for example, but can also be enhanced for certain impurities at much higher temperatures projected for STAR ( T e 0 ∼ 32 keV), for example for undesired tungsten or possibly desired xenon.",
+      "retracted": false,
+      "topicIds": [
+        "fusion"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415938344"
+    },
+    {
+      "id": "W7163340173",
+      "title": "Turbulent Nature of the Quasicontinuous Exhaust Regime for Fusion Plasmas",
+      "doi": "https://doi.org/10.1103/j44y-5dp6",
+      "date": "2026-06-03",
+      "journal": "Physical Review Letters",
+      "authors": [
+        "Kaiyu Zhang",
+        "Wladimir Zholobenko",
+        "A. Stegmeir",
+        "M. Faitsch",
+        "Konrad Eder"
+      ],
+      "citations": 1,
+      "fwci": 3.5049,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1103/j44y-5dp6",
+      "license": "cc-by",
+      "abstract": "We demonstrate a turbulence mechanism that reconciles high plasma confinement with efficient heat exhaust-a central challenge for fusion energy. Global two-fluid turbulence simulations of the reactor-relevant quasicontinuous exhaust regime on the ASDEX Upgrade tokamak reveal that a quasicoherent mode drives mesoscopic oscillations of the pedestal boundary across the magnetic separatrix and ejects ballistic filaments (blobs), reproducing both the mean profiles and turbulent fluctuations observed experimentally. This behavior arises from a synergistic interplay between kinetic ballooning modes and resistive X-point modes straddling the separatrix. These first-principles results place extrapolations to future fusion reactors on a firm physical footing.",
+      "retracted": false,
+      "topicIds": [
+        "fusion"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7163340173"
+    },
+    {
+      "id": "W4416918562",
+      "title": "Bulk superconductivity up to 96 K in pressurized nickelate single crystals",
+      "doi": "https://doi.org/10.1038/s41586-025-09954-4",
+      "date": "2025-12-02",
+      "journal": "Nature",
+      "authors": [
+        "Feiyu Li",
+        "Zhenfang Xing",
+        "Di Peng",
+        "Jie Dou",
+        "Ning Guo"
+      ],
+      "citations": 55,
+      "fwci": 18.1572,
+      "oa": true,
+      "oaUrl": "https://arxiv.org/pdf/2501.14584",
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "superconductivity"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416918562"
+    },
+    {
+      "id": "W4415208345",
+      "title": "Spin density wave rather than tetragonal structure is prerequisite for superconductivity in La3Ni2O7-δ",
+      "doi": "https://doi.org/10.1038/s41467-025-63701-x",
+      "date": "2025-10-15",
+      "journal": "Nature Communications",
+      "authors": [
+        "Mengzhu Shi",
+        "Di Peng",
+        "Yikang Li",
+        "Shaohua Yang",
+        "Zhenfang Xing"
+      ],
+      "citations": 20,
+      "fwci": 6.7267,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s41467-025-63701-x.pdf",
+      "license": "cc-by-nc-nd",
+      "abstract": "The pressure-induced high-temperature (Tc) superconductivity in nickelates La3Ni2O7-δ has sparked significant interest to explore its superconductivity at ambient pressure. Whether the pressure-stabilized tetragonal structure is a prerequisite for achieving nickelate superconductivity at ambient pressure is under hot debate. Here, by post-annealing in high oxygen pressure environment, tetragonal La3Ni2O6.92 single crystals are successfully obtained at ambient pressure, which exhibits a metallic behavior without a SDW transition. Moreover, superconductivity is also absent at high pressures up to ~ 70 GPa. Furthermore, by utilizing Helium as the pressure medium, we found that the superconductivity in pressurized orthorhombic La3Ni2O6.85 is achieved in orthorhombic structure rather than tetragonal structure claimed previously. All these findings demonstrate that tetragonal structure is not prerequisite for achieving superconductivity in La3Ni2O7-δ. Finally, our present work suggests a deep correlation between SDW order and superconductivity, which imposes stringent constraints on the underlying mechanism for pressure-induced superconductivity in nickelates. The authors obtain tetragonal La3Ni2O6.92 single crystals at ambient pressure by post-annealing in a high-oxygen-pressure environment. Experimental results on these samples suggest that the tetragonal structure is not a prerequisite for achieving superconductivity in La3Ni2O7.",
+      "retracted": false,
+      "topicIds": [
+        "superconductivity"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415208345"
+    },
+    {
+      "id": "W4416867159",
+      "title": "Chiral and topological superconductivity in isospin polarized multilayer graphene",
+      "doi": "https://doi.org/10.1038/s41467-025-66902-6",
+      "date": "2025-12-01",
+      "journal": "Nature Communications",
+      "authors": [
+        "Max Geier",
+        "Margarita D. Davydova",
+        "Liang Fu"
+      ],
+      "citations": 19,
+      "fwci": 6.3904,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s41467-025-66902-6_reference.pdf",
+      "license": "cc-by-nc-nd",
+      "abstract": "A microscopic mechanism for chiral p-wave superconductivity from Coulomb repulsion is proposed for spin- and valley-polarized state of rhombohedral multilayer graphene. The superconducting instability arises when strong Thomas-Fermi screening of the Coulomb potential allows Friedel oscillations to take over – leading to an effective attraction on length scales below the Fermi wavelength. The superconducting critical temperature is largest at low density below a Lifshitz transition to an annular Fermi sea, where the additional pocket strongly enhances Thomas-Fermi screening. The Lifshitz transition also marks a topological phase transition from a trivial to a topological superconducting phase hosting Majorana fermions. The chirality of the superconducting order parameter is selected by the chirality of the valley-polarized Bloch electrons. Our results are in reasonable agreement with observations in a recent experiment on tetralayer graphene. Recently, chiral superconductivity has been observed in rhombohedral tetralayer graphene under electron doping, arising from a spin- and valley-polarized normal state. Here, the authors propose a superconducting mechanism based on over-screening of Coulomb interaction due to charge fluctuations.",
+      "retracted": false,
+      "topicIds": [
+        "superconductivity"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416867159"
+    },
+    {
+      "id": "W4417414884",
+      "title": "Superconductivity and electronic structures of nickelate thin film superstructures",
+      "doi": "https://doi.org/10.1038/s41586-026-10352-7",
+      "date": "2026-04-08",
+      "journal": "Nature",
+      "authors": [
+        "Zihao Nie",
+        "Yueying Li",
+        "Wei Lv",
+        "Lizhi Xu",
+        "Zhicheng Jiang"
+      ],
+      "citations": 18,
+      "fwci": 45.36,
+      "oa": true,
+      "oaUrl": "https://arxiv.org/pdf/2509.03502",
+      "license": "cc-by",
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "superconductivity"
+      ],
+      "fields": [
+        "physics"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417414884"
+    },
+    {
+      "id": "W4415668517",
+      "title": "A ductile solid electrolyte interphase for solid-state batteries",
+      "doi": "https://doi.org/10.1038/s41586-025-09675-8",
+      "date": "2025-10-29",
+      "journal": "Nature",
+      "authors": [
+        "Jinshuo Mi",
+        "Jun Hong Yang",
+        "Likun Chen",
+        "Wenting Cui",
+        "Yuhang Li"
+      ],
+      "citations": 78,
+      "fwci": 18.3134,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "solid-electrolyte"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415668517"
+    },
+    {
+      "id": "W4417137716",
+      "title": "Dynamic diels-alder reaction crosslinked metal-organic framework/poly (ionic liquid) composite solid electrolyte for lithium-metal batteries",
+      "doi": "https://doi.org/10.1016/j.jcis.2025.139638",
+      "date": "2025-12-08",
+      "journal": "Journal of Colloid and Interface Science",
+      "authors": [
+        "Hongjin Kuang",
+        "Haiyang Liao",
+        "Zhanzhan Zhang",
+        "Shitao Huang",
+        "Binhui Mao"
+      ],
+      "citations": 70,
+      "fwci": 16.7254,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "solid-electrolyte"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417137716"
+    },
+    {
+      "id": "W4415056350",
+      "title": "Unveiling the Electrolyte and Solid Electrolyte Interphase in Sodium Ion Batteries: Mechanisms, Progress, and Perspectives",
+      "doi": "https://doi.org/10.1002/adma.202510882",
+      "date": "2025-10-10",
+      "journal": "Advanced Materials",
+      "authors": [
+        "Meng Li",
+        "Chengzhi Sun",
+        "Ruoqi Zhang",
+        "Man Qi",
+        "Zeen Wu"
+      ],
+      "citations": 69,
+      "fwci": 16.2003,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1002/adma.202510882",
+      "license": "cc-by",
+      "abstract": "Sodium-ion batteries (SIBs) are regarded as a promising alternative to lithium-ion batteries due to the low cost and abundant availability of sodium. Electrolyte, as the medium for ion transport, plays a crucial role in determining the electrochemical performance. Currently, SIBs employ mainly organic electrolytes, aqueous electrolytes, ionic liquids, gel electrolytes, and solid electrolytes. These electrolytes have made significant progress according to the needs of various application scenarios. Notably, the solid electrolyte interphase (SEI) formed by decomposition of electrolytes on the electrode surface has a decisive influence on the performance of SIBs, and its composition and formation mechanism are closely related to the chemical nature of the electrolyte. Therefore, a deep understanding of the structure and interfacial chemistry of the SEI is essential for developing high-performance SIBs, preferably through the simple and effective modulation of electrolyte composition. However, the fragmented and insufficient mechanistic summary on this connection results in poor guidance on future research, especially for the co-design of electrolyte and solid electrolyte interphase. This review summarizes and compares the research progress of various electrolyte systems, discusses the formation and aging mechanisms of SEI, and presents the perspectives on the integrated design of electrolyte and SEI.",
+      "retracted": false,
+      "topicIds": [
+        "solid-electrolyte"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415056350"
+    },
+    {
+      "id": "W4415946704",
+      "title": "Precisely deciphering solid electrolyte interphase",
+      "doi": "https://doi.org/10.1016/j.matt.2025.102368",
+      "date": "2025-11-01",
+      "journal": "Matter",
+      "authors": [
+        "Enhui Wang",
+        "Shaohua Ge",
+        "Wenbin Li",
+        "Beibei Fu",
+        "Fang Zhou"
+      ],
+      "citations": 47,
+      "fwci": 11.2299,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1016/j.matt.2025.102368",
+      "license": "cc-by-nc-nd",
+      "abstract": "Solid electrolyte interphase (SEI) plays a critical role in the cycling stability and safety issues of rechargeable batteries. To provide valuable suggestions for customized SEI regulation, a precise SEI understanding is essential and advanced detection techniques are indispensable. In this review, SEI formation, structure, ion transport, and failure mechanisms were first elucidated from the fundamental perspectives. Emerging detection techniques were briefly introduced, according to the high demands of SEI deciphering in high sensitivity, visualization, quantification, and simulation. Then, emphasis was given to the current advances of SEI study, to provide a systematic cognition of SEI in the aspects of component identification, structural distribution, physical-chemical properties, SEI functionalities (including ion conductivity and electronic insulation), and SEI chemistry-structure-property relationship. In the future, more efforts are suggested to penetrate into basic scientific issues, dynamic processes, multi-technique integration, and simulational techniques to provide more reliable understanding and guidance of high-quality SEI.",
+      "retracted": false,
+      "topicIds": [
+        "solid-electrolyte"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415946704"
+    },
+    {
+      "id": "W4415970745",
+      "title": "Homogenized chlorine distribution for >27% power conversion efficiency in perovskite solar cells",
+      "doi": "https://doi.org/10.1126/science.adw8780",
+      "date": "2025-11-06",
+      "journal": "Science",
+      "authors": [
+        "Zhuang Xiong",
+        "Qian Zhang",
+        "Kai Cai",
+        "Haitao Zhou",
+        "Qi Song"
+      ],
+      "citations": 454,
+      "fwci": 106.5935,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "The spatial heterogeneity of halogen distribution in perovskite thin films represents a critical factor currently limiting both the power conversion efficiency and stability of solar cells. We identified pronounced through-film inhomogeneity in chlorine distribution in formamidinium lead iodide films, with the generally used additive methylammonium chloride. We demonstrated that incorporating alkali metal oxalates could effectively homogenize the chlorine distribution. These compounds underwent thermal dissociation, releasing alkali metal cations that selectively bound chloride ions, which considerably suppressed surface defects and eliminated interfacial barriers. A certified steady-state power conversion efficiency (PCE) of 27.2% (device area and measured mask area: 0.108 square cm and 0.074 square cm, respectively) in perovskite solar cells was achieved, and devices retained 86.3% of their initial PCE after 1529 hours of continuous maximum power point tracking (MPPT) under 1 Sun condition. Moreover, the unpassivated device maintained 82.8% of its original PCE under MPPT at 85°C aging under 1 Sun illumination after 1000 hours.",
+      "retracted": false,
+      "topicIds": [
+        "perovskite"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415970745"
+    },
+    {
+      "id": "W4415988330",
+      "title": "Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering",
+      "doi": "https://doi.org/10.1038/s41566-025-01791-1",
+      "date": "2025-11-07",
+      "journal": "Nature Photonics",
+      "authors": [
+        "Guixiang Li",
+        "Zuhong Zhang",
+        "Benjamin Agyei‐Tuffour",
+        "Luyan Wu",
+        "Thomas W. Gries"
+      ],
+      "citations": 122,
+      "fwci": 28.6441,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s41566-025-01791-1.pdf",
+      "license": "cc-by",
+      "abstract": "Abstract Surface passivation in perovskite solar cells can enhance device efficiency, yet incomplete interfacial functionality poses challenges to long-term reliability. Here we present a strategic interfacial engineering approach using sodium heptafluorobutyrate to fully functionalize the perovskite surface. Sodium heptafluorobutyrate acts as an ion shield that tunes the perovskite surface work function and increases the defect formation energy, resulting in an improved interface with the electron transport layer that minimizes recombination and boosts electron extraction under operation. We find that a sodium-heptafluorobutyrate-functionalized perovskite surface promotes a uniform, compact C 60 layer that effectively blocks ion diffusion and stabilizes the device stack. This approach allows p–i–n perovskite solar cells to achieve a record power conversion efficiency (PCE) of 27.02% (certified 26.96% with a maximum-power-point-tracking PCE of 26.61%). Devices with an active area of 1 cm 2 deliver a PCE of 25.95%. Perovskite solar cells retain 100% of their initial efficiency following 1,200 h of continuous 1-sun illumination at the maximum power point. Devices also demonstrate exceptional thermal stability, retaining 92% of the initial PCE when ageing at 85 °C for 1,800 h and 94% after 200 thermal cycles between –40 °C and +85 °C.",
+      "retracted": false,
+      "topicIds": [
+        "perovskite"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415988330"
+    },
+    {
+      "id": "W4415196100",
+      "title": "Tin-based perovskite solar cells with a homogeneous buried interface",
+      "doi": "https://doi.org/10.1038/s41586-025-09724-2",
+      "date": "2025-10-15",
+      "journal": "Nature",
+      "authors": [
+        "Tianpeng Li",
+        "Xin Luo",
+        "Peilin Wang",
+        "Zhiguo Li",
+        "Yi-Meng Li"
+      ],
+      "citations": 81,
+      "fwci": 19.0178,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "perovskite"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415196100"
+    },
+    {
+      "id": "W4415024922",
+      "title": "Aromatic interaction-driven out-of-plane orientation for inverted perovskite solar cells with improved efficiency",
+      "doi": "https://doi.org/10.1038/s41560-025-01882-x",
+      "date": "2025-10-10",
+      "journal": "Nature Energy",
+      "authors": [
+        "Qisen Zhou",
+        "Guoyu Huang",
+        "Jianan Wang",
+        "Tianyin Miao",
+        "Rui Chen"
+      ],
+      "citations": 68,
+      "fwci": 15.9655,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "perovskite"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415024922"
+    },
+    {
+      "id": "W4415531242",
+      "title": "Recent advances in MXene-based nanocomposites for photocatalytic wastewater treatment, carbon dioxide reduction, and hydrogen production: a comprehensive review",
+      "doi": "https://doi.org/10.1016/j.ccr.2025.217270",
+      "date": "2025-10-24",
+      "journal": "Coordination Chemistry Reviews",
+      "authors": [
+        "Daniel Masekela",
+        "Potlako John Mafa",
+        "Tunde L. Yusuf",
+        "Sheriff Aweda Balogun",
+        "Alex Tawanda Kuvarega"
+      ],
+      "citations": 30,
+      "fwci": 4.4102,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1016/j.ccr.2025.217270",
+      "license": "cc-by",
+      "abstract": "This review critically examines recent advancements in MXene-based nanocomposites and their roles in photocatalytic applications for environmental remediation and renewable energy. MXenes, two-dimensional transition metal carbides, nitrides, and carbonitrides (M n+1 X n T x , where M = transition metal, X = C/N, T x = surface terminations such as O, OH, F), exhibit high electrical conductivity, tunable band structures, hydrophilic surfaces, and large specific surface areas. These properties make them highly effective in enhancing photocatalytic activity when incorporated into composite systems. The review summarizes synthesis methods, structural modifications, and the mechanisms underlying photocatalytic performance, highlighting their efficiency in degrading organic, inorganic, and microbial pollutants, converting CO₂ into value-added chemicals, and generating H₂ via water splitting. Key challenges, including stability, oxidation, and scalability are analyzed, along with strategies such as surface passivation, heterojunction formation, and hybridization with antioxidant materials to improve performance. Future research should focus on developing green synthesis methods, improving long-term stability, and exploring scalable production to facilitate practical deployment. These insights provide a comprehensive understanding of MXene nanocomposites, supporting their advancement as multifunctional photocatalysts for a clean and sustainable energy future. • Comprehensive review of MXenes and their role in photocatalytic nanocomposites. • Applications in pollutant degradation, CO₂ reduction, and hydrogen production. • Strategies for synthesis and modification to enhance photocatalytic efficiency. • Mechanistic insights: charge separation, light absorption, and surface reactions. • Discussion of stability, scalability, cost challenges, and future directions.",
+      "retracted": false,
+      "topicIds": [
+        "carbon-catalysis"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415531242"
+    },
+    {
+      "id": "W4414941470",
+      "title": "Substantially improved efficiency and selectivity of carbon dioxide reduction by superior hydrated electron in microdroplet",
+      "doi": "https://doi.org/10.1126/sciadv.adx5714",
+      "date": "2025-10-08",
+      "journal": "Science Advances",
+      "authors": [
+        "Qiuyue Ge",
+        "Yangyang Liu",
+        "Wenbo You",
+        "Yumo Li",
+        "Wei Wang"
+      ],
+      "citations": 30,
+      "fwci": 4.326,
+      "oa": true,
+      "oaUrl": "https://www.science.org/doi/pdf/10.1126/sciadv.adx5714?download=true",
+      "license": "cc-by-nc",
+      "abstract": "The photochemical conversion of CO 2 into valuable fuels faces challenges of low efficiency and poor selectivity. Hydrated electrons (e aq − ), with their extremely negative reduction potential, are promising CO 2 -reducing agents, yet their short lifetime limits selectivity and high-energy-density product formation. Herein, we show that microdroplet interfaces with strong electric fields (10 9 volts per meter) substantially extend the lifespan of e aq − generated from industrial sulfite pollutants (SO 3 2− ), lowering energy barriers in the CO 2 reduction reaction and enabling targeted product formation. The machine learning strategy identified microdroplet size as the key parameter controlling electric field strength, product yield, and selectivity. In our lab-based scaled-up system, microdroplets <10 micrometers improved performance by four to seven orders of magnitude over bulk-phase systems, achieving ~99% methanol selectivity. Strong interfacial electric fields stabilize intermediates and modulate carbon-oxygen bond lengths, directing pathways to high-value products. This approach enables sustainable CO 2 utilization via microdroplets, potentially producing fuels from waste.",
+      "retracted": false,
+      "topicIds": [
+        "carbon-catalysis"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4414941470"
+    },
+    {
+      "id": "W4415266425",
+      "title": "Recoverable operation strategy for selective and stable electrochemical carbon dioxide reduction to methane",
+      "doi": "https://doi.org/10.1038/s41560-025-01883-w",
+      "date": "2025-10-16",
+      "journal": "Nature Energy",
+      "authors": [
+        "Guorui Gao",
+        "Behnam Nourmohammadi Khiarak",
+        "Hengzhou Liu",
+        "Thành Trần‐Phú",
+        "Cornelius A. Obasanjo"
+      ],
+      "citations": 26,
+      "fwci": 3.8222,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "carbon-catalysis"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415266425"
+    },
+    {
+      "id": "W7128815235",
+      "title": "Harnessing the Potential of MXenes for Electrochemical Nitrogen and Carbon Dioxide Reduction Reactions: Recent Advances Based on First-Principles Simulations",
+      "doi": "https://doi.org/10.1021/acsanm.6c00292",
+      "date": "2026-02-13",
+      "journal": "ACS Applied Nano Materials",
+      "authors": [
+        "Romana Khanam",
+        "Mudasir Dar",
+        "Mudasir Dar",
+        "Malik Wahid",
+        "Gulzar Ahmad Bhat"
+      ],
+      "citations": 25,
+      "fwci": 37.8758,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "Energy conversion processes involving the electrochemical reduction of small molecules such as N 2 and CO 2 using renewable energy sources hold great promise for the sustainable development of mankind. N 2 reduction leads to NH 3, a key chemical used in fertilizers, and the CO 2 reduction results in the production of industrially relevant value-added chemicals with a decrease in the carbon footprint. However, the lack of suitable electrocatalysts with low overpotentials and high selectivity due to the inert nature of N 2 and CO 2 molecules is central to the development of next-generation technologies for these complicated and kinetically slow energy conversion processes. Recently, layered two-dimensional metal carbides and nitrides, collectively called MXenes, have shown considerable ability for driving a wide spectrum of chemical transformations owing to their excellent properties such as high surface area, tunable surface chemistry, and excellent electrical conductivity. Moreover, the interfacial chemistry of these layered materials can be easily engineered to tune their activity for driving complex electrocatalytic processes. Accordingly, this review provides a comprehensive overview of the latest advances made in understanding the nitrogen reduction reaction (NRR) and CO 2 reduction reaction (CO 2 RR) activity of MXenes from an electronic-structure-driven and mechanistic perspective, with a primary emphasis on insights derived from density functional theory. We primarily highlight the intricate role of surface functionalization, mixed termination, defect chemistry, and single atom engineering in modulating reaction pathways, selectivity, and kinetic barriers for NRR and CO 2 RR. In addition to thermodynamic screening based on limiting potentials, recent progress in microkinetic modeling and experimentally benchmarked performance metrics is critically discussed to bridge the gap between theoretical predictions and experimental observations. Furthermore, a comprehensive analysis of the reaction mechanism of NRR and CO 2 RR to identify the key scaling relationships between the limiting potential, electronic properties, and adsorption energy of intermediates is discussed in detail to facilitate the catalyst design for these energy conversion processes. Finally, the challenges and opportunities associated with MXene-based electrocatalysts─including stability, surface reconstruction, suppression of competing hydrogen evolution reaction, and scalable synthesis─are discussed, along with a forward-looking outlook on emerging strategies such as operando spectroscopy, data-driven catalyst discovery, multiscale modeling, and alternative 2D materials for advancing NRR and CO 2 RR technologies.",
+      "retracted": false,
+      "topicIds": [
+        "carbon-catalysis"
+      ],
+      "fields": [
+        "chemistry"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7128815235"
+    },
+    {
+      "id": "W7158957654",
+      "title": "The past, present and future of de novo protein design",
+      "doi": "https://doi.org/10.1038/s41586-026-10328-7",
+      "date": "2026-04-29",
+      "journal": "Nature",
+      "authors": [
+        "Wei Yang",
+        "Shunzhi Wang",
+        "Gyu Rie Lee",
+        "Jason Z. Zhang",
+        "Alexis Courbet"
+      ],
+      "citations": 41,
+      "fwci": 87.7934,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "protein-design"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7158957654"
+    },
+    {
+      "id": "W7126149934",
+      "title": "Artificial intelligence driven protein design and sustainable nanomedicine for advanced theranostics",
+      "doi": "https://doi.org/10.1016/j.bioactmat.2026.01.036",
+      "date": "2026-01-30",
+      "journal": "Bioactive Materials",
+      "authors": [
+        "Donya Esmaeilpour",
+        "Michael R. Hamblin",
+        "Jianlin Cheng",
+        "Arezoo Khosravi",
+        "Jian Liu"
+      ],
+      "citations": 14,
+      "fwci": 21.6525,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1016/j.bioactmat.2026.01.036",
+      "license": "cc-by-nc-nd",
+      "abstract": "The integration of artificial intelligence, protein engineering, and sustainable nanomedicine is driving a paradigm shift in theranostics by enabling highly precise disease diagnosis and targeted therapy. AI-driven methodologies, including machine learning and deep learning, facilitate the rapid analysis of complex biological and chemical datasets, accelerating protein structure prediction, molecular docking, and structure-activity relationship modeling. These capabilities support the rational design of proteins and peptides with enhanced specificity, therapeutic efficacy, and safety, while enabling personalized treatment strategies tailored to individual molecular profiles. In parallel, sustainable nanomedicine focuses on the development of biodegradable, biocompatible, and environmentally benign nanomaterials to improve drug bioavailability, stability, and controlled release. AI-assisted optimization further refines nanocarrier design by balancing therapeutic performance with safety and environmental impact. Advanced intelligent nanocarriers capable of real-time monitoring, adaptive drug release, and degradation into non-toxic by-products represent a significant advancement over conventional static systems. The theranostic paradigm has become central to precision medicine, particularly in oncology, especially where AI-designed nanoplatforms enable targeted delivery of imaging agents and therapeutics to tumors, while allowing continuous treatment monitoring and minimizing off-target effects. Emerging applications in neurological, infectious, and cardiovascular diseases further highlight the broad clinical potential of this approach. Accordingly, this review summarizes AI-driven protein design strategies, sustainable nanocarrier engineering, and their convergence in next-generation theranostic systems, critically discussing mechanistic insights, translational challenges, and design principles required for developing safe, scalable, and clinically adaptable intelligent nanomedicines.",
+      "retracted": false,
+      "topicIds": [
+        "protein-design"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7126149934"
+    },
+    {
+      "id": "W4414988964",
+      "title": "Multi-modification of food protein: Design, structural transformation, and functional application",
+      "doi": "https://doi.org/10.1016/j.foodchem.2025.146644",
+      "date": "2025-10-09",
+      "journal": "Food Chemistry",
+      "authors": [
+        "Wei Tang",
+        "Juan Qu",
+        "Yixuan Zhang",
+        "Jiahui Chen",
+        "Weilin Liu"
+      ],
+      "citations": 14,
+      "fwci": 6.4304,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "protein-design"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4414988964"
+    },
+    {
+      "id": "W4413005839",
+      "title": "Accelerating protein design by scaling experimental characterization",
+      "doi": "https://doi.org/10.1038/s41467-026-76740-9",
+      "date": "2026-08-20",
+      "journal": "Nature Communications",
+      "authors": [
+        "Jason Qian",
+        "Lukas F. Milles",
+        "Basile I. M. Wicky",
+        "Robert J. Ragotte",
+        "Amir Motmaen"
+      ],
+      "citations": 13,
+      "fwci": 21.413,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s41467-026-76740-9_reference.pdf",
+      "license": "cc-by",
+      "abstract": "Abstract Recent advances in de novo protein design have greatly outpaced standard protein biochemistry workflows, and experimental testing has been a bottleneck in the validation of new designs and methodologies. Here, we describe experimental and computational workflows to address the issues of scale, speed and reproducibility of common in vitro protein testing methods, enabling at least an order of magnitude increase in throughput while reducing wetlab time. Semi-Automated Protein Production (SAPP) is a rapid, modular, scalable and cost-effective protocol, enabling up to milligram-scale protein production, and standardized characterization including yield, dispersity, and oligomeric state of hundreds of designs per day, at the cost-equivalent of a few DNA oligos per construct. End-to-end protocol execution takes 48 hours, with about 6 hours spent benchside using mostly standard laboratory equipment. This protocol has become the standard at our institute, providing critical experimental validation for dozens of projects spanning tens of thousands of designs. We showcase the power of the platform by using it to rapidly characterize de novo designed inhibitors of respiratory syncytial virus. Since at least 80% of SAPP’s total cost comes from synthetic DNA, we also developed a scalable demultiplexing protocol (DMX) to leverage oligo pools as input DNA, providing a further 5-fold reduction in costs, enabling >1000 designs to be purified and characterized in arrayed, clonal format at a cost of $5 per construct. By reframing standard molecular biology practices and orchestrating wetlab workflows with partial automation instead of complex end-to-end robotics, these protocols should be widely adoptable, accelerating protein design.",
+      "retracted": false,
+      "topicIds": [
+        "protein-design"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4413005839"
+    },
+    {
+      "id": "W4416039232",
+      "title": "Phase 1 Trial of CRISPR-Cas9 Gene Editing Targeting ANGPTL3",
+      "doi": "https://doi.org/10.1056/nejmoa2511778",
+      "date": "2025-11-08",
+      "journal": "New England Journal of Medicine",
+      "authors": [
+        "Luke Joseph Laffin",
+        "Stephen James Nicholls",
+        "Russell S. Scott",
+        "Peter Marshall Clifton",
+        "John Baker"
+      ],
+      "citations": 68,
+      "fwci": 61.6893,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "BACKGROUND: loss-of-function genetic variants are associated with decreased levels of low-density lipoprotein cholesterol and triglycerides and a decreased lifetime risk of atherosclerotic cardiovascular disease. METHODS: to induce a loss-of-function mutation. Adults who had uncontrolled hypercholesterolemia, hypertriglyceridemia, or mixed dyslipidemia and were receiving maximally tolerated lipid-lowering therapy received a single intravenous dose of CTX310 (0.1, 0.3, 0.6, 0.7, or 0.8 mg per kilogram of body weight). The primary end point was adverse events, including dose-limiting toxic effects. RESULTS: A total of 15 participants received CTX310 and had at least 60 days of follow-up. No dose-limiting toxic effects related to CTX310 occurred. Serious adverse events occurred in two participants (13%): one participant had a spinal disk herniation, and the other died suddenly 179 days after treatment with the 0.1-mg-per-kilogram dose. Infusion-related reactions were reported in three participants (20%), and one participant (7%) who had elevated levels of aminotransferases at baseline had a transient elevation in aminotransferases to between three times and five times as high as those at baseline, peaking on day 4 and returning to baseline by day 14. The mean percent change in ANGPTL3 level was 9.6% (range, -21.8 to 71.2) with the dose of 0.1 mg per kilogram, 9.4% (range, -25.0 to 63.9) with 0.3 mg per kilogram, -32.7% (range, -51.4 to -19.4) with 0.6 mg per kilogram, -79.7% (range, -86.8 to -72.5) with 0.7 mg per kilogram, and -73.2% (range, -89.0 to -66.9) with 0.8 mg per kilogram. CONCLUSIONS: was associated with few adverse events and resulted in reductions from baseline in ANGPTL3 levels. (Funded by CRISPR Therapeutics; Australia New Zealand Clinical Trials Registry number, ACTRN12623000809639.).",
+      "retracted": false,
+      "topicIds": [
+        "gene-editing"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416039232"
+    },
+    {
+      "id": "W7147145559",
+      "title": "CRISPR-Cas12a Gene Editing of HBG1 and HBG2 Promoters to Treat Sickle Cell Disease",
+      "doi": "https://doi.org/10.1056/nejmoa2415550",
+      "date": "2026-04-01",
+      "journal": "New England Journal of Medicine",
+      "authors": [
+        "Rabi Hanna",
+        "Haydar Frangoul",
+        "Luis Darío Piñeiro",
+        "Christopher M. McKinney",
+        "Markus Y. Mapara"
+      ],
+      "citations": 26,
+      "fwci": 114.1905,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "BACKGROUND: promoters to reactivate fetal hemoglobin production for the treatment of sickle cell disease. METHODS: We conducted a phase 1-2, multicenter, open-label, single-group study involving patients with severe sickle cell disease who were 12 to 50 years of age and had had at least two severe vaso-occlusive events per year in the previous 2 years. The patients received a single infusion of reni-cel after myeloablative conditioning with busulfan. The patients were monitored for engraftment, hemoglobin-related measures, allelic editing levels, vaso-occlusive events, and adverse events over a 24-month period. The study was terminated early on the basis of the sponsor's reassessment of clinical development priorities. Results of an analysis that was not prespecified are reported. RESULTS: As of October 29, 2024, a total of 28 patients with severe sickle cell disease had been treated with reni-cel. The median duration of follow-up was 9.5 months (range, 0.7 to 25.2). Among 27 patients who had neutrophil and platelet engraftment by the data-cutoff date, neutrophil engraftment occurred after a median of 23 days (range, 14 to 29), and platelet engraftment occurred after a median of 25 days (range, 17 to 51). At month 6, among 18 patients with at least 6 months of available data, the mean (±SD) total hemoglobin level (9.8±1.7 g per deciliter at baseline) had increased to 13.8±1.9 g per deciliter, and the mean percentage of fetal hemoglobin (2.5±2.5% at baseline) had increased to 48.1±3.2%; both measures were maintained at or above these values thereafter. One patient had two severe vaso-occlusive events after infusion. Adverse events were consistent with those that occur after myeloablative busulfan-based conditioning and autologous hematopoietic stem-cell transplantation. CONCLUSIONS: Treatment with reni-cel led to normalization of the total hemoglobin level and an increase in the percentage of fetal hemoglobin, with no vaso-occlusive events occurring in 27 of 28 patients after infusion. These results support further investigation of this gene-editing approach in the treatment of severe sickle cell disease. (Funded by Editas Medicine; RUBY ClinicalTrials.gov number, NCT04853576.).",
+      "retracted": false,
+      "topicIds": [
+        "gene-editing"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7147145559"
+    },
+    {
+      "id": "W7147284523",
+      "title": "CRISPR-Cas12a Gene Editing of HBG1 and HBG2 Promoters to Treat β-Thalassemia",
+      "doi": "https://doi.org/10.1056/nejmoa2501277",
+      "date": "2026-04-01",
+      "journal": "New England Journal of Medicine",
+      "authors": [
+        "Haydar Frangoul",
+        "Rabi Hanna",
+        "Mark C. Walters",
+        "Roy L. Kao",
+        "Clinton Carroll"
+      ],
+      "citations": 23,
+      "fwci": 97.9484,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "BackgroundRenizgamglogene autogedtemcel (reni-cel) is an investigational clustered regularly interspaced short palindromic repeats (CRISPR)–Cas12a gene-edited autologous hematopoietic stem-cell therapy. The therapy was designed to disrupt the BCL11A binding sites in the HBG1 and HBG2 promoters to reactivate fetal hemoglobin production for the treatment of transfusion-dependent β-thalassemia. MethodsWe conducted a phase 1–2, multicenter, open-label, single-group study of reni-cel in participants 18 to 35 years of age with transfusion-dependent β-thalassemia. The participants received myeloablative conditioning with busulfan before reni-cel infusion. The primary end points were neutrophil engraftment by 42 days after infusion and frequency and severity of adverse events. Participants were monitored for hemoglobin-related measures and transfusion independence. The study was terminated early on the basis of the sponsor’s reassessment of clinical development priorities. Results of an analysis that was not prespecified are reported. ResultsNine participants with transfusion-dependent β-thalassemia (four β0/β0 or β0/β0-like and five non–β0/β0 genotypes) received reni-cel and were included in the analysis. The median duration of postinfusion follow-up was 17.5 months (range, 3.8 to 23.4), and six participants could be evaluated for transfusion independence at 12 months or more. All the participants had neutrophil engraftment by 42 days after infusion. Rapid increases in total and fetal hemoglobin levels resulted in each of the nine participants being transfusion-free at their last follow-up visit. The six participants who could be evaluated at 12 months or later were transfusion-independent. The mean total and fetal hemoglobin levels were greater than 12 g per deciliter and greater than 11 g per deciliter, respectively, between months 6 and 18. A total of 69 grade 3 or 4 adverse events with onset or worsening during or after reni-cel infusion were reported in the nine participants. Six serious adverse events (infections, pyrexia, or pneumonitis) were reported in four participants. Adverse events were generally consistent with myeloablative conditioning. One patient had decreased lymphocyte counts attributed to reni-cel. ConclusionsTreatment with reni-cel resulted in rapid neutrophil engraftment, an increase in fetal hemoglobin expression, and transfusion independence. These data support further investigation of Cas12a gene editing of the promoters of HBG1 and HBG2 in the treatment of transfusion-dependent β-thalassemia. (Funded by Editas Medicine; EdiThal ClinicalTrials.gov number, NCT05444894.)",
+      "retracted": false,
+      "topicIds": [
+        "gene-editing"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7147284523"
+    },
+    {
+      "id": "W7118849114",
+      "title": "Immune profiling in a living human recipient of a gene-edited pig kidney",
+      "doi": "https://doi.org/10.1038/s41591-025-04053-3",
+      "date": "2026-01-01",
+      "journal": "Nature Medicine",
+      "authors": [
+        "Guilherme Taborda Ribas",
+        "Andre Ferreira Cunha",
+        "Jonathan Avila",
+        "Alessia Giarraputo",
+        "Leela Morená"
+      ],
+      "citations": 21,
+      "fwci": 146.4517,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1038/s41591-025-04053-3",
+      "license": "cc-by-nc-nd",
+      "abstract": "Xenotransplantation of gene-edited pig kidneys offers a promising solution to the shortage of kidneys for organ transplantation. We recently performed a gene-edited pig kidney transplantation into a living human recipient with end-stage kidney disease. Here, using transcriptomics, proteomics, metabolomics and multiplexed imaging, we conducted high-dimensional immune profiling in this individual. Despite profound depletion of circulating T cells, early T cell-mediated rejection occurred within 1 week after transplantation, likely driven by subtherapeutic immunosuppression and the presence of residual CD8+ T cells in lymph nodes. This T cell-mediated rejection event was reversed by intensified immunosuppression. After treatment, adaptive immunity remained suppressed, whereas innate immune activation, characterized by sustained monocyte and macrophage activity along with elevated levels of interleukin-1 beta and granulocyte–macrophage colony-stimulating factor, persisted. Comparative transcriptomic analysis showed that xenograft rejection profiles resembled those typically observed in human allograft rejection, while also revealing unique innate immune signatures. We did not detect antibody-mediated rejection. The levels of circulating pig donor-derived cell-free DNA rose during the initial rejection episode and declined with treatment, supporting the potential of cell-free DNA measurements as a noninvasive biomarker of xenograft rejection. These findings define the distinct immune landscape of kidney xenotransplantation and highlight the need for regimens targeting both innate and adaptive immunity to improve outcomes. High-dimensional immune profiling of a living recipient of a pig-to-human xenotransplant provides insight into the immune landscape of xenotransplantation and directions for improved immunosuppression strategies.",
+      "retracted": false,
+      "topicIds": [
+        "gene-editing"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7118849114"
+    },
+    {
+      "id": "W7117963595",
+      "title": "Advances in 3D Organoids and Organ‐on‐a‐Chip Systems for Biomedical Research",
+      "doi": "https://doi.org/10.1002/jbma.70028",
+      "date": "2026-01-01",
+      "journal": "Journal of Biomedical Materials Research Part A",
+      "authors": [
+        "Vignesh Sakthivel",
+        "Santhanam Sanjai Dharshan",
+        "S. Karthick Raja Namasivayam",
+        "Jesu Arockiaraj"
+      ],
+      "citations": 43,
+      "fwci": 81.5462,
+      "oa": true,
+      "oaUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jbma.70028",
+      "license": "cc-by-nc-nd",
+      "abstract": "Traditional 2D cell cultures and animal models have served as the foundations of biomedical research. These have significant limitations in modeling human physiology and predicting outcomes of therapy. Recent developments in 3D organoids and organ-on-chip technologies have shifted the field by enabling human relevant dynamic and scalable platforms for disease modeling and drug discovery and toxicity evaluation. Organoids derived from either stem cells or patient samples accurately recreate complex cellular structure and function found in human organs. The combination of organoids with organ-on-chip systems, or micro-engineered devices that closely simulate the interactions between distinct organ types including tissue to tissue as well as fluids and mechanical forces, allows researchers to continually monitor and manipulate the immediate environment of cells. The focus of this study will be on the underlying technologies for the manufacture and use of these systems as well as the main applications of these systems. Future research will include the development of multi-organ chips, artificial intelligence (AI), and biosensors. This study also illustrates how organoids and organ-on-chip technologies will enable the modeling and mimicking of common neurological, liver, gut, heart, cancer, and infectious diseases, as well as their application for high-throughput drug screening and nanotoxicology applications which could potentially help to lessen our reliance on animals for preclinical drug testing. The combined use of CRISPR gene editing, multi-omics profiling, and machine-learning technology is accelerating the transition to personalized medicine. In spite of issues surrounding the standards associated with the use of organoid and organ-on-chip technology, ethical issues, and the magnitude of scalability, there continues to be ongoing technical advances and government support for this quickly developing technology. Organoids and organ-on-chip technologies represent a fundamental shift in the practice of biomedical research and may allow us to more closely and accurately simulate authentic human physiology while providing more efficient and safer platform for drug discovery to be conducted.",
+      "retracted": false,
+      "topicIds": [
+        "organoid"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7117963595"
+    },
+    {
+      "id": "W7127049049",
+      "title": "From organoid culture to manufacturing: technologies for reproducible and scalable organoid production",
+      "doi": "https://doi.org/10.1038/s44385-025-00054-6",
+      "date": "2026-02-02",
+      "journal": "npj Biomedical Innovations.",
+      "authors": [
+        "Dohui Kim",
+        "Dohui Kim",
+        "Jaeseung Youn",
+        "Juhyeok Kim",
+        "Jeongmin Lee"
+      ],
+      "citations": 32,
+      "fwci": 60.5565,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s44385-025-00054-6.pdf",
+      "license": "cc-by",
+      "abstract": "In this review, we systematically categorize diverse organoid engineering strategies-including cellular programming, material engineering, and platform- or system-level innovations-according to their impact on reproducibility and scalability, and highlight representative applications and emerging directions. By reframing organoid generation as a manufacturing process, these technological advances pave the way toward standardized and high-fidelity organoid production for both fundamental research and translational applications.",
+      "retracted": false,
+      "topicIds": [
+        "organoid"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7127049049"
+    },
+    {
+      "id": "W4416025668",
+      "title": "Rethinking Matrigel: The Complex Journey to Matrix Alternatives in Organoid Culture",
+      "doi": "https://doi.org/10.1002/advs.202508734",
+      "date": "2025-11-07",
+      "journal": "Advanced Science",
+      "authors": [
+        "Lisa Wolff",
+        "Sven Hendrix"
+      ],
+      "citations": 29,
+      "fwci": 7.2143,
+      "oa": true,
+      "oaUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202508734",
+      "license": "cc-by",
+      "abstract": "Matrigel is a crucial tool in cell biology, particularly for organoid research. It forms a stable scaffold with components like basement membrane proteins and growth factors, resembling the extracellular matrix and mimicking the cellular microenvironment. Its complex composition is both an asset and a drawback, as it is undefined and can vary from batch to batch. Another issue is the murine origin of Matrigel, raising ethical and scientific concerns. Interspecies variation hinders the successful translation of research findings from experimental models to clinical application in humans. Despite these well-known and often-discussed disadvantages, Matrigel is often the first choice of matrix. This review explores why Matrigel remains the gold standard for many human 3D culture systems despite its murine origin and well-known limitations. Therefore, challenges are identified that prevent researchers from transitioning to matrix alternatives and, eventually, developing completely xeno-free human model systems. To tackle these challenges, it is suggested to move beyond a one-for-all approach by pursuing a tissue- and model-specific focus when designing new matrices or selecting an alternative from already available options. To facilitate the implementation of Matrigel substitutes, we provide a matrix selection checklist and a scaffold assessment tool, and quantitative assessment criteria to evaluate matrix-model compatibility are suggested.",
+      "retracted": false,
+      "topicIds": [
+        "organoid"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416025668"
+    },
+    {
+      "id": "W7115709714",
+      "title": "Artificial Intelligence in Organoid-Based Disease Modeling: A New Frontier in Precision Medicine",
+      "doi": "https://doi.org/10.3390/biomimetics10120845",
+      "date": "2025-12-17",
+      "journal": "Biomimetics",
+      "authors": [
+        "Omar Balkhair",
+        "Halima Albalushi"
+      ],
+      "citations": 26,
+      "fwci": 5.8086,
+      "oa": true,
+      "oaUrl": "https://www.mdpi.com/2313-7673/10/12/845/pdf?version=1765961205",
+      "license": "cc-by",
+      "abstract": "Organoids are self-organizing three-dimensional (3D) cellular structures derived from stem cells. They can mimic the anatomical and functional properties of real organs. They have transformed in vitro disease modeling by closely replicating the structural and functional characteristics of human tissues. The complexity and variability of organoid-derived data pose significant challenges for analysis and clinical translation. Artificial Intelligence (AI) has emerged as a crucial enabler, offering scalable and high-throughput tools for interpreting imaging data, integrating multi-omics profiles, and guiding experimental workflows. This review aims to discuss how AI is reshaping organoid-based research by enhancing morphological image analysis, enabling dynamic modeling of organoid development, and facilitating the integration of genomics, transcriptomics, and proteomics for disease classification. Moreover, AI is increasingly used to support drug screening and personalize therapeutic strategies by analyzing patient-derived organoids. The integration of AI with organoid-on-chip systems further allows for real-time feedback and physiologically relevant modeling. Drawing on peer-reviewed literature from the past decade, Furthermore, CNNs have been used to analyze colonoscopy and histopathological images in colorectal cancer with over 95% diagnostic accuracy. We examine key tools, innovations, and case studies that illustrate this evolving interface. As this interdisciplinary field matures, the future of AI-integrated organoid platforms depends on establishing open data standards, advancing algorithms, and addressing ethical and regulatory considerations to unlock their clinical and translational potential.",
+      "retracted": false,
+      "topicIds": [
+        "organoid"
+      ],
+      "fields": [
+        "biotech"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7115709714"
+    },
+    {
+      "id": "W4414932502",
+      "title": "Immunometabolism: crosstalk with tumor metabolism and implications for cancer immunotherapy",
+      "doi": "https://doi.org/10.1186/s12943-025-02460-1",
+      "date": "2025-10-08",
+      "journal": "Molecular Cancer",
+      "authors": [
+        "Huiru Zhang",
+        "Huiru Zhang",
+        "Jigeng Fan",
+        "Deyang Kong",
+        "Yu Sun"
+      ],
+      "citations": 42,
+      "fwci": 13.1566,
+      "oa": true,
+      "oaUrl": "https://molecular-cancer.biomedcentral.com/counter/pdf/10.1186/s12943-025-02460-1",
+      "license": "cc-by-nc-nd",
+      "abstract": "Immunometabolism has established a groundbreaking paradigm for cancer immunotherapy by decoding the intricate interaction networks between metabolic pathways and immune responses. This review comprehensively explores the metabolic reprogramming of immune cells in the tumor microenvironment, analyzes the roles of key metabolic pathways, enzymes, and metabolites in immune regulation, and unveils the intricate metabolic interactions between tumor and immune cells. Furthermore, we discuss how metabolic interventions can enhance antitumor immune responses and highlight the potential of immunometabolic checkpoints as therapeutic targets. Future research in immunometabolism will focus on the application of advanced technologies, the discovery of novel metabolic biomarkers, and metabolomics-driven personalized medicine to advance cancer diagnosis, treatment, and precision oncology.",
+      "retracted": false,
+      "topicIds": [
+        "cancer-immunotherapy"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4414932502"
+    },
+    {
+      "id": "W4416453109",
+      "title": "Gut microbiota–derived metabolites in immunomodulation and gastrointestinal cancer immunotherapy",
+      "doi": "https://doi.org/10.3389/fimmu.2025.1710880",
+      "date": "2025-11-21",
+      "journal": "Frontiers in Immunology",
+      "authors": [
+        "Wenbin Luo",
+        "Ruoyun Li",
+        "Chaofan Pan",
+        "Changjiang Luo"
+      ],
+      "citations": 39,
+      "fwci": 11.0157,
+      "oa": true,
+      "oaUrl": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1710880/pdf",
+      "license": "cc-by",
+      "abstract": "Gut microbiota-derived metabolites have emerged as critical mediators linking microbial composition with immune regulation and tumor progression in gastrointestinal (GI) cancers. This review highlights four major classes of metabolites: short-chain fatty acids (SCFAs), bile acids, tryptophan derivatives, and several emerging metabolites such as inosine, trimethylamine-N-oxide (TMAO), and urolithin A. These metabolites exert context-dependent effects by modulating innate and adaptive immune cells, shaping the tumor microenvironment, and influencing inflammatory and epigenetic pathways. Importantly, their immunoregulatory effects are not confined to the intestinal milieu but can extend systemically through both cellular and chemical routes. SCFAs and urolithin A enhance epithelial barrier integrity and CD8 + T cell activity but may also promote immune tolerance. Bile acids display dual roles, with ursodeoxycholic acid and tauroursodeoxycholic acid counteracting the tumor-promoting effects of deoxycholic acid and lithocholic acid. Tryptophan metabolism produces both immunosuppressive (kynurenine) and immune-protective (indole derivatives) metabolites that regulate T-cell differentiation and function. In addition, dietary interventions, probiotics, engineered microbes, and plant-derived nanoparticles offer novel strategies to reshape the microbiota–metabolite–immune axis and improve immunotherapy outcomes. To pinpoint the sites of metabolite action and mitigate translational risks, we highlight immune-competent organoid co-culture systems. These platforms enable quantitative assessment of exposure–response thresholds, dissection of context-dependent effects, and in vitro pre-evaluation of the feasibility and safety of metabolite-based immunologic adjuvants combined with PD-1/PD-L1 blockade. Collectively, microbiota-derived metabolites represent promising targets for precision diagnosis and treatment in GI cancer immunotherapy.",
+      "retracted": false,
+      "topicIds": [
+        "cancer-immunotherapy"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416453109"
+    },
+    {
+      "id": "W7131666946",
+      "title": "Macrophages: Targets for next-generation cancer immunotherapy",
+      "doi": "https://doi.org/10.1016/j.ccell.2026.01.020",
+      "date": "2026-02-26",
+      "journal": "Cancer Cell",
+      "authors": [
+        "Xiaoqi Sun",
+        "Matthew D. Park",
+        "Miriam Merad",
+        "Brian D. Brown"
+      ],
+      "citations": 35,
+      "fwci": 89.8009,
+      "oa": true,
+      "oaUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13331334/",
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "cancer-immunotherapy"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7131666946"
+    },
+    {
+      "id": "W7117128536",
+      "title": "Intraperitoneal programming of tailored CAR macrophages via mRNA lipid nanoparticle to boost cancer immunotherapy",
+      "doi": "https://doi.org/10.1038/s41467-025-67674-9",
+      "date": "2025-12-24",
+      "journal": "Nature Communications",
+      "authors": [
+        "Kedan Gu",
+        "Ting Liang",
+        "Luting Hu",
+        "Yifan Zhao",
+        "Weiyang Ying"
+      ],
+      "citations": 33,
+      "fwci": 12.8281,
+      "oa": true,
+      "oaUrl": "https://www.nature.com/articles/s41467-025-67674-9_reference.pdf",
+      "license": "cc-by-nc-nd",
+      "abstract": "Therapeutic strategies for peritoneal metastasis in solid tumors are urgently needed. Programming chimeric antigen receptor macrophages (CAR-Ms) in situ offers opportunities for an unmet demand. However, potential intracellular domains (ICDs) for CAR design and their antitumor mechanisms for macrophage empowerment remain to be explored systematically. By developing a macrophage-targeted mRNA lipid nanoparticle (mRNA-LNP) system, we evaluate 36 CAR formats in CAR-Ms. Tailored CAR-Ms with CD3ζ TLR4 ICDs elicit robust adaptive immune activation and significantly synergize with PD-1/L1 therapy. Single-cell RNA sequencing (scRNA-seq) reveals that CAR-Ms reshape the immunosuppressive tumor microenvironment (TME) and boost the TCF1+PD-1+ progenitor-exhausted CD8+ T cells (Tpex) population. Mechanistically, CAR-Ms maintain a proinflammatory phenotype and simultaneously upregulate MHC-I and PD-L1 by perturbing NF-κB pathways. Collectively, this approach enables intraperitoneal programming of tailored CAR-Ms and broadens understanding of both regulatory and feedback mechanisms for CAR-M therapies against solid tumors. Peritoneal metastasis remains a major clinical challenge due to the lack of effective therapeutic options. In this study, the authors present intraperitoneal programming of tailored chimeric antigen receptor macrophages (CAR-Ms) as a strategy against peritoneal metastasis.",
+      "retracted": false,
+      "topicIds": [
+        "cancer-immunotherapy"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7117128536"
+    },
+    {
+      "id": "W7124314989",
+      "title": "GLP-1 receptor agonists and next-generation incretin-based medications: metabolic, cardiovascular, and renal benefits",
+      "doi": "https://doi.org/10.1016/s0140-6736(25)02105-1",
+      "date": "2026-01-14",
+      "journal": "The Lancet",
+      "authors": [
+        "Michael Albrecht Nauck",
+        "Katherine R. Tuttle",
+        "Matthias H. Tschöp",
+        "Matthias Blüher"
+      ],
+      "citations": 102,
+      "fwci": 521.6681,
+      "oa": true,
+      "oaUrl": "https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736(25)02105-1.pdf",
+      "license": "cc-by",
+      "abstract": "GLP-1 receptor agonists were initially developed to treat type 2 diabetes and have had a transformative effect on its therapy, and are highly effective for glycaemic control, with the added benefit of bodyweight reduction and a low risk of causing hypoglycaemia. GLP-1 receptor agonists reduce risks for major adverse cardiovascular events (eg, non-fatal myocardial infarction, stroke, and cardiovascular death), and the risk of admission to or treatment within hospital for heart failure. These drugs reduce albuminuria and slow the decline in estimated glomerular filtration rate over time, therefore delaying or preventing kidney failure. Furthermore, GLP-1 receptor agonists (eg, liraglutide and semaglutide) and the dual glucose-dependent insulinotropic polypeptide (GIP) and GLP-1 receptor co-agonist tirzepatide have been approved for treatment of obesity, with clinical trials establishing benefits for various obesity-related conditions: prevention of type 2 diabetes; risk for major adverse cardiovascular events; heart failure, especially with preserved ejection fraction; regression of steatosis and prevention of fibrosis in steatotic liver disease; and symptomatic improvements in obstructive sleep apnoea and knee osteoarthritis. Current developments include the exploration of novel indications (eg, neurodegenerative diseases and substance use disorders) with suggestive evidence of efficacy, and the development of small-molecule GLP-1 receptor agonists for oral treatment to improve convenience. Dual (ie, GLP-1-glucagon and GLP-1-amylin) and triple (ie, GIP-GLP-1-glucagon) receptor agonists activating multiple receptors promise greater efficacy than mono-agonists, especially for weight loss. However, some clinical development programmes have a high burden of adverse gastrointestinal events, and dose-escalation regimens should be optimised to reach acceptable tolerability.",
+      "retracted": false,
+      "topicIds": [
+        "glp1"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7124314989"
+    },
+    {
+      "id": "W7147201645",
+      "title": "GLP-1 Receptor Agonists",
+      "doi": "https://doi.org/10.1056/nejmra2500106",
+      "date": "2026-04-01",
+      "journal": "New England Journal of Medicine",
+      "authors": [
+        "Clifford james Rosen",
+        "Julie R. Ingelfinger"
+      ],
+      "citations": 74,
+      "fwci": 360.6711,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": "Glucagon-like peptide-1 (GLP-1) receptor agonists are incretin analogues that promote glucose-mediated insulin release and are used to treat type 2 diabetes mellitus and obesity. GLP-1 receptor agonists and GLP-1 and glucose-dependent insulinotropic peptide agonists have several mechanisms of action, including reduction of gastric emptying, inhibition of glucagon secretion, beneficial changes in the intestinal microbiome, and direct effects on hypothalamic nuclei to enhance satiety (which promotes weight loss). Beyond the impressive effects of GLP-1 receptor agonists on blood glucose levels and body weight, large-scale randomized, controlled trials have shown that GLP-1 receptor agonists reduce cardiovascular risk and slow progression to renal failure in persons at high risk and those with type 2 diabetes. Adverse side effects from GLP-1 receptor agonists are mostly gastrointestinal but may also include loss of muscle and bone mass. Questions remain about long-term adherence, weight regain after discontinuation of treatment, and the functional implications of the loss of muscle and bone mass. Recent and ongoing targeted studies suggest the possibility of additional uses for GLP-1 receptor agonists.",
+      "retracted": false,
+      "topicIds": [
+        "glp1"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W7147201645"
+    },
+    {
+      "id": "W4416587673",
+      "title": "Gestational Weight Gain and Pregnancy Outcomes After GLP-1 Receptor Agonist Discontinuation",
+      "doi": "https://doi.org/10.1001/jama.2025.20951",
+      "date": "2025-11-24",
+      "journal": "JAMA",
+      "authors": [
+        "Jacqueline Maya",
+        "Deepti B. Pant",
+        "Yiran Fu",
+        "Kaitlyn E. James",
+        "CAROLINA I. BATLLE"
+      ],
+      "citations": 64,
+      "fwci": 57.2596,
+      "oa": true,
+      "oaUrl": "https://pubmed.ncbi.nlm.nih.gov/41284263/",
+      "license": null,
+      "abstract": "Importance: Glucagon-like peptide-1 receptor agonists (GLP-1RAs) are contraindicated in pregnancy. Discontinuation of GLP-1RAs proximal to pregnancy could affect gestational weight gain and pregnancy outcomes. Objective: To compare gestational weight gain and pregnancy outcomes with and without exposure to GLP-1RAs before or during early pregnancy. Design, Setting, and Participants: Retrospective cohort study of 149 790 singleton pregnancies delivered between June 1, 2016, and March 31, 2025, within a single academic health system. Exposure: A GLP-1RA order between 3 years before and 90 days after conception, with propensity score matching of each exposed pregnancy to 3 unexposed pregnancies. Main Outcomes and Measures: The primary outcome was gestational weight gain. Secondary outcomes were excess gestational weight gain, large and small for gestational age birth weight, birth weight percentile for gestational age and sex, birth length, preterm delivery, cesarean delivery, gestational diabetes, and hypertensive disorders of pregnancy. Results: Among 149 790 pregnancies during the study period, 1792 (448 exposed and 1344 unexposed) were matched for the primary analysis. Exposed pregnancies had mean maternal age of 34.0 years (SD, 4.7 years) and prepregnancy body mass index of 36.1 (SD, 6.5; calculated as weight in kilograms divided by height in meters squared); 378 of 448 (84%) had obesity and 104 of 448 (23%) had preexisting diabetes; 136 (30%) were Hispanic, 49 (11%) were non-Hispanic Black, and 223 (50%) were non-Hispanic White; and 43 (10%) had public insurance. The GLP-1RA-exposed pregnancies had greater gestational weight gain (mean, 13.7 kg [SD, 9.2]) than propensity score-matched unexposed pregnancies (mean, 10.5 kg [SD, 8.0]), a difference of 3.3 kg (95% CI, 2.3-4.2; P < .001). The GLP-1RA-exposed group had a higher risk of excess gestational weight gain (65% vs 49%; risk ratio [RR], 1.32; 95% CI, 1.19-1.47), greater mean birth weight percentile (58.4% vs 54.8%; difference, 3.6%; 95% CI, 0.2%-6.9%), and higher risk of preterm delivery (17% vs 13%; RR, 1.34; 95% CI, 1.06-1.69), gestational diabetes (20% vs 15%; RR, 1.30; 95% CI, 1.01-1.68), and hypertensive disorders of pregnancy (46% vs 36%; RR, 1.29; 95% CI, 1.12-1.49). There was no difference in birth length, risk of large or small for gestational age birth weight, or cesarean delivery. Conclusions and Relevance: In a cohort composed primarily of women with obesity, GLP-1RA use with subsequent prepregnancy or early pregnancy discontinuation was associated with more gestational weight gain and a higher risk of preterm delivery, gestational diabetes, and hypertensive disorders of pregnancy.",
+      "retracted": false,
+      "topicIds": [
+        "glp1"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416587673"
+    },
+    {
+      "id": "W4416427646",
+      "title": "Orforglipron, an oral small-molecule GLP-1 receptor agonist, for the treatment of obesity in people with type 2 diabetes (ATTAIN-2): a phase 3, double-blind, randomised, multicentre, placebo-controlled trial",
+      "doi": "https://doi.org/10.1016/s0140-6736(25)02165-8",
+      "date": "2025-11-20",
+      "journal": "The Lancet",
+      "authors": [
+        "Deborah Bade Horn",
+        "Donna H. Ryan",
+        "Sanja Giljanovic Kiš",
+        "Breno Alves",
+        "Mu Yiming"
+      ],
+      "citations": 61,
+      "fwci": 39.2383,
+      "oa": false,
+      "oaUrl": null,
+      "license": null,
+      "abstract": null,
+      "retracted": false,
+      "topicIds": [
+        "glp1"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4416427646"
+    },
+    {
+      "id": "W4415128167",
+      "title": "Posttreatment Amyloid Levels and Clinical Outcomes Following Donanemab for Early Symptomatic Alzheimer Disease",
+      "doi": "https://doi.org/10.1001/jamaneurol.2025.3869",
+      "date": "2025-10-13",
+      "journal": "JAMA Neurology",
+      "authors": [
+        "Ming Lu",
+        "Min Jung Kim",
+        "Emily C. Collins",
+        "Sergey Shcherbinin",
+        "Amy K. Ellinwood"
+      ],
+      "citations": 30,
+      "fwci": 17.4593,
+      "oa": true,
+      "oaUrl": "https://jamanetwork.com/journals/jamaneurology/articlepdf/2839837/jamaneurology_lu_2025_oi_250070_1759351740.37437.pdf",
+      "license": "cc-by-nc-nd",
+      "abstract": "Importance: Accumulation of amyloid plaque drives pathogenesis of Alzheimer disease (AD). Reduction of amyloid via amyloid-targeting therapies may result in clinical benefit. Objective: To assess the correlation of posttreatment amyloid levels with clinical outcomes and biomarkers in AD. Design, Setting, and Participants: This was a post hoc exploratory analysis from the randomized, placebo-controlled phase 3 trial, TRAILBLAZER-ALZ 2, conducted June 2020 through April 2023 at 277 medical research centers/hospitals in 8 countries. A total of 8240 participants aged 60 to 85 years with early symptomatic AD with amyloid and tau pathology based on positron emission tomography (PET) imaging were assessed for eligibility. Of these, 6504 participants were excluded predominantly due to inadequate amyloid or tau pathology. The current analysis included 1582 participants (766 in the donanemab group and 816 in the placebo group) with baseline and at least 1 posttreatment assessment. Data analysis took place from July 2024 to March 2025. Interventions: Participants were randomized 1:1 to receive donanemab (700 mg for the first 3 doses and 1400 mg thereafter) or placebo intravenously every 4 weeks for up to 72 weeks, with outcomes assessed through 76 weeks. Main Outcomes and Measures: Participants were categorized into 1 of 10 groups (deciles) based on their lowest amyloid value observed posttreatment. Clinical progression was assessed via changes in integrated Alzheimer's Disease Rating Scale (iADRS) and Clinical Dementia Rating-Sum of Boxes (CDR-SB) scores. Plasma biomarkers measured included phosphorylated tau 217 (p-tau217), p-tau181, glial fibrillary acidic protein (GFAP), and neurofilament light chain (NfL). Correlations between the median amyloid level in each decile were assessed with 76-week least-squares mean changes in each outcome and biomarker. Results: Analyses included 1582 participants, including 766 treated with donanemab and 816 with placebo. The mean (SD) age was 72.9 (6.2) years, and 900 participants (56.9%) were female. Participants who received donanemab had lower posttreatment amyloid values than those in the placebo group. Across the trial population, lower posttreatment amyloid levels were correlated with slower clinical progression as measured by iADRS score (R2, 0.73 [95% CI, 0.37-0.97]) and CDR-SB score (R2, 0.87 [95% CI, 0.70-0.97]) and with decreases in p-tau217 (R2, 0.86 [95% CI, 0.73-0.97]), p-tau181 (R2, 0.88 [95% CI, 0.77-0.97]), and GFAP (R2, 0.87 [95% CI, 0.76-0.97]). There was no correlation between posttreatment amyloid value and NfL (R2, 0.03 [95% CI, 0.00-0.54]). Conclusions and Relevance: The findings in this secondary analysis of a randomized clinical trial demonstrating a correlation between posttreatment amyloid plaque level and clinical benefit support amyloid plaque removal as the mechanism of action for donanemab treatment and the level of amyloid plaque as a potential surrogate biomarker in amyloid-targeting therapies. Trial Registration: ClinicalTrials.gov Identifier: NCT04437511.",
+      "retracted": false,
+      "topicIds": [
+        "alzheimer"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4415128167"
+    },
+    {
+      "id": "W4417122943",
+      "title": "Home-Based Gamma Transcranial Alternating Current Stimulation in Patients With Alzheimer Disease",
+      "doi": "https://doi.org/10.1001/jamanetworkopen.2025.46556",
+      "date": "2025-12-08",
+      "journal": "JAMA Network Open",
+      "authors": [
+        "Valentina Cantoni",
+        "Elias Paolo Casula",
+        "Barbara Tarantino",
+        "Chiara Cupidi",
+        "Nadine Huber"
+      ],
+      "citations": 20,
+      "fwci": 6.3824,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1001/jamanetworkopen.2025.46556",
+      "license": "cc-by",
+      "abstract": "Importance: Alzheimer disease (AD) is characterized by dysregulated gamma brain oscillations. Transcranial alternating current stimulation (tACS) is a novel, noninvasive brain stimulation technique capable of entraining cerebral oscillations at targeted frequencies. Objective: To assess the safety, feasibility, and efficacy of home-based gamma tACS applied over the precuneus in patients with prodromal and mild AD. Design, Setting, and Participants: This double-blind, randomized, sham-controlled clinical trial with an open-label extension phase was conducted at a tertiary AD research clinic in Italy from December 10, 2022, to October 15, 2024. Patients with a diagnosis of AD were eligible to participate. Intervention: Participants were randomized to receive either home-based gamma tACS (5 sessions/wk, 60 minutes each) or sham stimulation for 8 weeks (double-blind phase). All participants subsequently received gamma tACS for an additional 8 weeks (open-label phase) and an 8-week follow-up. Main Outcomes and Measures: The primary end points were safety, feasibility, and clinical efficacy. Secondary end points included measures of biological efficacy, including gamma band power via electroencephalography, cholinergic neurotransmission, AD plasma biomarker levels, and brain connectivity as assessed via magnetic resonance imaging. Results: Sixty consecutive patients with prodromal or mild AD were screened; 50 were randomized to gamma or sham tACS (mean [SD] age, 67.3 [7.8] years; 25 [50.0%] female and 25 [50.0%] male). Home-based gamma tACS was safe and well-tolerated. A significant enhancement in global cognitive functions, activities of daily living, and associative memory performances was observed. Marginal mean differences between the sham vs gamma tACS groups were significant for the Clinical Dementia Rating sum of boxes (0.35; 95% CI, 0.10-0.61; P = .007), Alzheimer Disease Assessment Scale-cognitive subscale (0.93; 95% CI, 0.50-1.36; P = .001), Alzheimer Disease Cooperative Study-Activities of Daily Living (-0.55; 95% CI, -0.89 to -0.21; P = .02), and Face-Name Association Test (-1.14; 95% CI, -1.66 to -0.61; P ≤ .001). During the open-label phase, a significant marginal mean difference was observed for Alzheimer Disease Assessment Scale-cognitive subscale (-0.59; 95% CI, -1.02 to -0.16; P = .007), Alzheimer Disease Cooperative Study-Activities of Daily Living (0.41; 95% CI, 0.04-0.08; P = .02), and Face-Name Association Test (1.04; 95% CI, 0.50-1.57; P = .003). Neurophysiological measures showed an increase in cholinergic transmission, coinciding with an increase in gamma power following gamma tACS, effects not seen with sham stimulation. No changes of plasma biomarkers were observed. No add-on effect was observed after 2 repeated treatments with gamma tACS, suggesting that 8 rather than 16 weeks of treatment represents the ideal duration. Conclusions and Relevance: In this randomized clinical trial, home-based gamma tACS was feasible and improved clinical outcomes in AD, with neurophysiological evidence of brain engagement. These findings support further investigation of gamma tACS as a potential therapeutic intervention for AD. Trial Registration: ClinicalTrials.gov Identifier: NCT05643326.",
+      "retracted": false,
+      "topicIds": [
+        "alzheimer"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417122943"
+    },
+    {
+      "id": "W4417436333",
+      "title": "Valacyclovir Treatment of Early Symptomatic Alzheimer Disease",
+      "doi": "https://doi.org/10.1001/jama.2025.21738",
+      "date": "2025-12-17",
+      "journal": "JAMA",
+      "authors": [
+        "D. P. Devanand",
+        "Thomas Wısnıewskı",
+        "Qolamreza Ray Razlighi",
+        "Min Qian",
+        "Renjie Wei"
+      ],
+      "citations": 18,
+      "fwci": 10.2251,
+      "oa": true,
+      "oaUrl": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12712832/bin/jama-e2521738-s001.pdf",
+      "license": null,
+      "abstract": "Importance: Neuroscientific, epidemiological, and electronic health record studies implicate herpes simplex virus (HSV) as potentially etiological for Alzheimer disease (AD). Objective: To compare the efficacy and adverse effects of valacyclovir vs placebo in participants with early symptomatic AD and HSV seropositivity (HSV-1 or HSV-2). Design, Setting, and Participants: This randomized clinical trial included adults with a clinical diagnosis of probable AD or a clinical diagnosis of mild cognitive impairment with positive biomarkers for AD, a positive serum antibody test (IgG or IgM) for HSV-1 or HSV-2, and a Mini-Mental State Examination score of 18 to 28. The trial was conducted at 3 US outpatient clinics specializing in memory disorders. Recruitment occurred from January 2018 to May 2022; the last follow-up occurred in September 2024. Intervention: Either 4 g/d of valacyclovir (n = 60) or matching placebo (n = 60). Main Outcomes and Measures: The primary outcome was least-squares mean (LSM) change at 78 weeks in the 11-item Alzheimer's Disease Assessment Scale Cognitive (ADAS-Cognitive) Subscale score (range, 0-70; higher scores indicate greater impairment). The secondary outcomes were LSM change in the Alzheimer's Disease Cooperative Study-Activities of Daily Living (ADCS-ADL) Scale score; LSM change in the 18F-florbetapir amyloid positron emission tomography (PET) standardized uptake value ratio (SUVR; higher scores indicate higher amyloid levels) for 6 brain regions (medial orbitofrontal, anterior cingulate, parietal lobe, posterior cingulate, temporal lobe, and precuneus); and LSM change in 18F-MK-6240 tau PET medial temporal SUVR (higher scores indicate higher tau levels) for 4 brain regions (amygdala, hippocampus, entorhinal, and parahippocampus). The frequency of adverse events was the safety outcome. Results: Of the 120 participants (mean age, 71.4 [SD, 8.6] years; 55% were female), 93 (77.5%) completed the trial. At 78 weeks, the LSM change in the 11-item ADAS-Cognitive Subscale score was 10.86 (95% CI, 8.80 to 12.91) in the valacyclovir group vs 6.92 (95% CI, 4.88 to 8.97) in the placebo group, indicating greater cognitive worsening with valacyclovir than placebo (between-group difference, 3.93 [95% CI, 1.03 to 6.83]; P = .01). The LSM change in the ADCS-ADL Scale score at 78 weeks was -13.78 (95% CI, -17.00 to -10.56) in the valacyclovir group vs -10.16 (95% CI, -13.37 to -6.96) in the placebo group (between-group difference, -3.62 [95% CI, -8.16 to 0.93]). At 78 weeks, the LSM change in the 18F-florbetapir amyloid PET SUVR was 0.03 (95% CI, -0.04 to 0.10) in the valacyclovir group vs 0.01 (95% CI, -0.06 to 0.08) in the placebo group (between-group difference, 0.02 [95% CI, -0.08 to 0.12]). The LSM change in the 18F-MK-6240 tau PET medial temporal SUVR at 78 weeks was 0.07 (95% CI, -0.06 to 0.19) in the valacyclovir group vs -0.04 (95% CI, -0.15 to 0.07) in the placebo group (between-group difference, 0.11 [95% CI, -0.06 to 0.28]). The most common adverse events were elevated serum creatinine level (5 participants [8.3%] in the valacyclovir group vs 2 participants [3.3%] in the placebo group) and COVID-19 infection (3 [5%] vs 2 [3.3%], respectively). Conclusions and Relevance: Valacyclovir was not efficacious with cognitive worsening for the primary outcome and it is not recommended to treat individuals with early symptomatic AD and HSV seropositivity. Trial Registration: ClinicalTrials.gov Identifier: NCT03282916.",
+      "retracted": false,
+      "topicIds": [
+        "alzheimer"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417436333"
+    },
+    {
+      "id": "W4417035402",
+      "title": "Kidney Function, Alzheimer Disease Blood Biomarkers, and Dementia Risk in Community-Dwelling Older Adults",
+      "doi": "https://doi.org/10.1212/wnl.0000000000214446",
+      "date": "2025-12-03",
+      "journal": "Neurology",
+      "authors": [
+        "Francesca Gasparini",
+        "Martina Valletta",
+        "Davide Liborio Vetrano",
+        "Giorgi Beridze",
+        "Debora Rizzuto"
+      ],
+      "citations": 18,
+      "fwci": 12.0529,
+      "oa": true,
+      "oaUrl": "https://doi.org/10.1212/wnl.0000000000214446",
+      "license": "cc-by",
+      "abstract": "BACKGROUND AND OBJECTIVES: Impaired kidney function has been linked to altered concentrations of blood biomarkers of Alzheimer disease (AD), but the underlying mechanisms and its potential role in dementia development remain poorly understood. We explored the associations between estimated glomerular filtration rate (eGFR), blood-based biomarkers of AD, and dementia development. METHODS: Data were extracted from the Swedish National Study on Aging and Care in Kungsholmen, an ongoing longitudinal population-based study. Kidney function was assessed using eGFR based on serum creatinine. AD biomarkers (amyloid beta [Aβ42/40], phosphorylated tau [p-tau181 and p-tau217] and total tau [t-tau] proteins, neurofilament light chain [NfL], and glial fibrillary acidic protein [GFAP]) were measured from peripheral blood samples using the Simoa platform. Dementia was diagnosed according to DSM-IV criteria. Quantile regression models assessed the cross-sectional associations between eGFR and AD biomarkers; Cox regression models were used to examine the association of kidney function and biomarkers with incident dementia. RESULTS: ) (hazard ratio [HR], 0.93 [95% CI 0.72-1.21]). The relationship between increased (high vs low) NfL and dementia was stronger among individuals with impaired (vs preserved) kidney function (HR, 3.85 [95% CI 1.87-7.95] vs HR, 1.84 [95% CI 1.34-2.53], respectively). DISCUSSION.: Impaired kidney function was associated with elevated circulating level of most AD blood biomarkers. However, the presence of impaired kidney function did not independently increase the risk of dementia but rather seemed to accelerate the clinical expression of underlying neurodegenerative pathology.",
+      "retracted": false,
+      "topicIds": [
+        "alzheimer"
+      ],
+      "fields": [
+        "medicine"
+      ],
+      "type": "article",
+      "sourceUrl": "https://openalex.org/W4417035402"
+    }
+  ]
+}
