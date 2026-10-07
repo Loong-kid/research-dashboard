@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # 06:20 Asia/Seoul; GitHub may delay scheduled jobs.
-    - cron: '20 21 * * *'
+    # 09:20 Asia/Seoul, after the provider's daily UTC quota reset.
+    - cron: '20 0 * * *'
 
 permissions:
   contents: read

@@ -20,32 +20,13 @@
       "count": 202,
       "previousCount": 91,
       "growth": 122.0,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 119
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22quantum+error+correction%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4415198140",
         "W4417012238",
         "W4415104221",
         "W7116702366"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "fusion",
@@ -56,32 +37,13 @@
       "count": 78,
       "previousCount": 47,
       "growth": 66.0,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 48
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22fusion+plasma%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W7134961515",
         "W7140117203",
         "W4415938344",
         "W7163340173"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "superconductivity",
@@ -92,32 +54,13 @@
       "count": 1218,
       "previousCount": 914,
       "growth": 33.3,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 970
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22superconductivity%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4416918562",
         "W4415208345",
         "W4416867159",
         "W4417414884"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "solid-electrolyte",
@@ -128,32 +71,13 @@
       "count": 1207,
       "previousCount": 1228,
       "growth": -1.7,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 1230
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22solid+electrolyte%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4415668517",
         "W4417137716",
         "W4415056350",
         "W4415946704"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "perovskite",
@@ -164,32 +88,13 @@
       "count": 3582,
       "previousCount": 3531,
       "growth": 1.4,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 3517
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22perovskite+solar+cells%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4415970745",
         "W4415988330",
         "W4415196100",
         "W4415024922"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "carbon-catalysis",
@@ -200,32 +105,13 @@
       "count": 93,
       "previousCount": 162,
       "growth": -42.6,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": 191
-        },
-        {
-          "year": 2025,
-          "count": null
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22carbon+dioxide+reduction%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4415531242",
         "W4414941470",
         "W4415266425",
         "W7128815235"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "protein-design",
@@ -236,32 +122,13 @@
       "count": 89,
       "previousCount": 62,
       "growth": 43.5,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 68
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22protein+design%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W7158957654",
         "W7126149934",
         "W4414988964",
         "W4413005839"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "gene-editing",
@@ -272,32 +139,13 @@
       "count": 833,
       "previousCount": 753,
       "growth": 10.6,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 809
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22gene+editing%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4416039232",
         "W7147145559",
         "W7147284523",
         "W7118849114"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "organoid",
@@ -308,32 +156,13 @@
       "count": 2974,
       "previousCount": 2186,
       "growth": 36.0,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 2360
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22organoid%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W7117963595",
         "W7127049049",
         "W4416025668",
         "W7115709714"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "cancer-immunotherapy",
@@ -344,32 +173,13 @@
       "count": 1359,
       "previousCount": 1258,
       "growth": 8.0,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 1317
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22cancer+immunotherapy%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4414932502",
         "W4416453109",
         "W7131666946",
         "W7117128536"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "glp1",
@@ -380,32 +190,13 @@
       "count": 1747,
       "previousCount": 810,
       "growth": 115.7,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 931
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22GLP-1+receptor+agonist%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W7124314989",
         "W7147201645",
         "W4416587673",
         "W4416427646"
-      ],
-      "historyComplete": false
+      ]
     },
     {
       "id": "alzheimer",
@@ -416,32 +207,13 @@
       "count": 1578,
       "previousCount": 1419,
       "growth": 11.2,
-      "history": [
-        {
-          "year": 2022,
-          "count": null
-        },
-        {
-          "year": 2023,
-          "count": null
-        },
-        {
-          "year": 2024,
-          "count": null
-        },
-        {
-          "year": 2025,
-          "count": 1407
-        }
-      ],
       "sourceUrl": "https://api.openalex.org/works?filter=type%3Aarticle%2Cis_retracted%3Afalse%2Ctitle.search%3A%22Alzheimer%22%2Cfrom_publication_date%3A2025-10-08%2Cto_publication_date%3A2026-10-07",
       "paperIds": [
         "W4415128167",
         "W4417122943",
         "W4417436333",
         "W4417035402"
-      ],
-      "historyComplete": false
+      ]
     }
   ],
   "papers": [

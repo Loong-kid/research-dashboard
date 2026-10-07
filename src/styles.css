@@ -176,7 +176,7 @@ h2 { font-size: 16px; font-weight: 600; letter-spacing: -.5px; }
 .history-bars { display: flex; gap: 15px; justify-content: space-between; padding: 12px 4px 0; }
 .history-bar-column { display: flex; flex: 1; flex-direction: column; text-align: center; min-width: 0; }
 .bar-value { color: var(--focus-muted); font-family: var(--font-display); font-size: 8px; margin-bottom: 5px; }
-.bar-track { height: 43px; position: relative; margin: 0 3px; }
+.bar-track { height: 43px; position: relative; margin: 0 auto; width: 50px; max-width: 100%; }
 .bar-fill { position: absolute; bottom: 0; width: 100%; background: var(--focus-bar); border-radius: 3px 3px 0 0; opacity: .65; }
 .history-bar-column:last-child .bar-fill { background: var(--focus-bar-last); opacity: 1; }
 .bar-year { color: var(--focus-muted); font-family: var(--font-display); font-size: 8px; margin-top: 6px; }
@@ -198,7 +198,6 @@ h2 { font-size: 16px; font-weight: 600; letter-spacing: -.5px; }
 .field-overview-data > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .fastest-name { font-size: 10px; color: var(--secondary); white-space: nowrap; }
 .sparkline { width: 70px; height: 34px; flex-shrink: 0; }
-.history-pending { font-size: 9px; color: var(--muted); }
 .papers-section { margin-top: 29px; }
 .papers-section.expanded { margin-top: 29px; }
 .papers-heading p { color: var(--muted); font-size: 11px; margin-top: 6px; }

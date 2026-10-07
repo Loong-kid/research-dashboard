@@ -71,7 +71,7 @@ def paper_record(work, topic_id, field):
     }
 
 
-def collect_topic(topic, start, end, previous_start, previous_end, years):
+def collect_topic(topic, start, end, previous_start, previous_end):
     topic_id, field, name, query, description = topic
     exact_query = '"' + query + '"'
     title_filter = f'type:article,is_retracted:false,title.search:{exact_query}'
@@ -80,15 +80,11 @@ def collect_topic(topic, start, end, previous_start, previous_end, years):
     previous = fetch('works',
                      filter=f'{title_filter},from_publication_date:{previous_start},to_publication_date:{previous_end}',
                      **{'per-page': 1})
-    history = fetch('works', filter=f'{title_filter},publication_year:{years[0]}-{years[-1]}',
-                    **{'group_by': 'publication_year', 'per-page': 200})
-    counts = {int(item['key']): item['count'] for item in history['group_by']}
     count, previous_count = current['meta']['count'], previous['meta']['count']
     growth = round((count / previous_count - 1) * 100, 1) if previous_count else None
     papers = [paper_record(work, topic_id, field) for work in current['results']]
     record = {'id': topic_id, 'field': field, 'name': name, 'query': query, 'description': description,
-              'count': count, 'previousCount': previous_count, 'growth': growth, 'historyComplete': True,
-              'history': [{'year': year, 'count': counts.get(year, 0)} for year in years],
+              'count': count, 'previousCount': previous_count, 'growth': growth,
               'sourceUrl': 'https://api.openalex.org/works?' + urllib.parse.urlencode({'filter': current_filter}),
               'paperIds': [paper['id'] for paper in papers]}
     print(f'{topic_id}: {count} articles, {growth}% change', flush=True)
@@ -108,10 +104,9 @@ def main():
     start = previous_year(today)
     previous_end = start - dt.timedelta(days=1)
     previous_start = previous_year(start)
-    years = list(range(today.year - 4, today.year))
     records, all_papers = [], {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        jobs = [executor.submit(collect_topic, topic, start, end, previous_start, previous_end, years) for topic in TOPICS]
+        jobs = [executor.submit(collect_topic, topic, start, end, previous_start, previous_end) for topic in TOPICS]
         for job in jobs:
             topic, papers = job.result()
             records.append(topic)
