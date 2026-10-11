@@ -4,11 +4,25 @@ import json
 from pathlib import Path
 import unittest
 from refresh_neuroscience import month_windows, paper_record, clean
+from refresh_editorial import collect, editorial_type
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 class SnapshotContract(unittest.TestCase):
+    def test_editorial_subtype_is_publisher_verified_not_inferred_from_dc_type(self):
+        highlight = BeautifulSoup('<meta name="dc.type" content="BriefCommunication"><li data-test="article-category">Research Highlight</li>', 'html.parser')
+        self.assertEqual(editorial_type(highlight), 'Research Highlights')
+        original = BeautifulSoup('<meta name="dc.type" content="BriefCommunication"><li data-test="article-category">Brief Communication</li>', 'html.parser')
+        self.assertIsNone(editorial_type(original))
+        news = BeautifulSoup('<meta name="dc.type" content="News And Views">', 'html.parser')
+        self.assertEqual(editorial_type(news), 'News & Views')
+
+    def test_empty_publisher_response_cannot_replace_verified_editorials(self):
+        with self.assertRaises(ValueError):
+            collect(BeautifulSoup('<title>Unavailable</title>', 'html.parser'))
+
     def test_source_lanes_dates_and_deduplication(self):
         data = json.loads((ROOT / 'public/data/neuroscience.json').read_text(encoding='utf-8'))
         papers = data['papers']

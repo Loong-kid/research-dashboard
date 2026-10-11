@@ -1,6 +1,7 @@
 {
   "sourceUrl": "https://www.nature.com/subjects/neuroscience",
-  "fetchedAt": "2026-10-11T16:59:52.347561+00:00",
+  "collectionMode": "subject-page",
+  "fetchedAt": "2026-10-11T17:21:25.274136+00:00",
   "items": [
     {
       "title": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
@@ -10,7 +11,9 @@
       "journal": "Nature",
       "originalLinks": [
         "https://doi.org/10.1016%2Fj.xcrm.2026.103090"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090384+00:00"
     },
     {
       "title": "Brain regulation of bile acids",
@@ -20,7 +23,9 @@
       "journal": "Nature Reviews Neuroscience",
       "originalLinks": [
         "https://doi.org/10.1038%2Fs41467-026-77334-1"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090393+00:00"
     },
     {
       "title": "Extracting brain-wide interactions with CURBD",
@@ -28,7 +33,9 @@
       "date": "2026-10-07",
       "type": "Research Highlights",
       "journal": "Nature Methods",
-      "originalLinks": []
+      "originalLinks": [],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090395+00:00"
     },
     {
       "title": "Recording time via brain organoids",
@@ -36,7 +43,9 @@
       "date": "2026-10-07",
       "type": "Research Highlights",
       "journal": "Nature Methods",
-      "originalLinks": []
+      "originalLinks": [],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090396+00:00"
     },
     {
       "title": "In situ capture of combinatorial neuromodulatory codes",
@@ -46,7 +55,9 @@
       "journal": "Nature Reviews Neuroscience",
       "originalLinks": [
         "https://doi.org/10.1016%2Fj.neuron.2026.07.008"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090397+00:00"
     },
     {
       "title": "Brain organoids grafted into cortex-free mice will advance human brain research",
@@ -60,7 +71,9 @@
         "https://doi.org/10.1038%2Fs41586-020-1962-0",
         "https://doi.org/10.1038%2Fnbt.4127",
         "https://doi.org/10.1016%2Fj.neuron.2019.10.002"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090397+00:00"
     },
     {
       "title": "Arginine inhibits a key innate immune signalling hub",
@@ -74,7 +87,9 @@
         "https://doi.org/10.1038%2Fs42255-026-01636-3",
         "https://doi.org/10.1016%2Fj.clnesp.2026.103134",
         "https://doi.org/10.3389%2Ffimmu.2017.00093"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090398+00:00"
     },
     {
       "title": "Ultraprocessed foods evoke distinct metabolic and neural responses",
@@ -88,7 +103,9 @@
         "https://doi.org/10.1146%2Fannurev-psych-122216-011643",
         "https://doi.org/10.1016%2Fj.cub.2017.07.018",
         "https://doi.org/10.1016%2Fj.cmet.2018.05.018"
-      ]
+      ],
+      "listedOn": "https://www.nature.com/subjects/neuroscience",
+      "lastVerifiedAt": "2026-10-11T17:21:07.090399+00:00"
     }
   ]
 }
