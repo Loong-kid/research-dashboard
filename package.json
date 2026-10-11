@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "data:refresh": "python scripts/refresh_data.py",
+    "data:neuroscience": "python scripts/refresh_neuroscience.py",
+    "data:editorial": "python scripts/refresh_editorial.py",
     "test": "playwright test"
   },
   "dependencies": {

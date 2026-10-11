@@ -1,0 +1,111 @@
+{
+  "id": "neuroscience",
+  "name": "뇌과학",
+  "description": "세포에서 인지, 질환과 뇌공학까지. 관심 주제를 따라 연구를 살펴봅니다.",
+  "groups": [
+    {"id":"cellular","name":"세포·분자","color":"var(--neuro-cell)","description":"신경세포가 신호를 주고받고 변화하는 원리","question":"뇌는 어떻게 연결을 바꾸고 유지할까?"},
+    {"id":"circuits","name":"신경회로","color":"var(--neuro-circuit)","description":"신경망의 연결 구조와 감각 정보 처리","question":"연결된 신경세포는 어떤 계산을 할까?"},
+    {"id":"cognition","name":"인지·행동","color":"var(--neuro-cognition)","description":"기억과 학습, 수면의 신경학적 기반","question":"경험은 어떻게 기억과 행동이 될까?"},
+    {"id":"clinical","name":"뇌질환","color":"var(--neuro-clinical)","description":"퇴행성 뇌질환의 기전, 진단과 치료 연구","question":"질환의 기전을 어떻게 치료로 연결할까?"},
+    {"id":"engineering","name":"뇌공학","color":"var(--neuro-engineering)","description":"뇌 신호를 읽고 신경 활동에 개입하는 기술","question":"뇌와 기계를 어떻게 연결할까?"},
+    {"id":"computational","name":"계산뇌과학","color":"var(--neuro-computation)","description":"신경 활동의 표현과 계산 모델","question":"뇌의 계산을 어떻게 설명할까?"}
+  ],
+  "topics": [
+    {
+      "id":"neuro-plasticity","group":"cellular","name":"시냅스 가소성",
+      "query":"(TITLE:\"synaptic plasticity\" OR TITLE:\"long-term potentiation\" OR TITLE:\"long-term depression\")",
+      "description":"경험과 활동에 따라 신경세포 사이 연결의 강도가 달라지는 과정",
+      "readFor":["어떤 시냅스와 회로에서 변화가 관측되었나?","연결의 변화가 행동·기억 변화로 이어졌나?","변화는 얼마나 지속되고, 원인 관계를 검증했나?"],
+      "terms":[{"en":"Synaptic plasticity","ko":"시냅스 가소성","definition":"신경세포 사이의 신호 전달 효율이 활동과 경험에 따라 변하는 성질."},{"en":"LTP","ko":"장기 강화","definition":"시냅스 신호 전달이 비교적 오래 강해지는 현상."}],
+      "guide":"세포 수준의 연결 변화와 실제 학습 행동을 구분해서 읽어봐."
+    },
+    {
+      "id":"neuro-glia","group":"cellular","name":"신경교세포",
+      "query":"(TITLE:microgli* OR TITLE:astrocyt* OR TITLE:oligodendrocyt* OR TITLE:\"glial cells\")",
+      "description":"미세아교세포·성상세포 등의 면역, 대사와 신경 활동 조절",
+      "readFor":["어떤 종류의 교세포를 연구했나?","염증 반응과 정상 생리 기능을 구분했나?","세포의 상태 변화가 신경회로에 어떤 영향을 주나?"],
+      "terms":[{"en":"Microglia","ko":"미세아교세포","definition":"중추신경계에서 면역 감시와 조직 상태 조절에 관여하는 세포."},{"en":"Astrocyte","ko":"성상세포","definition":"신경세포의 주변 환경, 대사와 신호 전달을 조절하는 교세포."}],
+      "guide":"단일세포 분석에서 발견한 상태와 기능 실험의 결과를 함께 확인해봐."
+    },
+    {
+      "id":"neuro-connectome","group":"circuits","name":"커넥톰·신경회로",
+      "query":"(TITLE:connectome OR TITLE:connectomics OR TITLE:\"brain connectivity\" OR TITLE:\"neural circuit\" OR TITLE:\"neural circuits\")",
+      "description":"뇌의 연결 지도와 특정 기능을 수행하는 신경회로",
+      "readFor":["구조적 연결과 기능적 연결 중 무엇을 측정했나?","지도는 어떤 종, 뇌 영역과 해상도를 다루나?","연결 지도가 실제 기능을 설명하거나 예측하나?"],
+      "terms":[{"en":"Connectome","ko":"커넥톰","definition":"신경계의 연결 관계를 표현한 지도."},{"en":"Functional connectivity","ko":"기능적 연결성","definition":"서로 다른 뇌 영역의 활동이 함께 변하는 정도. 직접적인 해부학적 연결과 같지는 않아."}],
+      "guide":"연결 지도를 만든 성과와 연결의 기능을 밝힌 성과를 구분해봐."
+    },
+    {
+      "id":"neuro-sensory","group":"circuits","name":"감각 정보처리",
+      "query":"(TITLE:\"visual cortex\" OR TITLE:\"auditory cortex\" OR TITLE:\"somatosensory cortex\" OR TITLE:\"sensory processing\" OR TITLE:\"sensory cortex\")",
+      "description":"시각·청각·촉각 정보의 표현과 감각 피질의 계산",
+      "readFor":["자극과 행동 과제는 무엇인가?","신경 활동이 자극을 구분하는 것과 지각을 설명하는 것을 구분했나?","깨어 있는 상태와 마취 상태의 차이는 고려했나?"],
+      "terms":[{"en":"Receptive field","ko":"수용장","definition":"한 신경세포의 반응에 영향을 주는 자극의 범위와 특성."},{"en":"Sensory cortex","ko":"감각 피질","definition":"감각 정보를 처리하는 대뇌피질의 영역."}],
+      "guide":"측정한 신경 반응과 동물이 실제로 지각한 것을 연결하는 근거를 찾아봐."
+    },
+    {
+      "id":"neuro-memory","group":"cognition","name":"기억·학습",
+      "query":"((TITLE:memory OR TITLE:learning) AND (TITLE:hippocampus OR TITLE:hippocampal OR TITLE:brain OR TITLE:neuronal OR TITLE:neural OR TITLE:cognitive)) AND NOT (TITLE:\"machine learning\" OR TITLE:\"deep learning\" OR TITLE:\"reinforcement learning\")",
+      "description":"기억의 형성·저장·인출과 경험에 따른 신경 활동의 변화",
+      "readFor":["어떤 종류의 기억과 학습 과제를 다루나?","형성·저장·인출 중 어느 단계를 측정했나?","개입이 기억 자체와 운동·주의에 미치는 영향을 구분했나?"],
+      "terms":[{"en":"Engram","ko":"기억 흔적","definition":"특정 경험의 기억과 관련된 지속적인 신경계 변화나 세포 집단."},{"en":"Hippocampus","ko":"해마","definition":"일부 기억과 공간 정보 처리에 중요한 뇌 구조."}],
+      "guide":"행동 과제에서 무엇을 기억이라고 정의했는지 먼저 확인해봐."
+    },
+    {
+      "id":"neuro-sleep","group":"cognition","name":"수면·일주기",
+      "query":"((TITLE:sleep OR TITLE:circadian) AND (TITLE:brain OR TITLE:neural OR TITLE:neuronal OR TITLE:cortex OR TITLE:memory OR TITLE:hippocamp* OR TITLE:glia* OR TITLE:microgli* OR TITLE:astrocyt* OR TITLE:cognitive))",
+      "description":"수면 단계와 일주기 리듬이 신경 활동과 기억에 미치는 영향",
+      "readFor":["수면 단계나 생체 시간을 어떻게 측정했나?","수면 부족, 시간대와 스트레스의 효과를 구분했나?","관찰 연구인가, 수면이나 회로를 조작한 실험인가?"],
+      "terms":[{"en":"Circadian rhythm","ko":"일주기 리듬","definition":"약 24시간 주기로 변하는 생리·행동 리듬."},{"en":"REM sleep","ko":"렘수면","definition":"빠른 안구 운동과 특징적인 뇌 활동이 나타나는 수면 단계."}],
+      "guide":"시간대와 수면량을 통제했는지 확인하는 것이 중요해."
+    },
+    {
+      "id":"neuro-alzheimer","group":"clinical","name":"알츠하이머병",
+      "query":"TITLE:Alzheimer*",
+      "description":"아밀로이드·타우, 신경퇴행, 바이오마커와 치료 전략",
+      "readFor":["세포·동물 모델인가, 사람을 대상으로 한 연구인가?","바이오마커 변화와 임상 증상 개선을 구분했나?","치료 효과의 크기, 추적 기간과 이상반응은 어떠한가?"],
+      "terms":[{"en":"Amyloid beta","ko":"아밀로이드 베타","definition":"알츠하이머병에서 축적과 관련해 연구되는 단백질 조각."},{"en":"Biomarker","ko":"바이오마커","definition":"생물학적 상태를 측정하는 지표. 변화 자체가 치료 효과를 뜻하지는 않아."}],
+      "guide":"사람 대상 연구에서도 지표 개선과 삶에 영향을 주는 임상 효과를 구분해봐."
+    },
+    {
+      "id":"neuro-parkinson","group":"clinical","name":"파킨슨병",
+      "query":"TITLE:Parkinson*",
+      "description":"도파민 회로, 알파시누클레인, 운동·비운동 증상과 치료",
+      "readFor":["어떤 질환 단계와 증상을 평가했나?","증상 완화와 질환 진행 억제를 구분했나?","약물·자극·세포치료의 비교군과 장기 안전성은 어떠한가?"],
+      "terms":[{"en":"Dopamine","ko":"도파민","definition":"운동, 동기 등 여러 기능에 관여하는 신경전달물질."},{"en":"Alpha-synuclein","ko":"알파시누클레인","definition":"파킨슨병의 병리와 관련해 연구되는 단백질."}],
+      "guide":"운동 점수의 변화와 질환 자체의 진행에 대한 주장을 따로 살펴봐."
+    },
+    {
+      "id":"neuro-bci","group":"engineering","name":"뇌–컴퓨터 인터페이스",
+      "query":"(TITLE:\"brain-computer interface\" OR TITLE:\"brain computer interface\" OR TITLE:\"brain-machine interface\" OR TITLE:neuroprosthesis OR TITLE:neuroprostheses OR TITLE:neuroprosthetic OR TITLE:neuroprosthetics)",
+      "description":"뇌 신호를 해독해 의사소통과 움직임을 연결하는 인터페이스",
+      "readFor":["침습·비침습 방식과 참여자 수는 무엇인가?","오프라인 정확도와 실시간 사용 성능을 구분했나?","보정 시간, 장기 안정성과 일상 사용 가능성은 어떠한가?"],
+      "terms":[{"en":"Decoder","ko":"해독기","definition":"신경 신호를 의도, 움직임이나 언어 등의 출력으로 바꾸는 알고리즘."},{"en":"EEG","ko":"뇌파","definition":"두피 전극 등을 이용해 측정하는 뇌의 전기 활동."}],
+      "guide":"정확도 하나보다 실시간 성능, 안정성과 참여자별 차이를 함께 읽어봐."
+    },
+    {
+      "id":"neuro-stimulation","group":"engineering","name":"신경자극·조절",
+      "query":"(TITLE:\"deep brain stimulation\" OR TITLE:\"transcranial magnetic stimulation\" OR TITLE:\"transcranial alternating current stimulation\" OR TITLE:\"transcranial direct current stimulation\")",
+      "description":"전기·자기 자극으로 뇌 활동과 증상에 개입하는 연구",
+      "readFor":["자극 위치, 강도와 시간 패턴은 무엇인가?","모의 자극과 눈가림을 적용했나?","단기 반응과 장기 효과, 이상반응을 함께 보고했나?"],
+      "terms":[{"en":"DBS","ko":"뇌심부자극","definition":"뇌 깊은 영역에 삽입한 전극으로 신경 활동에 개입하는 방법."},{"en":"Sham stimulation","ko":"모의 자극","definition":"실제 자극의 효과와 기대·절차의 효과를 구분하기 위한 비교 조건."}],
+      "guide":"자극 조건과 비교군을 확인해야 서로 다른 연구의 결과를 비교할 수 있어."
+    },
+    {
+      "id":"neuro-coding","group":"computational","name":"신경집단 부호화",
+      "query":"(TITLE:\"neural population\" OR TITLE:\"population coding\" OR TITLE:\"neural coding\" OR TITLE:\"neural manifold\")",
+      "description":"여러 신경세포의 활동이 정보를 표현하는 방식",
+      "readFor":["몇 개의 신경세포를 어떤 방식으로 기록했나?","차원 축소나 해독 결과가 새 데이터에서도 유지되나?","표현을 찾은 것과 뇌가 실제로 그 표현을 사용하는 것을 구분했나?"],
+      "terms":[{"en":"Population code","ko":"집단 부호","definition":"여러 신경세포의 활동 패턴으로 정보를 표현하는 방식."},{"en":"Neural manifold","ko":"신경 매니폴드","definition":"고차원 신경 활동을 설명하는 비교적 낮은 차원의 구조."}],
+      "guide":"아름다운 시각화와 행동을 예측하는 검증 결과를 구분해서 읽어봐."
+    },
+    {
+      "id":"neuro-models","group":"computational","name":"신경 계산모델",
+      "query":"(TITLE:\"computational neuroscience\" OR TITLE:\"neural mass model\" OR TITLE:\"biophysical neuron\" OR (TITLE:\"spiking neural network\" AND (ABSTRACT:brain OR ABSTRACT:neuron OR ABSTRACT:neuroscience)))",
+      "description":"신경세포와 회로의 동작을 모델로 설명하고 예측하는 연구",
+      "readFor":["어떤 생물학적 관측을 설명하려는 모델인가?","모델의 가정과 파라미터를 어떻게 정했나?","실험 데이터와 대안 모델로 예측을 검증했나?"],
+      "terms":[{"en":"Spiking neuron","ko":"스파이킹 뉴런","definition":"시간에 따른 발화 사건을 표현하는 신경세포 모델."},{"en":"Biophysical model","ko":"생물물리 모델","definition":"막 전위와 이온 전류 등의 물리·생물학적 과정을 표현하는 모델."}],
+      "guide":"모델이 잘 맞는다는 사실과 실제 뇌의 작동 원리가 같다는 주장을 구분해봐."
+    }
+  ]
+}

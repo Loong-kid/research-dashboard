@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('research map filters real data and opens the selected topic papers', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('./');
+  await page.goto('./#all');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('학문');
   await expect(page.locator('.map-point')).toHaveCount(12);
   await page.getByRole('button', { name: '물리학', exact: true }).first().click();
@@ -18,7 +18,7 @@ test('research map filters real data and opens the selected topic papers', async
 });
 
 test('library and reading notes survive reload; dialogs support Escape', async ({ page }) => {
-  await page.goto('./');
+  await page.goto('./#all');
   await expect(page.locator('.paper-row').first()).toBeVisible();
   const title = await page.locator('.paper-title').first().textContent();
   await page.locator('.save-button').first().click();
@@ -44,7 +44,7 @@ test('library and reading notes survive reload; dialogs support Escape', async (
 });
 
 test('search, journal and open access filters give clear results and empty states', async ({ page }) => {
-  await page.goto('./');
+  await page.goto('./#all');
   await page.getByRole('tab', { name: '논문 탐색' }).click();
   await page.getByRole('checkbox', { name: 'Nature 계열' }).check();
   const journals = await page.locator('.journal-name').allTextContents();
@@ -67,7 +67,7 @@ test('search, journal and open access filters give clear results and empty state
 for (const width of [320, 375, 414, 768, 1440]) {
   test(`dashboard and reading panel fit ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 1000 });
-    await page.goto('./');
+    await page.goto('./#all');
     await expect(page.locator('.map-panel')).toBeVisible();
     await page.screenshot({ path: `.cache/preview-${width}.png`, fullPage: true });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();

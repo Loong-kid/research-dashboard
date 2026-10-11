@@ -30,6 +30,22 @@ jobs:
         with:
           python-version: '3.13'
       - run: npm ci
+      - run: pip install -r scripts/requirements.txt
+      - name: Restore last published neuroscience snapshot
+        run: python scripts/refresh_neuroscience.py --restore-only
+      - name: Refresh neuroscience snapshot
+        id: neuroscience
+        continue-on-error: true
+        run: python scripts/refresh_neuroscience.py
+      - name: Refresh Nature editorial listings
+        id: editorial
+        continue-on-error: true
+        run: python scripts/refresh_editorial.py
+      - name: Report retained neuroscience snapshot
+        if: steps.neuroscience.outcome == 'failure' || steps.editorial.outcome == 'failure'
+        run: echo '::warning::A neuroscience source refresh failed. Its last successful snapshot and original date are retained.'
+      - name: Verify neuroscience data contracts
+        run: python scripts/test_neuroscience.py
       - name: Refresh OpenAlex snapshot
         id: refresh
         continue-on-error: true

@@ -1,0 +1,94 @@
+{
+  "sourceUrl": "https://www.nature.com/subjects/neuroscience",
+  "fetchedAt": "2026-10-11T16:59:52.347561+00:00",
+  "items": [
+    {
+      "title": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
+      "url": "https://www.nature.com/articles/d41586-026-03159-z",
+      "date": "2026-10-09",
+      "type": "Research Highlights",
+      "journal": "Nature",
+      "originalLinks": [
+        "https://doi.org/10.1016%2Fj.xcrm.2026.103090"
+      ]
+    },
+    {
+      "title": "Brain regulation of bile acids",
+      "url": "https://www.nature.com/articles/s41583-026-01089-3",
+      "date": "2026-10-08",
+      "type": "Research Highlights",
+      "journal": "Nature Reviews Neuroscience",
+      "originalLinks": [
+        "https://doi.org/10.1038%2Fs41467-026-77334-1"
+      ]
+    },
+    {
+      "title": "Extracting brain-wide interactions with CURBD",
+      "url": "https://www.nature.com/articles/s41592-026-03258-9",
+      "date": "2026-10-07",
+      "type": "Research Highlights",
+      "journal": "Nature Methods",
+      "originalLinks": []
+    },
+    {
+      "title": "Recording time via brain organoids",
+      "url": "https://www.nature.com/articles/s41592-026-03257-w",
+      "date": "2026-10-07",
+      "type": "Research Highlights",
+      "journal": "Nature Methods",
+      "originalLinks": []
+    },
+    {
+      "title": "In situ capture of combinatorial neuromodulatory codes",
+      "url": "https://www.nature.com/articles/s41583-026-01091-9",
+      "date": "2026-10-07",
+      "type": "Research Highlights",
+      "journal": "Nature Reviews Neuroscience",
+      "originalLinks": [
+        "https://doi.org/10.1016%2Fj.neuron.2026.07.008"
+      ]
+    },
+    {
+      "title": "Brain organoids grafted into cortex-free mice will advance human brain research",
+      "url": "https://www.nature.com/articles/d41586-026-02967-7",
+      "date": "2026-10-06",
+      "type": "News & Views",
+      "journal": "Nature",
+      "originalLinks": [
+        "https://doi.org/10.1038%2Fs41586-026-11032-2",
+        "https://doi.org/10.1038%2Fs41586-022-05277-w",
+        "https://doi.org/10.1038%2Fs41586-020-1962-0",
+        "https://doi.org/10.1038%2Fnbt.4127",
+        "https://doi.org/10.1016%2Fj.neuron.2019.10.002"
+      ]
+    },
+    {
+      "title": "Arginine inhibits a key innate immune signalling hub",
+      "url": "https://www.nature.com/articles/s42255-026-01638-1",
+      "date": "2026-10-06",
+      "type": "News & Views",
+      "journal": "Nature Metabolism",
+      "originalLinks": [
+        "https://doi.org/10.1038%2Fs42003-026-10207-x",
+        "https://doi.org/10.1038%2Fs41573-023-00822-2",
+        "https://doi.org/10.1038%2Fs42255-026-01636-3",
+        "https://doi.org/10.1016%2Fj.clnesp.2026.103134",
+        "https://doi.org/10.3389%2Ffimmu.2017.00093"
+      ]
+    },
+    {
+      "title": "Ultraprocessed foods evoke distinct metabolic and neural responses",
+      "url": "https://www.nature.com/articles/s42255-026-01618-5",
+      "date": "2026-10-05",
+      "type": "News & Views",
+      "journal": "Nature Metabolism",
+      "originalLinks": [
+        "https://doi.org/10.1136%2Fbmj-2023-077310",
+        "https://doi.org/10.1016%2FS0140-6736%2825%2901565-X",
+        "https://doi.org/10.1146%2Fannurev-psych-122216-011643",
+        "https://doi.org/10.1016%2Fj.cub.2017.07.018",
+        "https://doi.org/10.1016%2Fj.cmet.2018.05.018"
+      ]
+    }
+  ]
+}
