@@ -113,6 +113,7 @@ def main():
     except Exception:
         pass
     existing = json.loads(DEST.read_text(encoding='utf-8')) if DEST.exists() else {}
+    attempted = dt.datetime.now(dt.timezone.utc).isoformat()
     mode = 'subject-page'
     try:
         items = collect(fetch(SOURCE))
@@ -121,16 +122,28 @@ def main():
             item['lastVerifiedAt'] = dt.datetime.now(dt.timezone.utc).isoformat()
     except Exception:
         mode = 'official-rss-and-verified-archive'
-        items = collect_rss(existing)
+        try:
+            items = collect_rss(existing)
+        except Exception:
+            if existing.get('items'):
+                # Record failure separately; source verification dates stay unchanged.
+                existing['lastAttemptAt'] = attempted
+                existing['refreshStatus'] = 'retained'
+                temporary = DEST.with_suffix('.tmp')
+                temporary.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding='utf-8')
+                temporary.replace(DEST)
+            raise
     for item in items:
         try:
             article = fetch(item['url'])
             # Publisher-labelled references, kept as references rather than a claimed one-to-one mapping.
             links = article.select('.c-article-references a[data-track-action="article reference"]')
-            item['originalLinks'] = list(dict.fromkeys(link['href'] for link in links if link.get('href', '').startswith('https://doi.org/')))[:5]
+            references = list(dict.fromkeys(link['href'] for link in links if link.get('href', '').startswith('https://doi.org/')))[:5]
+            previous = next((old for old in existing.get('items', []) if old['url'] == item['url']), {})
+            item['originalLinks'] = references or previous.get('originalLinks', [])
         except Exception:
             pass
-    output = {'sourceUrl': SOURCE, 'collectionMode': mode, 'fetchedAt': dt.datetime.now(dt.timezone.utc).isoformat(), 'items': items}
+    output = {'sourceUrl': SOURCE, 'collectionMode': mode, 'fetchedAt': dt.datetime.now(dt.timezone.utc).isoformat(), 'lastAttemptAt': attempted, 'refreshStatus': 'refreshed', 'items': items}
     temporary = DEST.with_suffix('.tmp')
     temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
     temporary.replace(DEST)

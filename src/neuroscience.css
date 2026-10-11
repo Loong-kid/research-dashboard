@@ -100,6 +100,9 @@ summary { cursor: pointer; }
 .neuro-editorial-note p { font-size: 13px; line-height: 1.8; margin: 0; }
 .neuro-editorial-note svg { flex-shrink: 0; }
 .neuro-editorial-list { border-top: 1px solid var(--line); }
+.neuro-refresh-status { margin: 18px 0; border: 1px solid #dfd3ba; background: #fbf7ef; color: #7a6240; border-radius: 4px; padding: 14px 18px; font-size: 12px; line-height: 1.8; }
+.neuro-refresh-status strong, .neuro-refresh-status span { display: block; }
+.neuro-refresh-status span { font-size: 11px; margin-top: 5px; }
 .neuro-editorial-list article { display: flex; gap: 25px; padding: 26px 10px; border-bottom: 1px solid var(--line); }
 .neuro-editorial-index { font: 23px Manrope, sans-serif; color: #a8b3c1; }
 .neuro-editorial-meta { display: flex; gap: 9px 16px; flex-wrap: wrap; align-items: center; font-size: 11px; color: var(--muted); }

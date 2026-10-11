@@ -3,6 +3,9 @@ import datetime as dt
 import json
 from pathlib import Path
 import unittest
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+import refresh_editorial
 from refresh_neuroscience import month_windows, paper_record, clean
 from refresh_editorial import collect, editorial_type
 from bs4 import BeautifulSoup
@@ -11,6 +14,20 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class SnapshotContract(unittest.TestCase):
+    def test_failed_refresh_preserves_verification_date_and_reports_retention(self):
+        previous = {'fetchedAt': '2026-10-01T00:00:00+00:00', 'items': [{'url': 'https://www.nature.com/articles/example', 'date': '2026-10-01', 'lastVerifiedAt': '2026-10-01T00:00:00+00:00'}]}
+        with TemporaryDirectory() as directory:
+            destination = Path(directory) / 'editorial.json'
+            destination.write_text(json.dumps(previous), encoding='utf-8')
+            with patch.object(refresh_editorial, 'DEST', destination), patch.object(refresh_editorial.urllib.request, 'urlopen', side_effect=OSError('unavailable')), patch.object(refresh_editorial, 'fetch', side_effect=ValueError('challenge')), patch.object(refresh_editorial, 'collect_rss', side_effect=ValueError('unavailable')):
+                with self.assertRaises(ValueError):
+                    refresh_editorial.main()
+            retained = json.loads(destination.read_text(encoding='utf-8'))
+            self.assertEqual(retained['fetchedAt'], previous['fetchedAt'])
+            self.assertEqual(retained['items'], previous['items'])
+            self.assertEqual(retained['refreshStatus'], 'retained')
+            self.assertIn('lastAttemptAt', retained)
+
     def test_editorial_subtype_is_publisher_verified_not_inferred_from_dc_type(self):
         highlight = BeautifulSoup('<meta name="dc.type" content="BriefCommunication"><li data-test="article-category">Research Highlight</li>', 'html.parser')
         self.assertEqual(editorial_type(highlight), 'Research Highlights')
