@@ -70,6 +70,19 @@ jobs:
         run: test -f public/data/quantum-computing.json
       - name: Verify quantum data contracts
         run: python scripts/test_quantum.py
+      - name: Restore last published longevity snapshot
+        run: python scripts/refresh_longevity.py --restore-only
+      - name: Refresh longevity snapshot
+        id: longevity
+        continue-on-error: true
+        run: python scripts/refresh_longevity.py
+      - name: Report retained longevity snapshot
+        if: steps.longevity.outcome == 'failure'
+        run: echo '::warning::Longevity refresh failed. Retaining the last successful snapshot and its date.'
+      - name: Refresh public trial registry metadata
+        run: python scripts/refresh_longevity_trials.py
+      - name: Verify longevity data contracts
+        run: python scripts/test_longevity.py
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

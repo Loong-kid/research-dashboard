@@ -1,0 +1,185 @@
+{
+  "trials": {
+    "NCT07290244": {
+      "id": "NCT07290244",
+      "title": "Evaluating ER-100 for Safety in People With Glaucoma or Non-Arteritic Anterior Ischemic Optic Neuropathy (Optic Nerve Conditions)",
+      "sponsor": "Life Biosciences Inc.",
+      "status": "RECRUITING",
+      "statusVerifiedDate": "2026-03",
+      "lastUpdate": "2026-05-19",
+      "phases": [
+        "PHASE1"
+      ],
+      "studyType": "INTERVENTIONAL",
+      "allocation": "NON_RANDOMIZED",
+      "masking": "NONE",
+      "enrollment": {
+        "count": 18,
+        "type": "ESTIMATED"
+      },
+      "primaryCompletion": {
+        "date": "2027-05",
+        "type": "ESTIMATED"
+      },
+      "hasPostedResults": false,
+      "conditions": [
+        "Open Angle Glaucoma (OAG)",
+        "NAION( Non-arteritic Anterior Ischemic Optic Neuropathy)"
+      ],
+      "primaryOutcomes": [
+        {
+          "measure": "Incidence of Treatment-Emergent Adverse Events (TEAEs) During and Post-Doxycycline Activation Period",
+          "description": "This outcome tracks any new or worsening health problems that occur while participants are receiving and completed oral doxycycline.\n\nThese health problems are called treatment-emergent adverse events (TEAEs). Researchers record how often these events happen as well as their nature and seriousness.\n\nThis helps determine whether ER-100 causes any short-term side effects during this phase.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Incidence of Dose-Limiting Toxicities During and Post-Doxycycline Activation Period",
+          "description": "This outcome measures how often participants experience dose-limiting toxicities, which are side effects serious enough to prevent increasing the dose, while receiving and completed oral doxycycline.\n\nThese toxicities are defined by the study protocol and may differ for participants with open-angle glaucoma (OAG) and non-arteritic anterior ischemic optic neuropathy (NAION).\n\nThis helps identify the highest dose that can be given safely during treatment.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Liver Function Tests - LFTs) During and Post-Doxycycline Activation Period",
+          "description": "Liver function tests (LFTs) measure specific enzymes and proteins in a blood sample to check how well the liver is working. These include alanine aminotransferase (ALT), aspartate aminotransferase (AST), alkaline phosphatase (ALP), gamma-glutamyl transferase (GGT), and lactate dehydrogenase (LDH). When liver cells are injured, these enzymes leak into the bloodstream, and higher levels on a blood test can signal a problem. Compared to baseline, higher levels can mean the liver is under stress or injured. Unit of Measure: Units per liter (U/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Blood Protein Levels) During and Post-Doxycycline Activation Period",
+          "description": "Blood proteins such as albumin and total protein help show nutritional status and how well the liver is making proteins. Compared to baseline, lower levels can mean poor nutrition or liver problems. Unit of Measure: Grams per deciliter (g/dL)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Calcium, Glucose, Bilirubin, Creatinine, Blood Urea Nitrogen) During and Post-Doxycycline Activation Period",
+          "description": "These tests show how the body manages minerals, sugar, and waste. Calcium helps with bone and muscle function. Glucose shows blood sugar control. Bilirubin shows liver health. Creatinine and blood urea nitrogen (BUN) show kidney function. Compared to baseline, higher or lower levels can mean problems with the liver, kidneys, or metabolism. Unit of Measure: Milligrams per deciliter (mg/dL)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Electrolytes: Sodium, Potassium, Chloride) During and Post-Doxycycline Activation Period",
+          "description": "Electrolytes help keep the body's fluids and nerves working properly. Changes can mean dehydration or kidney problems. This outcome looks at how much sodium (Na), potassium (K), and chloride (Cl) levels change from baseline. Unit of Measure: Millimoles per liter (mmol/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Electrolytes: Bicarbonate and Magnesium) During and Post-Doxycycline Activation Period",
+          "description": "Bicarbonate helps control the body's acid balance. Magnesium is important for muscles and nerves. Changes can mean metabolic or kidney problems. This outcome looks at how much these levels change from baseline. Unit of Measure: Milliequivalents per liter (mEq/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Hemoglobin) During and Post-Doxycycline Activation Period",
+          "description": "Hemoglobin is a protein in red blood cells that carries oxygen. Lower levels can mean anemia, which is when the blood cannot carry enough oxygen. This outcome looks at how much hemoglobin changes from baseline. Unit of Measure: Grams per deciliter (g/dL)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Hematocrit) During and Post-Doxycycline Activation Period",
+          "description": "Hematocrit shows the percentage of blood made up of red blood cells. Compared to baseline, lower levels can mean anemia, which is when the blood cannot carry enough oxygen. Unit of Measure: Percent (%)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (White Blood Cell and Platelet Counts) During and Post-Doxycycline Activation Period",
+          "description": "White blood cells help fight infection. Platelets help blood clot. Compared to baseline, changes can mean infection, immune problems, or bleeding risk. Unit of Measure: Billion cells per liter (x10\\^9/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Red Blood Cell Count) During and Post-Doxycycline Activation Period",
+          "description": "Red blood cells carry oxygen throughout the body. Compared to baseline, lower levels can mean anemia, which is when the blood cannot carry enough oxygen. Unit of Measure: Trillion cells per liter (x10\\^12/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Erythrocyte Sedimentation Rate) During and Post-Doxycycline Activation Period",
+          "description": "This test shows inflammation in the body. Compared to baseline, higher values can mean infection or other inflammatory conditions. Unit of Measure: Millimeters per hour (mm/hr)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (C-Reactive Protein) During and Post-Doxycycline Activation Period",
+          "description": "C-reactive protein shows inflammation in the body. Compared to baseline, higher values can mean infection or other inflammatory conditions. Unit of Measure: Milligrams per liter (mg/L)",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change in Safety Laboratory Tests (Urine Test Results) During and Post-Doxycycline Activation Period",
+          "description": "Urine tests check for blood, protein, sugar, and other substances. Compared to baseline, changes can mean kidney or urinary tract problems. Unit of Measure: Presence or absence",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in the Intraocular Pressure (IOP) in the Treated Eye During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures changes in pressure inside the treated eye while participants are receiving and completed oral doxycycline.\n\nEye pressure is measured in millimeters of mercury (mmHg).\n\nOn Day 1, pressure is measured using an instrument named Goldmann Applanation Tonometry (GAT), which is the gold standard. This instrument will gently touch the eye with a probe after applying numbing drops.\n\nAfter Day 1, pressure is measured using another, non-contact method, which uses a puff of air.\n\nIf pressure increases significantly, GAT may be repeated to confirm.\n\nDepending on their values, higher or lower pressures compared to the participant's baseline may indicate safety concerns related to the treatment.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in the Best Corrected Visual Acuity (BCVA) Letter Score in the Treated Eye During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in visual clarity (corrected with glasses or contact lenses for refractive errors like nearsightedness, farsightedness, or astigmatism) in the treated eye while participants are receiving and completed oral doxycycline.\n\nBCVA is assessed using a special chart called the Early Treatment Diabetic Retinopathy Study (ETDRS) chart.\n\nThe number of letters read correctly is recorded as a letter score, ranging from 0 to 100. A drop in score from the baseline may indicate a safety issue affecting vision, while stable or improved scores suggest no adverse impact.\n\nTrial frames with the lens prescription determined at screening will be used for these assessments.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Humphrey Visual Field (HVF) Test Results During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in central and peripheral (side) field of vision while participants are receiving and completed oral doxycycline.\n\nThe field of vision is assessed using the Humphrey Visual Field (HVF) test, which checks how well a person can see lights that flash in different areas of their visual field while they focus on a central point.\n\nResults are reported as a Mean Deviation (MD) score in decibels (dB). For participants with open-angle glaucoma (OAG), the test uses the SITA Standard 24-2 protocol. For participants with non-arteritic anterior ischemic optic neuropathy (NAION), a larger light stimulus (size V) is used.\n\nCompared to baseline, a more negative MD score means more vision loss, and a significant worsening in MD may suggest a safety concern.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Pattern Electroretinogram (pERG) During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in retinal function while participants are receiving and completed oral doxycycline.\n\nThe pERG is a test that checks how well the retina responds to visual patterns like black and white stripes. It helps evaluate the health of retinal ganglion cells, which are important for sending visual signals to the brain.\n\nThe test provides two types of results:\n\n* Amplitude (measured in microvolts, µV): This shows the strength of the retina's response.\n* Peak time (measured in milliseconds, ms): This shows how quickly the retina responds.\n\nLower amplitudes or slower response times than those recorded at baseline may indicate worsening retinal function. A significant decline in these results may suggest a safety concern related to disease progression or if there are signs that the treatment is causing effects.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Quantitative Contrast Sensitivity Function (qCSF) During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in contrast sensitivity while participants are receiving and completed oral doxycycline.\n\nThe quantitative Contrast Sensitivity Function (qCSF), also called quick CSF, is a computerized test that evaluates how well a person can detect differences in contrast, for example, the ability to discern subtle differences in shading or light and dark between an object and its background.\n\nLower scores than those recorded at baseline may indicate worsening visual function, and a significant decline in one or more parameters may suggest a safety concern. Changes in these scores are monitored to detect potential trea",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Optical Coherence Tomography (OCT): Ganglion Cell Layer (GCL) Thickness During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in the thickness of the ganglion cell layer (GCL) while participants are receiving and completed oral doxycycline.\n\nOptical Coherence Tomography (OCT) is a non-invasive imaging test that uses light waves to take detailed cross-sectional pictures of the retina. OCT will be conducted using an instrument called the Heidelberg Spectralis system.\n\nThe GCL contains the cell bodies of retinal ganglion cells, which are critical for transmitting visual information from the retina to the brain. GCL thickness is measured in micrometers (µm).\n\nA significant decrease in GCL thickness from baseline may suggest a safety concern related to disease progression or if there are signs that the treatment is causing effects.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Optical Coherence Tomography (OCT): Retinal Nerve Fiber Layer (RNFL) Thickness During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures the change in the thickness of the retinal nerve fiber layer (RNFL) while participants are receiving and completed oral doxycycline.\n\nOptical Coherence Tomography (OCT) is a non-invasive imaging test that uses light waves to take detailed cross-sectional pictures of the retina. OCT will be conducted using the Heidelberg Spectralis system.\n\nThe RNFL contains nerve fibers that help carry visual signals from the eye to the brain. RNFL thickness is measured in micrometers (µm).\n\nA significant decrease in RNFL thickness from baseline may suggest a safety concern related to disease progression or if there are signs that the treatment is causing effects.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        },
+        {
+          "measure": "Change from Baseline in Slit Lamp Exam Results During and Post-Doxycycline Activation Period - Safety",
+          "description": "This outcome measures changes in the health of the front structures of the eye while participants are receiving and completed oral doxycycline.\n\nA slit lamp exam is a routine eye test that uses a bright light and microscope to closely examine the front parts of the eye, including the cornea, iris, lens, and the white part of the eye. The exam helps detect signs of irritation, inflammation, infection, or other possible damage.\n\nChanges from baseline observed during the slit lamp exam might be signs that the treatment is causing effects or that the disease is getting worse.",
+          "timeFrame": "Baseline to Day 56, Day 112"
+        }
+      ],
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07290244",
+      "fetchedAt": "2026-10-14T14:11:51.895164+00:00",
+      "refreshStatus": "refreshed"
+    },
+    "NCT07812090": {
+      "id": "NCT07812090",
+      "title": "A Randomized, Phase 2 Study of Oral BGE-102 in Participants With Center-Involved Diabetic Macular Edema",
+      "sponsor": "BioAge Labs, Inc.",
+      "status": "RECRUITING",
+      "statusVerifiedDate": "2026-09",
+      "lastUpdate": "2026-09-10",
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL",
+      "allocation": "RANDOMIZED",
+      "masking": "TRIPLE",
+      "enrollment": {
+        "count": 180,
+        "type": "ESTIMATED"
+      },
+      "primaryCompletion": {
+        "date": "2027-11",
+        "type": "ESTIMATED"
+      },
+      "hasPostedResults": false,
+      "conditions": [
+        "Diabetic Macular Edema (DME)"
+      ],
+      "primaryOutcomes": [
+        {
+          "measure": "Change in Best Corrected Visual Acuity (BCVA)",
+          "description": "Change from Baseline in BCVA as Measured by Early Treatment Diabetic Retinopathy Study (ETDRS) in the Study Eye",
+          "timeFrame": "Week 12"
+        }
+      ],
+      "sourceUrl": "https://clinicaltrials.gov/study/NCT07812090",
+      "fetchedAt": "2026-10-14T14:11:52.146431+00:00",
+      "refreshStatus": "refreshed"
+    }
+  },
+  "schemaVersion": 1,
+  "attemptedAt": "2026-10-14T14:11:51.637128+00:00",
+  "source": "ClinicalTrials.gov"
+}

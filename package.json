@@ -11,6 +11,8 @@
     "data:neuroscience": "python scripts/refresh_neuroscience.py",
     "data:editorial": "python scripts/refresh_editorial.py",
     "data:quantum": "python scripts/refresh_quantum.py",
+    "data:longevity": "python scripts/refresh_longevity.py",
+    "data:trials": "python scripts/refresh_longevity_trials.py",
     "test": "playwright test"
   },
   "dependencies": {

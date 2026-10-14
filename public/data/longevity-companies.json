@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "curatedAsOf": "2026-10-14",
+  "updateMode": "manual",
+  "description": "기업·프로그램·발표를 출처와 확인일에 따라 정리한 초기 관측 목록. 논문·임상등록 정보와 회사 발표는 구분합니다.",
+  "companies": [
+    {
+      "id": "altos",
+      "name": "Altos Labs",
+      "groupIds": [
+        "rejuvenation",
+        "reprogramming"
+      ],
+      "approach": "세포 회춘·회복력과 재프로그래밍의 기초생물학",
+      "programs": [
+        {
+          "name": "Cell rejuvenation research",
+          "stage": "프로그램별 임상 단계 미확인",
+          "target": "노화·손상 관련 세포 기능",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://www.altoslabs.com/science",
+      "newsUrl": "https://www.altoslabs.com/featured",
+      "readingNote": "소속 연구자의 과거 대학 논문과 현재 회사 연구는 구분해서 읽어봐."
+    },
+    {
+      "id": "newlimit",
+      "name": "NewLimit",
+      "groupIds": [
+        "reprogramming",
+        "rejuvenation"
+      ],
+      "approach": "후성유전 재프로그래밍과 간세포·혈관내피 기능 회복",
+      "programs": [
+        {
+          "name": "Reprogramming medicines",
+          "stage": "회사 개발·전임상 보고",
+          "target": "간세포·혈관내피 세포",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://blog.newlimit.com/p/2026-may-june-progress-update",
+      "newsUrl": "https://blog.newlimit.com/archive",
+      "readingNote": "인간 유래 세포·모델 결과와 사람 임상시험을 구분해. 제조 규모와 효능도 별도 지표야."
+    },
+    {
+      "id": "lifebio",
+      "name": "Life Biosciences",
+      "groupIds": [
+        "reprogramming"
+      ],
+      "approach": "OSK 기반 부분 후성유전 재프로그래밍",
+      "programs": [
+        {
+          "name": "ER-100",
+          "stage": "임상 1상 · 회사 발표 기준",
+          "target": "개방각 녹내장·NAION 등 시신경 질환",
+          "nctIds": [
+            "NCT07290244"
+          ]
+        }
+      ],
+      "sourceUrl": "https://www.lifebiosciences.com/pipeline/",
+      "newsUrl": "https://www.lifebiosciences.com/life-biosciences-announces-first-in-human-data-from-ongoing-phase-1-trial-evaluating-er-100-in-optic-neuropathies/",
+      "readingNote": "특정 시신경 질환의 초기 결과이며 전신 회춘·수명 연장을 입증하는 결과는 아니야."
+    },
+    {
+      "id": "retro",
+      "name": "Retro Biosciences",
+      "groupIds": [
+        "rejuvenation",
+        "reprogramming"
+      ],
+      "approach": "자가포식 촉진, 조혈줄기세포·조직 재프로그래밍",
+      "programs": [
+        {
+          "name": "RTR242",
+          "stage": "임상 1상 진입 · 회사 발표 기준",
+          "target": "자가포식 관련 치료 개발",
+          "nctIds": []
+        },
+        {
+          "name": "HSC / Tissue Reprogramming",
+          "stage": "프로그램별 임상 단계 미확인",
+          "target": "조혈줄기세포·조직 재생",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://www.retro.bio/science",
+      "newsUrl": "https://www.retro.bio/blog/fundraise-2026",
+      "readingNote": "건강수명 연장 목표와 실제 달성 결과를 구분하고 프로그램별로 확인해."
+    },
+    {
+      "id": "calico",
+      "name": "Calico",
+      "groupIds": [
+        "rejuvenation",
+        "reprogramming"
+      ],
+      "approach": "노화 기초생물학·유전학·질환별 신약 개발",
+      "programs": [
+        {
+          "name": "Aging biology / drug discovery",
+          "stage": "프로그램별 자료에서 확인",
+          "target": "노화 관련 생물학·질환",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://www.calicolabs.com/research-technology/",
+      "newsUrl": "https://www.calicolabs.com/news-and-media/",
+      "readingNote": "기업 전체에 하나의 임상 단계를 붙이지 않아. 질환별 프로그램과 공개 논문을 따로 확인해."
+    },
+    {
+      "id": "rubedo",
+      "name": "Rubedo Life Sciences",
+      "groupIds": [
+        "senotherapy"
+      ],
+      "approach": "병적·노화 관련 세포 표적과 염증성 환경 조절",
+      "programs": [
+        {
+          "name": "RLS-1496",
+          "stage": "초기 임상 결과 · 회사 발표 기준",
+          "target": "피부 질환·노화 관련 피부 연구",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://www.rubedolife.com/pipeline/",
+      "newsUrl": "https://www.rubedolife.com/investors-news/investor-news-grid/",
+      "readingNote": "피부 결과, 노화세포 표적과 전신 노화 개선은 각각 검증해야 해."
+    },
+    {
+      "id": "bioage",
+      "name": "BioAge Labs",
+      "groupIds": [
+        "rejuvenation"
+      ],
+      "approach": "노화 생물학 기반 만성염증·대사 환경 조절",
+      "programs": [
+        {
+          "name": "BGE-102 / QUELL-DME",
+          "stage": "임상 2상 첫 투여 · 회사 발표 기준",
+          "target": "당뇨병성 황반부종·NLRP3 관련 염증",
+          "nctIds": [
+            "NCT07812090"
+          ]
+        }
+      ],
+      "sourceUrl": "https://bioagelabs.com/overview",
+      "newsUrl": "https://ir.bioagelabs.com/news-events/press-releases",
+      "readingNote": "염증·대사 조절이라는 인접 연구야. 노화세포를 직접 제거하거나 회춘을 입증한 프로그램으로 분류하지 않아."
+    },
+    {
+      "id": "egenesis",
+      "name": "eGenesis",
+      "groupIds": [
+        "organs"
+      ],
+      "approach": "유전자 편집 돼지 장기와 이종이식",
+      "programs": [
+        {
+          "name": "EGEN-2784",
+          "stage": "확대 접근 사례 · RESTORE 시험은 2027년 1분기 시작 계획",
+          "target": "신부전·신장 이식",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+      "newsUrl": "https://egenesisbio.com/news-media",
+      "readingNote": "확대 접근 사례와 정식 임상시험을 구분해. 시험 실시 허가를 제품 판매 승인으로 읽으면 안 돼."
+    },
+    {
+      "id": "bivacor",
+      "name": "BiVACOR",
+      "groupIds": [
+        "organs"
+      ],
+      "approach": "회전 펌프·자기부상 기반 완전 인공심장",
+      "programs": [
+        {
+          "name": "BiVACOR Total Artificial Heart",
+          "stage": "사람 대상 초기 타당성 시험",
+          "target": "심실 기능 대체·이식까지의 보조",
+          "nctIds": []
+        }
+      ],
+      "sourceUrl": "https://bivacor.com/",
+      "newsUrl": "https://bivacor.com/news/",
+      "readingNote": "심장 펌프 기능 대체와 장기간 신체 전체의 수명 연장은 구분해. 약물의 임상 단계와 같은 기준으로 비교하지 않아."
+    }
+  ],
+  "events": [
+    {
+      "id": "er100-20261008",
+      "companyId": "lifebio",
+      "program": "ER-100",
+      "date": "2026-10-08",
+      "title": "ER-100 초기 사람 데이터 발표",
+      "kind": "회사 보도자료",
+      "evidence": "사람 임상 · 1상 중간 결과",
+      "participants": 3,
+      "followUp": "56일",
+      "design": "비눈가림 시험·안전성 중심",
+      "finding": "회사는 3명의 내약성과 2명의 탐색적 시야 개선 신호를 보고했어.",
+      "limitation": "표본이 작고 추적이 짧아. 대조군 연구·장기 안전성·효능의 추가 검증이 필요해.",
+      "sourceUrl": "https://www.lifebiosciences.com/life-biosciences-announces-first-in-human-data-from-ongoing-phase-1-trial-evaluating-er-100-in-optic-neuropathies/"
+    },
+    {
+      "id": "rubedo-20260929",
+      "companyId": "rubedo",
+      "program": "RLS-1496",
+      "date": "2026-09-29",
+      "title": "모낭 연구 결과와 탈모 임상연구 계획 발표",
+      "kind": "회사 보도자료",
+      "evidence": "인간 유래 조직 ex vivo · 임상연구 계획",
+      "participants": null,
+      "followUp": "체외 조직 · 6일 관찰",
+      "design": "원문에서 연구별 설계 확인",
+      "finding": "회사는 체외 인간 모낭 연구 결과와 임상연구 계획을 공개했어.",
+      "limitation": "체외 인간 조직은 사람에게 효과가 확인된 임상 결과와 달라. 프로그램별 설계·대조군을 확인해.",
+      "sourceUrl": "https://www.businesswire.com/news/home/20260916811892/en/Rubedo-Life-Sciences-Announces-Clinical-Study-to-Treat-Hair-Loss-with-GPX4-Modulator-RLS-1496-First-Human-Ex-Vivo-Evidence-Demonstrates-Robust-Hair-Follicle-Growth",
+      "dateBasis": "회사 뉴스 목록 게시일",
+      "listedOn": "https://www.rubedolife.com/investors-news/investor-news-grid/"
+    },
+    {
+      "id": "bioage-20260908",
+      "companyId": "bioage",
+      "program": "BGE-102 / QUELL-DME",
+      "date": "2026-09-08",
+      "title": "QUELL-DME 임상 2상 첫 참가자 투여 발표",
+      "kind": "회사 보도자료",
+      "evidence": "임상시험 진행 이정표",
+      "participants": null,
+      "followUp": null,
+      "design": "회사 발표: 무작위·대조군 시험, 약 180명 계획",
+      "finding": "회사는 당뇨병성 황반부종 시험의 첫 투여를 발표했고 주요 결과 발표는 2027년 하반기로 계획했어.",
+      "limitation": "시험 시작은 효능 입증 결과가 아니야. 계획 인원과 실제 분석 인원을 구분해.",
+      "sourceUrl": "https://ir.bioagelabs.com/news-releases/news-release-details/bioage-labs-announces-first-participant-dosed-quell-dme-phase-2"
+    },
+    {
+      "id": "egenesis-20260903",
+      "companyId": "egenesis",
+      "program": "EGEN-2784",
+      "date": "2026-09-03",
+      "title": "확대 접근 신장 이식 사례와 후속 시험 계획 공개",
+      "kind": "회사 보도자료",
+      "evidence": "사람 확대 접근 사례",
+      "participants": 5,
+      "followUp": "환자별 상이 · 일부 8개월 이상",
+      "design": "확대 접근 사례 · 정식 무작위 시험과 구분",
+      "finding": "회사는 5명에게 이식했고 3명에서 8개월 넘게 투석 없이 기능이 유지됐다고 보고했어. 후속 RESTORE 시험 시작은 2027년 1분기로 계획했어.",
+      "limitation": "개별 사례의 경과와 정식 임상시험의 효능 평가를 구분해. 생존·거부반응·면역 억제 부담을 원문에서 확인해.",
+      "sourceUrl": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure"
+    },
+    {
+      "id": "newlimit-20260710",
+      "companyId": "newlimit",
+      "program": "Reprogramming medicines",
+      "date": "2026-07-10",
+      "title": "간세포·혈관내피 연구와 제조 확대 보고",
+      "kind": "회사 연구 블로그",
+      "evidence": "회사 전임상·개발 보고",
+      "participants": null,
+      "followUp": null,
+      "design": "실험·모델별 세부 조건은 원문 확인",
+      "finding": "회사는 노화된 간세포·혈관내피의 기능 회복 후보와 선도 자산의 제조 확대를 보고했어.",
+      "limitation": "세포·전임상 결과와 사람 임상 효능은 다르고, 제조 확대는 별도의 개발 지표야.",
+      "sourceUrl": "https://blog.newlimit.com/p/2026-may-june-progress-update"
+    },
+    {
+      "id": "rubedo-20260615",
+      "companyId": "rubedo",
+      "program": "RLS-1496",
+      "date": "2026-06-15",
+      "title": "광선각화증의 초기 임상 결과 발표",
+      "kind": "회사 보도자료",
+      "evidence": "회사 발표 · 초기 임상 결과",
+      "participants": 18,
+      "followUp": "4주",
+      "design": "비눈가림·다기관 · 무처리 대조와 비교, 24명 중 첫 18명 평가",
+      "finding": "회사는 4주에 광선각화증 병변 수가 46% 줄었다고 보고했어. 무처리 대조의 감소는 11%였어.",
+      "limitation": "짧은 피부 질환 결과를 전신 회춘이나 건강수명 연장으로 해석하지 않아.",
+      "sourceUrl": "https://www.businesswire.com/news/home/20260528143952/en/Rubedos-RLS-1496-Reduces-Actinic-Keratosis-Pre-Cancerous-Skin-Lesions-by-46-at-Four-Weeks-with-Minimal-Irritation-in-Preliminary-Results-of-Phase-1b2a-Study",
+      "dateBasis": "회사 뉴스 목록 게시일",
+      "listedOn": "https://www.rubedolife.com/investors-news/investor-news-grid/"
+    },
+    {
+      "id": "retro-20260522",
+      "companyId": "retro",
+      "program": "RTR242 / pipeline",
+      "date": "2026-05-22",
+      "title": "RTR242의 임상 진입과 연구 프로그램 확대 공개",
+      "kind": "회사 개발 보고",
+      "evidence": "개발 진행 이정표",
+      "participants": null,
+      "followUp": null,
+      "design": "세부 시험 결과 별도 확인",
+      "finding": "회사는 자가포식 촉진 후보 RTR242의 임상 1상 진입과 세포·조직 재프로그래밍 프로그램을 공개했어.",
+      "limitation": "임상 진입·자금조달·제조 역량을 임상 효능 또는 건강수명 연장 결과와 구분해.",
+      "sourceUrl": "https://www.retro.bio/blog/fundraise-2026"
+    }
+  ]
+}

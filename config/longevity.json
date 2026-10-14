@@ -1,0 +1,388 @@
+{
+  "id": "longevity",
+  "name": "불로장생",
+  "description": "세포 회춘, 후성유전 재프로그래밍, 노화세포 제거와 인공장기 연구를 관측합니다.",
+  "defaultTopic": "long-partial-reprogramming",
+  "groups": [
+    {
+      "id": "rejuvenation",
+      "name": "세포 회춘",
+      "color": "var(--long-cell)",
+      "question": "세포의 정비·재생 능력을 어떻게 회복할까?",
+      "description": "자가포식·미토콘드리아·줄기세포 기능의 회복. 재프로그래밍과 겹치는 연구도 함께 연결해."
+    },
+    {
+      "id": "reprogramming",
+      "name": "후성유전 재프로그래밍",
+      "color": "var(--long-reprogram)",
+      "question": "세포의 역할을 유지하며 노화 특성을 바꿀 수 있을까?",
+      "description": "부분·화학적 재프로그래밍, 전달과 회춘 검증. 세포 회춘이라는 목표를 위한 방법 중 하나야."
+    },
+    {
+      "id": "senotherapy",
+      "name": "노화세포 제거",
+      "color": "var(--long-senescence)",
+      "question": "병적 노화세포와 그 영향을 어떻게 줄일까?",
+      "description": "노화세포 제거와 면역 표적, 분비 환경 조절. 세포를 죽이지 않고 영향을 줄이는 연구도 구분해서 읽어봐."
+    },
+    {
+      "id": "organs",
+      "name": "인공장기",
+      "color": "var(--long-organ)",
+      "question": "손상된 장기의 기능을 무엇으로 대신할까?",
+      "description": "기계 장기, 생체인공장기, 조직공학과 이종이식. 신경·기계 연결 연구는 기존 뇌과학 BCI와도 이어져."
+    }
+  ],
+  "topics": [
+    {
+      "id": "long-autophagy",
+      "group": "rejuvenation",
+      "name": "자가포식·세포 정비",
+      "query": "(TITLE:autophagy OR TITLE:proteostasis) AND (TITLE:aging OR TITLE:ageing OR TITLE:rejuvenation OR TITLE:longevity)",
+      "description": "노화와 관련된 손상 물질의 처리·재활용과 단백질 품질 관리",
+      "guide": "세포 정비 지표의 변화와 조직 기능·건강수명의 변화를 구분해봐.",
+      "readFor": [
+        "자가포식의 실제 처리 흐름을 측정했나?",
+        "어떤 조직·종·노화 모델을 사용했나?",
+        "기능 회복과 생존 지표, 부작용을 함께 확인했나?"
+      ],
+      "terms": [
+        {
+          "en": "Autophagy",
+          "ko": "자가포식",
+          "definition": "세포가 내부 구성요소를 분해·재활용하는 과정."
+        },
+        {
+          "en": "Proteostasis",
+          "ko": "단백질 항상성",
+          "definition": "단백질 생성·접힘·분해를 조절해 기능을 유지하는 체계."
+        }
+      ]
+    },
+    {
+      "id": "long-mitochondria",
+      "group": "rejuvenation",
+      "name": "미토콘드리아 회복",
+      "query": "(TITLE:mitochondria* OR TITLE:mitophagy) AND (TITLE:aging OR TITLE:ageing OR TITLE:rejuvenation OR TITLE:longevity)",
+      "description": "노화와 관련된 에너지 대사, 미토콘드리아 품질 관리·손상 회복",
+      "guide": "대사 지표와 생체 기능 회복의 인과적 연결을 찾아봐.",
+      "readFor": [
+        "어떤 미토콘드리아 기능과 손상을 측정했나?",
+        "개입으로 조직 기능이 회복됐나?",
+        "노화 모델과 질환 모델의 결과를 구분했나?"
+      ],
+      "terms": [
+        {
+          "en": "Mitophagy",
+          "ko": "미토파지",
+          "definition": "미토콘드리아를 선택적으로 처리하는 자가포식 과정."
+        },
+        {
+          "en": "mtDNA",
+          "ko": "미토콘드리아 DNA",
+          "definition": "미토콘드리아가 가진 유전물질. 손상·유출과 염증의 연결을 연구해."
+        }
+      ]
+    },
+    {
+      "id": "long-stem-cells",
+      "group": "rejuvenation",
+      "name": "줄기세포·재생 능력",
+      "query": "(TITLE:\"stem cell\" OR TITLE:\"stem cells\" OR TITLE:hematopoietic) AND (TITLE:rejuvenation OR TITLE:aging OR TITLE:ageing)",
+      "description": "노화된 줄기세포와 조직·면역계의 재생 능력을 회복하는 연구",
+      "guide": "줄기세포 지표가 좋아진 것과 이식 후 장기간 기능을 수행하는 것을 구분해봐.",
+      "readFor": [
+        "어떤 줄기세포와 주변 미세환경을 다뤘나?",
+        "원래 분화 능력과 장기 재생이 유지되나?",
+        "이식·개입 후 종양·면역·장기 추적을 평가했나?"
+      ],
+      "terms": [
+        {
+          "en": "HSC",
+          "ko": "조혈줄기세포",
+          "definition": "혈액·면역 세포 계열을 만들어내는 줄기세포."
+        },
+        {
+          "en": "Stem-cell niche",
+          "ko": "줄기세포 미세환경",
+          "definition": "줄기세포의 유지·분화에 영향을 주는 주변 세포와 신호 환경."
+        }
+      ]
+    },
+    {
+      "id": "long-partial-reprogramming",
+      "group": "reprogramming",
+      "name": "부분 재프로그래밍",
+      "query": "(TITLE:\"partial reprogramming\" OR TITLE:\"partial cellular reprogramming\" OR TITLE:\"partial in vivo reprogramming\" OR TITLE:\"partial epidermal reprogramming\") OR ((TITLE:\"epigenetic reprogramming\" OR TITLE:\"cellular reprogramming\" OR TITLE:\"transient reprogramming\") AND (TITLE:aging OR TITLE:ageing OR TITLE:rejuvenat* OR TITLE:longevity))",
+      "description": "세포를 완전히 초기화하지 않고 노화 관련 상태·기능을 바꾸는 접근",
+      "guide": "원래 세포의 역할을 유지하는지, 나이 지표와 기능이 함께 개선되는지 읽어봐.",
+      "readFor": [
+        "원래 세포 정체성과 기능이 유지됐나?",
+        "노화 지표와 실제 조직 기능을 모두 평가했나?",
+        "종양 위험·지속기간·반복 적용을 확인했나?"
+      ],
+      "terms": [
+        {
+          "en": "OSK / OSKM",
+          "ko": "재프로그래밍 인자",
+          "definition": "OCT4·SOX2·KLF4와 경우에 따라 MYC를 조합하는 연구 접근. 목적·조직·조건에 따라 결과가 달라."
+        },
+        {
+          "en": "Cell identity",
+          "ko": "세포 정체성",
+          "definition": "세포가 특정 역할과 특성을 유지하는 상태."
+        }
+      ]
+    },
+    {
+      "id": "long-chemical-reprogramming",
+      "group": "reprogramming",
+      "name": "화학적 재프로그래밍",
+      "query": "(TITLE:\"chemical reprogramming\" OR TITLE:\"chemically induced\" OR TITLE:\"small molecule\" OR TITLE:\"small-molecule\") AND TITLE:reprogramming AND (TITLE:rejuvenat* OR TITLE:senescen* OR TITLE:aging OR TITLE:ageing)",
+      "description": "작은 분자 등을 이용해 세포의 발현·후성유전 상태를 바꾸는 접근",
+      "guide": "세포 상태를 바꾸는 결과가 안전한 회춘과 같은 의미인지 확인해봐.",
+      "readFor": [
+        "회춘인가, 다른 세포로의 전환인가?",
+        "원래 기능과 정체성이 유지됐나?",
+        "배양 세포 결과가 동물·사람에서 확인됐나?"
+      ],
+      "terms": [
+        {
+          "en": "Small molecule",
+          "ko": "저분자 화합물",
+          "definition": "세포의 특정 경로나 단백질에 영향을 줄 수 있는 작은 화합물."
+        },
+        {
+          "en": "Chemical reprogramming",
+          "ko": "화학적 재프로그래밍",
+          "definition": "화합물의 작용으로 세포 상태를 바꾸는 접근. 회춘 외의 목적도 포함할 수 있어."
+        }
+      ]
+    },
+    {
+      "id": "long-delivery",
+      "group": "reprogramming",
+      "name": "조직 표적·발현 제어",
+      "query": "TITLE:reprogramming AND (TITLE:partial OR TITLE:aging OR TITLE:ageing OR TITLE:rejuvenat* OR TITLE:longevity OR TITLE:OSK OR TITLE:OSKM) AND (TITLE:delivery OR TITLE:targeted OR TITLE:inducible OR TITLE:mRNA OR TITLE:vector)",
+      "description": "재프로그래밍의 위치·강도·기간을 제어하기 위한 전달 연구",
+      "guide": "원하는 조직에 도달하는 것과 안전하게 작동하는 것을 각각 확인해봐.",
+      "readFor": [
+        "표적 조직과 다른 조직의 발현을 비교했나?",
+        "개입을 중단한 뒤 상태가 어떻게 변하나?",
+        "면역 반응과 장기간 안전성을 평가했나?"
+      ],
+      "terms": [
+        {
+          "en": "Delivery",
+          "ko": "전달",
+          "definition": "연구 개입을 원하는 세포·조직으로 보내는 과정."
+        },
+        {
+          "en": "Inducible expression",
+          "ko": "유도성 발현",
+          "definition": "특정 조건에 반응해 유전자 발현을 조절하는 방식."
+        }
+      ]
+    },
+    {
+      "id": "long-clocks",
+      "group": "reprogramming",
+      "name": "후성유전 시계·회춘 검증",
+      "query": "TITLE:\"epigenetic clock\" OR TITLE:\"epigenetic clocks\" OR TITLE:\"DNA methylation age\"",
+      "description": "노화 관련 분자 지표와 기능·생존 결과의 관계를 검증하는 연구",
+      "guide": "시계의 숫자가 내려간 것과 건강수명·기능이 개선된 것을 구분해봐.",
+      "readFor": [
+        "어떤 시계·조직·대상 집단에서 검증했나?",
+        "세포 구성 변화와 실제 노화 변화가 구분됐나?",
+        "기능·질병·사망 결과와의 관계를 확인했나?"
+      ],
+      "terms": [
+        {
+          "en": "Epigenetic clock",
+          "ko": "후성유전 시계",
+          "definition": "DNA 메틸화 등의 패턴으로 나이·노화 관련 상태를 추정하는 모델."
+        },
+        {
+          "en": "Surrogate endpoint",
+          "ko": "대리지표",
+          "definition": "직접적인 건강 결과 대신 사용하는 지표. 그 변화가 실제 이득을 뜻하는지 검증해야 해."
+        }
+      ]
+    },
+    {
+      "id": "long-senolytics",
+      "group": "senotherapy",
+      "name": "세놀리틱스",
+      "query": "TITLE:senolytic*",
+      "description": "노화세포를 선택적으로 제거하는 약물·개입의 연구",
+      "guide": "제거 효율과 다른 세포에 대한 독성, 실제 조직 회복을 함께 살펴봐.",
+      "readFor": [
+        "노화세포의 선택적 제거를 어떻게 확인했나?",
+        "건강한 세포와 유익한 노화 반응에 영향을 주나?",
+        "기능 회복·부작용·재축적을 평가했나?"
+      ],
+      "terms": [
+        {
+          "en": "Senolytic",
+          "ko": "세놀리틱",
+          "definition": "노화세포를 제거하는 것을 목표로 하는 개입."
+        },
+        {
+          "en": "Selectivity",
+          "ko": "선택성",
+          "definition": "표적 세포와 다른 세포에 미치는 영향을 구분하는 성질."
+        }
+      ]
+    },
+    {
+      "id": "long-immune-clearance",
+      "group": "senotherapy",
+      "name": "면역 기반 노화세포 제거",
+      "query": "(TITLE:senescen* OR TITLE:senolytic*) AND (TITLE:\"CAR T\" OR TITLE:\"CAR-T\" OR TITLE:\"natural killer\" OR TITLE:\"immune clearance\" OR TITLE:immunosenolytic*) AND (TITLE:clearance OR TITLE:eliminat* OR TITLE:senolytic* OR TITLE:immunosenolytic* OR TITLE:\"senescent cells\")",
+      "description": "면역세포와 표적 인식을 활용해 노화세포를 제거하는 접근",
+      "guide": "표적의 선택성과 면역 개입의 지속성·안전성을 확인해봐.",
+      "readFor": [
+        "어떤 표적과 면역세포를 사용했나?",
+        "다른 조직·건강한 세포를 함께 공격할 가능성을 평가했나?",
+        "기능 개선과 장기 추적·면역 부작용을 확인했나?"
+      ],
+      "terms": [
+        {
+          "en": "CAR-T",
+          "ko": "CAR-T 세포",
+          "definition": "특정 표적을 인식하도록 수용체를 설계한 T세포."
+        },
+        {
+          "en": "NK cell",
+          "ko": "자연살해세포",
+          "definition": "비정상 세포의 인식·제거에 관여하는 면역세포."
+        }
+      ]
+    },
+    {
+      "id": "long-sasp",
+      "group": "senotherapy",
+      "name": "SASP·노화 환경 조절",
+      "query": "TITLE:\"senescence-associated secretory\" OR TITLE:senomorphic*",
+      "description": "노화세포를 제거하지 않고 분비·염증성 영향을 줄이는 연구",
+      "guide": "분비물 감소가 세포 제거를 의미하지는 않아. 주변 조직 기능을 함께 확인해봐.",
+      "readFor": [
+        "어떤 분비·염증 지표를 측정했나?",
+        "노화세포 수와 분비 상태의 변화를 구분했나?",
+        "주변 세포·조직의 기능과 안전성을 평가했나?"
+      ],
+      "terms": [
+        {
+          "en": "SASP",
+          "ko": "노화 관련 분비 표현형",
+          "definition": "노화세포가 분비하는 염증성 신호·물질의 양상."
+        },
+        {
+          "en": "Senomorphic",
+          "ko": "세노모픽",
+          "definition": "노화세포를 제거하기보다 상태·영향을 조절하는 개입."
+        }
+      ]
+    },
+    {
+      "id": "long-artificial-heart",
+      "group": "organs",
+      "name": "인공심장·심실보조",
+      "query": "TITLE:\"artificial heart\" OR TITLE:\"ventricular assist device\" OR TITLE:\"ventricular assist devices\"",
+      "description": "심장의 펌프 기능을 보조·대체하는 장치와 임상 연구",
+      "guide": "이식까지의 보조와 장기 대체를 구분하고 생존·합병증을 함께 읽어봐.",
+      "readFor": [
+        "어떤 환자와 사용 목적을 대상으로 하나?",
+        "작동 기간·생존·삶의 질을 평가했나?",
+        "혈전·출혈·감염과 외부 장비 의존도는 어떠한가?"
+      ],
+      "terms": [
+        {
+          "en": "TAH",
+          "ko": "완전 인공심장",
+          "definition": "심실 등의 펌프 기능을 대체하는 장치."
+        },
+        {
+          "en": "VAD",
+          "ko": "심실보조장치",
+          "definition": "기존 심장의 혈액 펌프 기능을 보조하는 장치."
+        }
+      ]
+    },
+    {
+      "id": "long-artificial-kidney",
+      "group": "organs",
+      "name": "인공신장·생체인공신장",
+      "query": "TITLE:\"artificial kidney\" OR TITLE:\"bioartificial kidney\" OR TITLE:\"renal assist device\"",
+      "description": "여과 장치·살아 있는 세포 등으로 신장 기능을 보조·대체하는 연구",
+      "guide": "노폐물 여과와 신장의 여러 생리 기능을 구분하고 장기 작동을 확인해봐.",
+      "readFor": [
+        "체외·착용형·이식형 중 어떤 방식인가?",
+        "여과뿐 아니라 재흡수·대사 기능을 평가했나?",
+        "혈전·면역 반응·장기 안정성을 검증했나?"
+      ],
+      "terms": [
+        {
+          "en": "Bioartificial kidney",
+          "ko": "생체인공신장",
+          "definition": "공학적 장치와 살아 있는 세포를 결합하는 신장 기능 대체 접근."
+        },
+        {
+          "en": "Hemofilter",
+          "ko": "혈액여과 장치",
+          "definition": "혈액에서 특정 물질·수분을 여과하는 구성요소."
+        }
+      ]
+    },
+    {
+      "id": "long-engineered-organs",
+      "group": "organs",
+      "name": "조직공학·장기 제작",
+      "query": "(TITLE:bioprint* OR TITLE:\"tissue engineering\" OR TITLE:bioengineered) AND (TITLE:organ* OR TITLE:kidney OR TITLE:liver OR TITLE:heart OR TITLE:vascular*)",
+      "description": "세포·지지체·바이오프린팅·혈관화를 이용한 조직과 장기 제작",
+      "guide": "작은 조직 모형과 이식 가능한 장기를 구분하고 실제 생리 기능을 확인해봐.",
+      "readFor": [
+        "어떤 크기·구조·기능을 재현했나?",
+        "혈관·숙주 연결과 면역 적합성을 평가했나?",
+        "이식 후 장기간 기능을 수행했나?"
+      ],
+      "terms": [
+        {
+          "en": "Bioprinting",
+          "ko": "바이오프린팅",
+          "definition": "세포와 생체재료를 배치해 조직 구조를 만드는 접근."
+        },
+        {
+          "en": "Vascularization",
+          "ko": "혈관화",
+          "definition": "조직에 혈액·영양·산소를 공급하는 혈관 구조를 형성하는 과정."
+        }
+      ]
+    },
+    {
+      "id": "long-xenotransplant",
+      "group": "organs",
+      "name": "이종이식·면역 적합성",
+      "query": "TITLE:xenotransplant* OR (TITLE:porcine AND TITLE:transplant*)",
+      "description": "다른 종의 장기를 사람과 적합하게 만들고 이식하는 연구",
+      "guide": "시험 사용·정식 임상시험·허가를 구분하고 기능 유지와 면역 억제 비용을 읽어봐.",
+      "readFor": [
+        "어떤 유전자 편집과 면역 억제를 적용했나?",
+        "이식 후 기능·생존·감염·거부반응을 확인했나?",
+        "소규모 사례와 대조군 임상연구를 구분했나?"
+      ],
+      "terms": [
+        {
+          "en": "Xenotransplantation",
+          "ko": "이종이식",
+          "definition": "서로 다른 종 사이에 살아 있는 세포·조직·장기를 이식하는 접근."
+        },
+        {
+          "en": "Expanded access",
+          "ko": "확대 접근",
+          "definition": "시험 치료를 정규 임상시험 밖의 조건에서 사용하는 경로. 정식 시험 결과와 구분해야 해."
+        }
+      ]
+    }
+  ]
+}

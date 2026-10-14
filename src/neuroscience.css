@@ -166,3 +166,57 @@ summary { cursor: pointer; }
 @media (max-width: 1100px) { .neuro-map-layout { grid-template-columns: 1fr; } .neuro-topic-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .neuro-focus { display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px; } .neuro-focus-label { grid-column: 1 / -1; margin-bottom: 18px; } .neuro-focus .neuro-kicker, .neuro-focus h2, .neuro-focus-description, .neuro-focus-metrics { grid-column: 1; } .neuro-focus h2 { margin-top: 0; } .neuro-focus-description { margin: 0 0 15px; } .neuro-monthly { grid-column: 2; grid-row: 2 / span 4; align-self: center; } .neuro-focus-bottom { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; margin-top: 18px; } .neuro-focus-bottom > span { align-self: center; } .neuro-focus-bottom > button { margin-top: 0; } .neuro-focus-bottom .neuro-review-link { grid-column: 2; margin: 0; } .neuro-summary { grid-template-columns: repeat(3, 1fr); } .neuro-summary > p { grid-column: 1 / -1; } .neuro-summary > div:nth-child(3) { border-right: none; } }
 @media (max-width: 930px) { .neuro-topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 580px) { .neuro-status { font-size: 10px; gap: 8px; } .neuro-status button { margin-left: 0; } .neuro-tabs { gap: 22px; margin-bottom: 17px; } .neuro-tabs button { font-size: 12px; } .neuro-tabs svg { display: none; } .neuro-groups { gap: 6px; margin-bottom: 20px; } .neuro-groups button { font-size: 11px; padding: 8px 9px; } .neuro-summary { gap: 12px; padding-bottom: 20px; margin-bottom: 20px; } .neuro-summary strong { font-size: 25px; gap: 4px; flex-wrap: wrap; } .neuro-summary strong small { max-width: none; font-size: 9px; } .neuro-summary > div > span { font-size: 10px; } .neuro-summary > p { font-size: 12px; } .neuro-atlas { padding: 22px 16px 0; } .neuro-atlas .section-heading h2 { font-size: 19px; } .neuro-topic-grid { grid-template-columns: 1fr; } .neuro-area { padding-bottom: 25px; } .neuro-area-heading h3 { font-size: 15px; } .neuro-area-heading p { font-size: 12px; } .neuro-topic { padding: 13px 10px; gap: 12px; } .neuro-topic strong { font-size: 13px; } .neuro-topic > svg { display: block; } .neuro-change { font-size: 12px; } .neuro-focus { display: block; padding: 24px; } .neuro-focus-label { margin-bottom: 24px; } .neuro-focus h2 { margin-top: 8px; } .neuro-focus-description { margin-bottom: 25px; } .neuro-focus-bottom { display: block; margin-top: 0; } .neuro-focus-bottom > button { margin-top: 18px; } .neuro-bars { gap: 4px; } .neuro-preview .section-heading { display: block; } .neuro-preview .text-button { margin-top: 12px; } .neuro-toolbar { gap: 10px; } .neuro-toolbar > label:nth-child(-n+2) { flex: 1 1 100%; } .neuro-toolbar select { width: 100%; } .neuro-paper-signals { padding-left: 16px; padding-right: 16px; } .neuro-korean-title { padding-left: 16px; padding-right: 16px; } .neuro-editorial-list article { gap: 13px; padding: 24px 0; } .neuro-editorial-list h3 { font-size: 17px; } .neuro-editorial-index { font-size: 17px; } .neuro-editorial-meta { font-size: 10px; gap: 7px; } .neuro-guide-grid { grid-template-columns: 1fr; } .neuro-guide-grid article { padding: 22px; } .neuro-reading-note { padding: 17px; } }
+:root { --longevity: #527761; --long-cell: #60836a; --long-reprogram: #75958a; --long-senescence: #b98557; --long-organ: #658593; }
+.longevity-workspace { --neuroscience: var(--longevity); }
+.longevity-workspace .neuro-area-index { display: none; }
+.longevity-workspace .neuro-focus { background: #233c30; }
+.longevity-workspace .neuro-groups button.selected { background: #edf3ee; border-color: #9bb3a2; color: #355841; }
+.long-area-description { font-size: 12px; line-height: 1.7; color: var(--muted); margin: 0 0 12px; }
+.long-company-note { display: flex; gap: 14px; background: #edf3ee; padding: 18px 22px; margin: 24px 0; border-left: 3px solid var(--longevity); color: #355841; }
+.long-company-note svg { flex-shrink: 0; margin-top: 3px; }
+.long-company-note p { margin: 0; font-size: 13px; line-height: 1.8; }
+.long-company-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.long-company { background: var(--surface, #fff); border: 1px solid var(--line); padding: 22px; border-radius: 8px; min-width: 0; }
+.long-company-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.long-company-heading h3 { font: 600 19px 'Manrope', 'IBM Plex Sans KR', sans-serif; margin: 0; }
+.long-company p { font-size: 13px; line-height: 1.8; }
+.long-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 15px; }
+.long-tags span, .long-evidence { font-size: 11px; color: #496b54; background: #edf3ee; padding: 4px 8px; border-radius: 4px; }
+.long-program { border-top: 1px solid var(--line); padding: 15px 0 4px; }
+.long-program h4 { font-size: 13px; margin: 0 0 6px; }
+.long-program p { margin: 0 0 5px; }
+.long-program > small { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.long-reading-note { color: var(--muted); }
+.long-links { display: flex; gap: 16px; flex-wrap: wrap; }
+.long-companies a { display: inline-flex; align-items: center; gap: 5px; color: #496b54; font-size: 12px; text-decoration: none; }
+.long-companies a:hover { text-decoration: underline; }
+.long-trial { margin-top: 15px; padding: 12px; background: #f6f8f5; border-radius: 5px; }
+.long-trial summary { cursor: pointer; font-size: 12px; color: #355841; line-height: 1.7; }
+.long-trial dl, .long-events dl { margin: 14px 0; }
+.long-trial dl > div, .long-events dl > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 12px; margin-bottom: 8px; font-size: 12px; line-height: 1.8; }
+.long-trial dt, .long-events dt { color: var(--muted); }
+.long-trial dd, .long-events dd { margin: 0; }
+.long-outcomes { border-top: 1px solid var(--line); padding-top: 14px; }
+.long-outcomes strong { font-size: 12px; }
+.long-outcomes small { display: block; color: var(--muted); }
+.long-source-date { font-size: 11px !important; line-height: 1.8; color: var(--muted); margin-top: 18px; }
+.long-events-heading { margin-top: 40px; }
+.long-events article { padding: 24px 0; border-bottom: 1px solid var(--line); }
+.long-event-meta { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 12px; }
+.long-event-meta time { color: #496b54; }
+.long-events h3 { font-size: 18px; font-weight: 500; line-height: 1.6; margin: 10px 0 12px; }
+.long-events .long-evidence { display: inline-block; }
+.long-events article > a { margin-right: 16px; }
+.long-registry-missing { color: var(--muted); }
+@media (max-width: 930px) { .long-company-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 580px) {
+  .long-company { padding: 18px; }
+  .long-company-note { padding: 14px; gap: 10px; }
+  .long-trial dl > div, .long-events dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; margin-bottom: 12px; }
+  .long-companies .section-heading { align-items: start; gap: 15px; flex-wrap: wrap; }
+}
+
+.longevity-workspace .neuro-area-heading { border-top: 2px solid var(--group-color); padding-top: 11px; }
+.longevity-workspace .neuro-topic-grid { align-items: start; }
+.longevity-workspace .neuro-topic.selected { background: #edf3ee; }
+.longevity-workspace .neuro-kicker { letter-spacing: 0; font-family: var(--font-body); font-size: 11px; }
