@@ -55,12 +55,26 @@ jobs:
       - name: Report retained snapshot
         if: steps.refresh.outcome == 'failure'
         run: echo '::warning::OpenAlex refresh failed. Deploying the previous snapshot with its original date.'
+      - name: Restore last published quantum snapshot
+        run: python scripts/refresh_quantum.py --restore-only
+      - name: Refresh quantum computing snapshot
+        id: quantum
+        continue-on-error: true
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/refresh_quantum.py
+      - name: Report retained quantum snapshot
+        if: steps.quantum.outcome == 'failure'
+        run: echo '::warning::Quantum refresh failed. Retaining the last successful snapshot and its date.'
+      - name: Require quantum snapshot
+        run: test -f public/data/quantum-computing.json
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
