@@ -78,7 +78,7 @@ export function FocusWorkspace({ data, editorial, notes, search, setSearch, Pape
 }
 
 export function NeuroContext({ paper, topics, note }) {
-  const related = topics.filter(topic => paper.topicIds.includes(topic.id));
+  const related = topics.filter(topic => paper.topicIds.includes(topic.id) && Array.isArray(topic.readFor));
   const quantum = paper.fields.includes('quantum-computing');
   return <>
     {quantum ? <div className="neuro-detail-signals"><strong>발표 유형</strong><span>{paper.type === 'preprint' ? '프리프린트 · 심사 여부 미확인' : paper.type === 'review' ? '저널 리뷰·서베이' : '저널 연구'}</span><p>실험·시뮬레이션·이론의 구분과 성능 수치는 본문에서 확인해줘. 인용 수나 저널 게재만으로 양자 우위를 판단할 수는 없어.</p></div> : <div className="neuro-detail-signals"><strong>연구 메타데이터</strong><span>{paper.type === 'review' ? '리뷰·메타분석' : '원 연구'}</span>{paper.studySignals.map(signal => <span key={signal.id} title={signal.basis}>{signal.label}</span>)}{!paper.studySignals.length && <span>연구 대상 미제공</span>}<p>대상 표시는 MeSH·출판 유형에 근거해. 연구의 질이나 사람에서의 효과를 평가한 점수는 아니야.</p></div>}

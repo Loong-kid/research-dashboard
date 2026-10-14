@@ -64,6 +64,28 @@ test('Korean notes, library filtering and quantum methodology survive field chan
   await expect(page.locator('.query-list a')).toHaveCount(14);
 });
 
+test('a paper shared with the older physics feed has one library entry and a valid reading guide', async ({ page }) => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  const quantum = await (await page.request.get('./data/quantum-computing.json')).json();
+  const legacy = await (await page.request.get('./data/snapshot.json')).json();
+  const shared = quantum.papers.find(paper => legacy.papers.some(old => old.id === paper.id));
+  expect(shared).toBeTruthy();
+  await page.goto('./#quantum-computing');
+  await page.evaluate(paper => localStorage.setItem('research-atlas-library', JSON.stringify([paper])), shared);
+  await page.reload();
+  await page.locator('.heading-library').click();
+  await expect(page.locator('.paper-title')).toHaveCount(1);
+  await page.locator('.paper-title').click();
+  await expect(page.locator('.neuro-reading-guide')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await page.getByRole('combobox').first().selectOption('physics');
+  await expect(page.locator('.paper-title')).toHaveCount(1);
+  await page.getByRole('combobox').first().selectOption('quantum-computing');
+  await expect(page.locator('.paper-title')).toHaveCount(1);
+  expect(errors).toEqual([]);
+});
+
 for (const width of [320, 375, 414, 768, 1440]) {
   test(`quantum topic chart and preprint detail fit ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 1000 });
