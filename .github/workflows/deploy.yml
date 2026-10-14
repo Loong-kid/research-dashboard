@@ -68,6 +68,8 @@ jobs:
         run: echo '::warning::Quantum refresh failed. Retaining the last successful snapshot and its date.'
       - name: Require quantum snapshot
         run: test -f public/data/quantum-computing.json
+      - name: Verify quantum data contracts
+        run: python scripts/test_quantum.py
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

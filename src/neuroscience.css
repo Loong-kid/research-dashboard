@@ -1,4 +1,17 @@
 :root { --neuroscience: #087a77; --neuro-cell: #9878da; --neuro-circuit: #467fee; --neuro-cognition: #159e91; --neuro-clinical: #cd7356; --neuro-engineering: #b0964b; --neuro-computation: #7b88a8; }
+:root { --quantum: #6546b0; --quantum-hardware: #6576cb; --quantum-error: #9470d1; --quantum-algorithms: #397da9; --quantum-software: #4b958f; --quantum-verification: #b27d45; --quantum-scaling: #8d6b8b; }
+.nav-item .topic-count { font-family: var(--font-body); font-size: 10px; padding: 3px 4px; min-width: 0; }
+.nav-item.neuro-nav { gap: 7px; padding-left: 10px; padding-right: 8px; }
+.nav-item.neuro-nav > span:nth-child(2) { font-size: 12px; }
+.sidebar-bottom { padding-top: 30px; }
+.quantum-workspace { --neuroscience: var(--quantum); }
+.quantum-workspace .neuro-groups button.selected { color: #5d4394; background: #eee9f7; border-color: #b4a4d4; }
+.quantum-workspace .neuro-topic.selected { background: #f0edf7; }
+.quantum-workspace .neuro-focus { background: #292343; }
+.quantum-workspace .neuro-atlas .neuro-area-index { display: none; }
+.quantum-workspace .neuro-topic-grid { align-items: start; }
+.quantum-workspace .neuro-area-heading { border-top: 2px solid var(--group-color); padding-top: 11px; }
+.quantum-workspace .neuro-kicker { text-transform: none; letter-spacing: 0; font-family: var(--font-body); font-size: 11px; }
 .neuro-nav { margin-bottom: 16px; }
 .neuro-workspace { margin-top: 24px; }
 .sidebar-nav { overflow-y: auto; min-height: 0; }

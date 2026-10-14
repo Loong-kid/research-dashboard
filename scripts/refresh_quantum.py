@@ -65,7 +65,7 @@ def collect(topic, today):
             if not work.get('publication_date'):
                 raise ValueError('Publication date missing; cannot calculate complete monthly history.')
             corpus[work['id']] = work
-        cursor = response['meta'].get('next_cursor') if response['results'] else None
+        cursor = response['meta'].get('next_cursor') if len(response['results']) == 200 else None
     current = [work for work in corpus.values() if str(start) <= work['publication_date'] <= str(end)]
     previous = [work for work in corpus.values() if str(previous_start) <= work['publication_date'] <= str(previous_end)]
     original = [work for work in current if work['type'] == 'article' and not REVIEW.search(work.get('title', ''))]
@@ -132,6 +132,19 @@ def main():
                     old['lanes'] = sorted(set(old['lanes'] + item['lanes']))
                     for topic_id, lanes in item['topicLanes'].items():
                         old['topicLanes'][topic_id] = sorted(set(old['topicLanes'].get(topic_id, []) + lanes))
+    notes_path = ROOT / 'public/data/quantum-notes.json'
+    notes = json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else {}
+    for paper_id, note in notes.items():
+        if paper_id not in papers:
+            work = fetch('works/' + paper_id)
+            if work.get('is_retracted'):
+                continue
+            item = record(work, note['topicIds'][0], 'curated')
+            item['topicIds'] = note['topicIds']
+            item['topicLanes'] = {topic_id: ['curated'] for topic_id in note['topicIds']}
+            papers[paper_id] = item
+        if 'curated' not in papers[paper_id]['lanes']:
+            papers[paper_id]['lanes'].append('curated')
     start = shift_year(today)
     output = {'schemaVersion': 2, 'field': CONFIG['id'], 'name': CONFIG['name'], 'description': CONFIG['description'],
               'defaultTopic': CONFIG['defaultTopic'], 'asOf': str(today), 'fetchedAt': dt.datetime.now(dt.timezone.utc).isoformat(), 'source': 'OpenAlex',

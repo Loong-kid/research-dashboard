@@ -10,6 +10,7 @@
     "data:refresh": "python scripts/refresh_data.py",
     "data:neuroscience": "python scripts/refresh_neuroscience.py",
     "data:editorial": "python scripts/refresh_editorial.py",
+    "data:quantum": "python scripts/refresh_quantum.py",
     "test": "playwright test"
   },
   "dependencies": {
