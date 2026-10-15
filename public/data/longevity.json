@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "field": "longevity",
   "name": "불로장생",
-  "description": "세포 회춘, 후성유전 재프로그래밍, 노화세포 제거와 인공장기 연구를 관측합니다.",
+  "description": "세포 회춘, 노화세포 제거와 인공장기 연구를 관측합니다. 후성유전 재프로그래밍은 세포 회춘 아래에서 추적합니다.",
   "defaultTopic": "long-partial-reprogramming",
   "asOf": "2026-10-14",
   "fetchedAt": "2026-10-14T14:26:53.562375+00:00",
@@ -19,15 +19,8 @@
       "id": "rejuvenation",
       "name": "세포 회춘",
       "color": "var(--long-cell)",
-      "question": "세포의 정비·재생 능력을 어떻게 회복할까?",
-      "description": "자가포식·미토콘드리아·줄기세포 기능의 회복. 재프로그래밍과 겹치는 연구도 함께 연결해."
-    },
-    {
-      "id": "reprogramming",
-      "name": "후성유전 재프로그래밍",
-      "color": "var(--long-reprogram)",
-      "question": "세포의 역할을 유지하며 노화 특성을 바꿀 수 있을까?",
-      "description": "부분·화학적 재프로그래밍, 전달과 회춘 검증. 세포 회춘이라는 목표를 위한 방법 중 하나야."
+      "question": "세포의 상태와 정비·재생 능력을 어떻게 회복할까?",
+      "description": "세포 회춘이라는 목표 아래, 후성유전 재프로그래밍과 세포 정비·재생을 함께 살펴봐."
     },
     {
       "id": "senotherapy",
@@ -147,7 +140,8 @@
         "EPMC-MED-42763063",
         "EPMC-MED-42802483",
         "EPMC-MED-42806945"
-      ]
+      ],
+      "subgroup": "cell-maintenance"
     },
     {
       "id": "long-mitochondria",
@@ -259,7 +253,8 @@
         "EPMC-MED-42811121",
         "EPMC-MED-42814573",
         "EPMC-MED-42826385"
-      ]
+      ],
+      "subgroup": "cell-maintenance"
     },
     {
       "id": "long-stem-cells",
@@ -364,30 +359,42 @@
         "EPMC-MED-42778529",
         "EPMC-MED-42802377",
         "EPMC-MED-42829448"
-      ]
+      ],
+      "subgroup": "cell-maintenance"
     },
     {
       "id": "long-partial-reprogramming",
-      "group": "reprogramming",
-      "name": "부분 재프로그래밍",
+      "group": "rejuvenation",
+      "name": "야마나카 인자·부분 재프로그래밍",
       "query": "(TITLE:\"partial reprogramming\" OR TITLE:\"partial cellular reprogramming\" OR TITLE:\"partial in vivo reprogramming\" OR TITLE:\"partial epidermal reprogramming\") OR ((TITLE:\"epigenetic reprogramming\" OR TITLE:\"cellular reprogramming\" OR TITLE:\"transient reprogramming\") AND (TITLE:aging OR TITLE:ageing OR TITLE:rejuvenat* OR TITLE:longevity))",
-      "description": "세포를 완전히 초기화하지 않고 노화 관련 상태·기능을 바꾸는 접근",
-      "guide": "원래 세포의 역할을 유지하는지, 나이 지표와 기능이 함께 개선되는지 읽어봐.",
+      "description": "OSK·OSKM 등 재프로그래밍 인자로 원래 세포의 역할을 유지하거나 회복하면서 노화 관련 상태를 바꾸려는 연구",
+      "guide": "완전 재프로그래밍으로 iPSC를 만드는 연구와 구분해 읽어봐. 사용 인자, 세포 정체성, 기능 회복과 안전성을 각각 확인해.",
       "readFor": [
-        "원래 세포 정체성과 기능이 유지됐나?",
-        "노화 지표와 실제 조직 기능을 모두 평가했나?",
-        "종양 위험·지속기간·반복 적용을 확인했나?"
+        "OSKM·OSK 또는 다른 인자·화합물 중 무엇을 사용했나?",
+        "배양세포·동물·사람 중 어디에서 검증했으며 원래 세포 정체성을 유지하거나 회복했나?",
+        "후성유전 시계·조직 기능·생존 중 무엇이 개선됐나?",
+        "종양 위험, 효과 지속기간과 반복 적용을 확인했나?"
       ],
       "terms": [
         {
-          "en": "OSK / OSKM",
-          "ko": "재프로그래밍 인자",
-          "definition": "OCT4·SOX2·KLF4와 경우에 따라 MYC를 조합하는 연구 접근. 목적·조직·조건에 따라 결과가 달라."
+          "en": "Yamanaka factors / OSKM",
+          "ko": "야마나카 인자",
+          "definition": "OCT4·SOX2·KLF4·c-MYC의 네 전사인자. 완전 재프로그래밍과 부분 재프로그래밍에서 목적·발현 조건을 달리해 사용해."
+        },
+        {
+          "en": "OSK",
+          "ko": "c-MYC를 제외한 세 인자",
+          "definition": "OCT4·SOX2·KLF4 조합. c-MYC를 제외한 것만으로 안전성이나 회춘 효과가 보장되지는 않아."
+        },
+        {
+          "en": "iPSC",
+          "ko": "유도만능줄기세포",
+          "definition": "성숙한 세포를 여러 세포로 분화할 수 있는 상태로 재프로그래밍한 세포."
         },
         {
           "en": "Cell identity",
           "ko": "세포 정체성",
-          "definition": "세포가 특정 역할과 특성을 유지하는 상태."
+          "definition": "피부세포·신경세포처럼 특정 역할과 특성을 유지하는 상태."
         }
       ],
       "field": "longevity",
@@ -463,11 +470,12 @@
         "EPMC-MED-42373638",
         "EPMC-MED-42647204",
         "EPMC-MED-42822446"
-      ]
+      ],
+      "subgroup": "reprogramming"
     },
     {
       "id": "long-chemical-reprogramming",
-      "group": "reprogramming",
+      "group": "rejuvenation",
       "name": "화학적 재프로그래밍",
       "query": "(TITLE:\"chemical reprogramming\" OR TITLE:\"chemically induced\" OR TITLE:\"small molecule\" OR TITLE:\"small-molecule\") AND TITLE:reprogramming AND (TITLE:rejuvenat* OR TITLE:senescen* OR TITLE:aging OR TITLE:ageing)",
       "description": "작은 분자 등을 이용해 세포의 발현·후성유전 상태를 바꾸는 접근",
@@ -550,11 +558,12 @@
       "paperIds": [
         "EPMC-MED-41528804",
         "EPMC-MED-41589348"
-      ]
+      ],
+      "subgroup": "reprogramming"
     },
     {
       "id": "long-delivery",
-      "group": "reprogramming",
+      "group": "rejuvenation",
       "name": "조직 표적·발현 제어",
       "query": "TITLE:reprogramming AND (TITLE:partial OR TITLE:aging OR TITLE:ageing OR TITLE:rejuvenat* OR TITLE:longevity OR TITLE:OSK OR TITLE:OSKM) AND (TITLE:delivery OR TITLE:targeted OR TITLE:inducible OR TITLE:mRNA OR TITLE:vector)",
       "description": "재프로그래밍의 위치·강도·기간을 제어하기 위한 전달 연구",
@@ -638,11 +647,12 @@
         "EPMC-MED-41443352",
         "EPMC-MED-41786976",
         "EPMC-MED-42822446"
-      ]
+      ],
+      "subgroup": "reprogramming"
     },
     {
       "id": "long-clocks",
-      "group": "reprogramming",
+      "group": "rejuvenation",
       "name": "후성유전 시계·회춘 검증",
       "query": "TITLE:\"epigenetic clock\" OR TITLE:\"epigenetic clocks\" OR TITLE:\"DNA methylation age\"",
       "description": "노화 관련 분자 지표와 기능·생존 결과의 관계를 검증하는 연구",
@@ -740,7 +750,8 @@
         "EPMC-MED-42710879",
         "EPMC-MED-42775949",
         "EPMC-MED-42823742"
-      ]
+      ],
+      "subgroup": "reprogramming"
     },
     {
       "id": "long-senolytics",
@@ -15082,5 +15093,20 @@
     }
   ],
   "queryVersion": "longevity-v3",
-  "methodology": "Four overlapping reading categories, not a claim of immortality. PubMed title-synonym queries. Counts include reviews; latest/impact exclude reviews and retracted records. Monthly: 12 complete calendar months. Latest:20/topic/30 days, impact:10/topic/12 months, review:5/topic/12 months. Deduplicate PubMed IDs; overlap allowed. MeSH Humans may include human cells, not clinical evidence. Company profiles/events are manually sourced and dated separately from automatic papers and trial-registry metadata."
+  "methodology": "Three overlapping approaches, with epigenetic reprogramming nested under cellular rejuvenation, not a claim of immortality. PubMed title-synonym queries. Counts include reviews; latest/impact exclude reviews and retracted records. Monthly: 12 complete calendar months. Latest:20/topic/30 days, impact:10/topic/12 months, review:5/topic/12 months. Deduplicate PubMed IDs; overlap allowed. MeSH Humans may include human cells, not clinical evidence. Company profiles/events are manually sourced and dated separately from automatic papers and trial-registry metadata.",
+  "subgroups": [
+    {
+      "id": "reprogramming",
+      "group": "rejuvenation",
+      "name": "후성유전 재프로그래밍",
+      "description": "유전자 발현과 후성유전 상태를 바꾸는 접근. 야마나카 인자 기반 부분 재프로그래밍을 여기서 추적해."
+    },
+    {
+      "id": "cell-maintenance",
+      "group": "rejuvenation",
+      "name": "세포 정비·재생",
+      "description": "자가포식, 미토콘드리아와 줄기세포 기능을 통한 회복."
+    }
+  ],
+  "taxonomyVersion": "longevity-hierarchy-v1"
 }

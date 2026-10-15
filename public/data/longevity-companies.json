@@ -8,8 +8,7 @@
       "id": "altos",
       "name": "Altos Labs",
       "groupIds": [
-        "rejuvenation",
-        "reprogramming"
+        "rejuvenation"
       ],
       "approach": "세포 회춘·회복력과 재프로그래밍의 기초생물학",
       "programs": [
@@ -22,13 +21,16 @@
       ],
       "sourceUrl": "https://www.altoslabs.com/science",
       "newsUrl": "https://www.altoslabs.com/featured",
-      "readingNote": "소속 연구자의 과거 대학 논문과 현재 회사 연구는 구분해서 읽어봐."
+      "readingNote": "소속 연구자의 과거 대학 논문과 현재 회사 연구는 구분해서 읽어봐.",
+      "subgroupIds": [
+        "reprogramming",
+        "cell-maintenance"
+      ]
     },
     {
       "id": "newlimit",
       "name": "NewLimit",
       "groupIds": [
-        "reprogramming",
         "rejuvenation"
       ],
       "approach": "후성유전 재프로그래밍과 간세포·혈관내피 기능 회복",
@@ -42,13 +44,17 @@
       ],
       "sourceUrl": "https://blog.newlimit.com/p/2026-may-june-progress-update",
       "newsUrl": "https://blog.newlimit.com/archive",
-      "readingNote": "인간 유래 세포·모델 결과와 사람 임상시험을 구분해. 제조 규모와 효능도 별도 지표야."
+      "readingNote": "인간 유래 세포·모델 결과와 사람 임상시험을 구분해. 제조 규모와 효능도 별도 지표야.",
+      "subgroupIds": [
+        "reprogramming",
+        "cell-maintenance"
+      ]
     },
     {
       "id": "lifebio",
       "name": "Life Biosciences",
       "groupIds": [
-        "reprogramming"
+        "rejuvenation"
       ],
       "approach": "OSK 기반 부분 후성유전 재프로그래밍",
       "programs": [
@@ -63,14 +69,16 @@
       ],
       "sourceUrl": "https://www.lifebiosciences.com/pipeline/",
       "newsUrl": "https://www.lifebiosciences.com/life-biosciences-announces-first-in-human-data-from-ongoing-phase-1-trial-evaluating-er-100-in-optic-neuropathies/",
-      "readingNote": "특정 시신경 질환의 초기 결과이며 전신 회춘·수명 연장을 입증하는 결과는 아니야."
+      "readingNote": "특정 시신경 질환의 초기 결과이며 전신 회춘·수명 연장을 입증하는 결과는 아니야.",
+      "subgroupIds": [
+        "reprogramming"
+      ]
     },
     {
       "id": "retro",
       "name": "Retro Biosciences",
       "groupIds": [
-        "rejuvenation",
-        "reprogramming"
+        "rejuvenation"
       ],
       "approach": "자가포식 촉진, 조혈줄기세포·조직 재프로그래밍",
       "programs": [
@@ -89,14 +97,17 @@
       ],
       "sourceUrl": "https://www.retro.bio/science",
       "newsUrl": "https://www.retro.bio/blog/fundraise-2026",
-      "readingNote": "건강수명 연장 목표와 실제 달성 결과를 구분하고 프로그램별로 확인해."
+      "readingNote": "건강수명 연장 목표와 실제 달성 결과를 구분하고 프로그램별로 확인해.",
+      "subgroupIds": [
+        "reprogramming",
+        "cell-maintenance"
+      ]
     },
     {
       "id": "calico",
       "name": "Calico",
       "groupIds": [
-        "rejuvenation",
-        "reprogramming"
+        "rejuvenation"
       ],
       "approach": "노화 기초생물학·유전학·질환별 신약 개발",
       "programs": [
@@ -109,7 +120,11 @@
       ],
       "sourceUrl": "https://www.calicolabs.com/research-technology/",
       "newsUrl": "https://www.calicolabs.com/news-and-media/",
-      "readingNote": "기업 전체에 하나의 임상 단계를 붙이지 않아. 질환별 프로그램과 공개 논문을 따로 확인해."
+      "readingNote": "기업 전체에 하나의 임상 단계를 붙이지 않아. 질환별 프로그램과 공개 논문을 따로 확인해.",
+      "subgroupIds": [
+        "reprogramming",
+        "cell-maintenance"
+      ]
     },
     {
       "id": "rubedo",
@@ -128,7 +143,8 @@
       ],
       "sourceUrl": "https://www.rubedolife.com/pipeline/",
       "newsUrl": "https://www.rubedolife.com/investors-news/investor-news-grid/",
-      "readingNote": "피부 결과, 노화세포 표적과 전신 노화 개선은 각각 검증해야 해."
+      "readingNote": "피부 결과, 노화세포 표적과 전신 노화 개선은 각각 검증해야 해.",
+      "subgroupIds": []
     },
     {
       "id": "bioage",
@@ -149,7 +165,10 @@
       ],
       "sourceUrl": "https://bioagelabs.com/overview",
       "newsUrl": "https://ir.bioagelabs.com/news-events/press-releases",
-      "readingNote": "염증·대사 조절이라는 인접 연구야. 노화세포를 직접 제거하거나 회춘을 입증한 프로그램으로 분류하지 않아."
+      "readingNote": "염증·대사 조절이라는 인접 연구야. 노화세포를 직접 제거하거나 회춘을 입증한 프로그램으로 분류하지 않아.",
+      "subgroupIds": [
+        "cell-maintenance"
+      ]
     },
     {
       "id": "egenesis",
@@ -168,7 +187,8 @@
       ],
       "sourceUrl": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
       "newsUrl": "https://egenesisbio.com/news-media",
-      "readingNote": "확대 접근 사례와 정식 임상시험을 구분해. 시험 실시 허가를 제품 판매 승인으로 읽으면 안 돼."
+      "readingNote": "확대 접근 사례와 정식 임상시험을 구분해. 시험 실시 허가를 제품 판매 승인으로 읽으면 안 돼.",
+      "subgroupIds": []
     },
     {
       "id": "bivacor",
@@ -187,7 +207,8 @@
       ],
       "sourceUrl": "https://bivacor.com/",
       "newsUrl": "https://bivacor.com/news/",
-      "readingNote": "심장 펌프 기능 대체와 장기간 신체 전체의 수명 연장은 구분해. 약물의 임상 단계와 같은 기준으로 비교하지 않아."
+      "readingNote": "심장 펌프 기능 대체와 장기간 신체 전체의 수명 연장은 구분해. 약물의 임상 단계와 같은 기준으로 비교하지 않아.",
+      "subgroupIds": []
     }
   ],
   "events": [

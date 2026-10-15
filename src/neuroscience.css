@@ -220,3 +220,37 @@ summary { cursor: pointer; }
 .longevity-workspace .neuro-topic-grid { align-items: start; }
 .longevity-workspace .neuro-topic.selected { background: #edf3ee; }
 .longevity-workspace .neuro-kicker { letter-spacing: 0; font-family: var(--font-body); font-size: 11px; }
+.long-subgroups { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px; border-left: 2px solid #9bb3a2; padding: 0 0 0 16px; margin: -9px 0 25px 12px; }
+.long-subgroups > span { font-size: 11px; color: var(--muted); }
+.long-subgroups button { font-size: 12px; padding: 7px 0; color: var(--secondary); border-bottom: 2px solid transparent; }
+.long-subgroups button[aria-pressed=true] { border-color: var(--longevity); color: #355841; font-weight: 600; }
+.long-parent-area { grid-column: 1 / -1; }
+.long-branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; padding-left: 14px; border-left: 1px solid #b9cdbd; }
+.long-branches.single { grid-template-columns: minmax(0, 1fr); }
+.long-branch { min-width: 0; }
+.long-branch h4 { font-size: 13px; line-height: 1.6; color: #355841; margin: 0 0 7px; }
+.long-branch > p { color: var(--muted); font-size: 11px; line-height: 1.8; margin: 0 0 12px; }
+.long-reading-primer { margin: 26px 0; }
+.long-reading-primer section { background: #fff; border-top: 2px solid #9bb3a2; padding: 24px; margin-bottom: 20px; }
+.long-reading-primer h3 { font-size: 18px; margin: 0 0 15px; }
+.long-reading-primer p { max-width: 76ch; color: var(--secondary); font-size: 13px; line-height: 1.9; }
+.long-concept-path { display: flex; flex-wrap: wrap; gap: 6px 10px; list-style: none; margin: 0 0 19px; padding: 0; color: #355841; font-size: 12px; line-height: 1.8; }
+.long-concept-path li + li:before { content: '/'; color: #859a8c; margin-right: 10px; }
+.long-reprogramming-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 18px 0; margin: 20px 0; }
+.long-reprogramming-comparison dt { font-size: 13px; font-weight: 600; color: #355841; }
+.long-reprogramming-comparison dd { margin: 9px 0 0; font-size: 13px; line-height: 1.85; color: var(--secondary); }
+.long-primer-sources { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-top: 18px; }
+.long-primer-sources a { display: inline-flex; gap: 5px; align-items: center; color: #496b54; font-size: 12px; text-underline-offset: 3px; }
+.paper-access-note { padding: 16px 0; margin: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 13px; }
+.paper-access-note > strong { font-size: 13px; }
+.paper-access-note p { font-size: 12px; line-height: 1.8; color: var(--secondary); margin: 9px 0 12px; }
+.paper-access-note a { display: inline-flex; align-items: center; gap: 6px; color: var(--blue); font-size: 12px; }
+.paper-access-note small { display: block; font-size: 11px; line-height: 1.7; color: var(--muted); margin-top: 9px; }
+@media (max-width: 580px) {
+  .long-branches, .long-reprogramming-comparison { grid-template-columns: minmax(0, 1fr); }
+  .long-branches { gap: 22px; padding-left: 10px; }
+  .long-subgroups { gap: 5px 14px; padding-left: 11px; margin-left: 5px; }
+  .long-subgroups > span { flex-basis: 100%; }
+  .long-subgroups button { font-size: 11px; }
+  .long-reading-primer section { padding: 20px 17px; }
+}

@@ -1,15 +1,23 @@
 import { test, expect } from '@playwright/test';
 
-test('longevity has the requested four fields, fourteen topics and real monthly history', async ({ page }) => {
+test('longevity nests reprogramming under rejuvenation while keeping fourteen observed topics', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('./#longevity');
   await expect(page.getByRole('button', { name: '불로장생', exact: true })).toContainText('14개 주제');
-  await expect(page.locator('.neuro-area')).toHaveCount(4);
+  await expect(page.locator('.neuro-area')).toHaveCount(3);
   await expect(page.locator('.neuro-topic')).toHaveCount(14);
-  await expect(page.locator('.neuro-focus h2')).toHaveText('부분 재프로그래밍');
+  await expect(page.locator('.neuro-focus h2')).toHaveText('야마나카 인자·부분 재프로그래밍');
+  await expect(page.locator('.neuro-focus-label')).toContainText('세포 회춘 / 후성유전 재프로그래밍');
+  await expect(page.locator('.long-parent-area .long-branch')).toHaveCount(2);
   await expect(page.locator('.neuro-bar-column')).toHaveCount(12);
-  for (const [name, count] of [['세포 회춘', 3], ['후성유전 재프로그래밍', 4], ['노화세포 제거', 3], ['인공장기', 4]]) {
+  await page.getByRole('button', { name: '세포 회춘', exact: true }).click();
+  await expect(page.locator('.neuro-topic')).toHaveCount(7);
+  await page.getByRole('button', { name: '후성유전 재프로그래밍', exact: true }).click();
+  await expect(page.locator('.neuro-topic')).toHaveCount(4);
+  await page.getByRole('button', { name: '세포 정비·재생', exact: true }).click();
+  await expect(page.locator('.neuro-topic')).toHaveCount(3);
+  for (const [name, count] of [['세포 회춘', 7], ['노화세포 제거', 3], ['인공장기', 4]]) {
     await page.getByRole('button', { name, exact: true }).click();
     await expect(page.locator('.neuro-topic')).toHaveCount(count);
   }
@@ -19,11 +27,39 @@ test('longevity has the requested four fields, fourteen topics and real monthly 
   expect(errors).toEqual([]);
 });
 
+test('reprogramming branches scope papers, guides and company research consistently', async ({ page }) => {
+  await page.goto('./#longevity');
+  await page.getByRole('button', { name: '세포 회춘', exact: true }).click();
+  await page.getByRole('button', { name: '후성유전 재프로그래밍', exact: true }).click();
+  await page.getByRole('tab', { name: '최신 연구' }).click();
+  await expect(page.getByRole('combobox', { name: '불로장생 주제' }).locator('option')).toHaveCount(5);
+  await page.getByRole('tab', { name: '기업 연구' }).click();
+  await expect(page.locator('.long-company').filter({ has: page.getByRole('heading', { name: 'Life Biosciences', exact: true }) })).toBeVisible();
+  await expect(page.locator('.long-company').filter({ has: page.getByRole('heading', { name: 'BiVACOR', exact: true }) })).toHaveCount(0);
+  await page.getByRole('tab', { name: '읽기 가이드' }).click();
+  await expect(page.locator('.neuro-guide-grid article')).toHaveCount(4);
+  await expect(page.getByRole('heading', { name: '야마나카 인자와 회춘 연구', exact: true })).toBeVisible();
+  await expect(page.locator('.long-reprogramming-comparison')).toContainText('완전 재프로그래밍');
+  await expect(page.locator('.long-access-guide')).toContainText('Nature Communications');
+  for (const width of [375, 1440]) {
+    await page.setViewportSize({ width, height: 1000 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
+    await page.locator('.long-reading-primer').screenshot({ path: `.cache/longevity-primer-${width}.png`, animations: 'disabled' });
+  }
+});
+
 test('paper reading, source, bookmarks and notes work in the shared library', async ({ page }) => {
   await page.goto('./#longevity');
   await page.getByRole('tab', { name: '최신 연구' }).click();
   await expect(page.locator('.neuro-filter-caption')).toContainText('인간 유래 세포');
   await page.locator('.paper-title').first().click();
+  const title = await page.locator('.paper-dialog h2').innerText();
+  const scholar = page.getByRole('link', { name: 'Google Scholar에서 다른 버전 찾기' });
+  const scholarUrl = new URL(await scholar.getAttribute('href'));
+  expect(scholarUrl.hostname).toBe('scholar.google.com');
+  expect(scholarUrl.searchParams.get('q')).toBeTruthy();
+  await expect(page.locator('.paper-access-note')).toContainText('모든 버전');
+  expect(title).toBeTruthy();
   await expect(page.getByRole('link', { name: 'Europe PMC에서 서지정보 확인' })).toHaveAttribute('href', /^https:\/\/europepmc.org/);
   await page.getByRole('button', { name: '내 서재에 저장', exact: true }).click();
   await page.getByRole('textbox', { name: /나의 읽기 메모/ }).fill('기능 회복과 시계 변화를 따로 확인');

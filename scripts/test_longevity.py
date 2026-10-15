@@ -3,6 +3,7 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 import refresh_longevity_trials as registry
+from refresh_longevity import apply_taxonomy
 
 ROOT = Path(__file__).resolve().parents[1]
 def read(name):
@@ -12,7 +13,10 @@ class LongevityContract(unittest.TestCase):
     def test_snapshot_scope_and_reading_lanes(self):
         data = read('longevity.json')
         config = json.loads((ROOT / 'config/longevity.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(data['groups']), 4)
+        self.assertEqual(len(data['groups']), 3)
+        self.assertEqual(data['groups'], config['groups'])
+        self.assertEqual(data['subgroups'], config['subgroups'])
+        self.assertEqual({g['group'] for g in data['subgroups']}, {'rejuvenation'})
         self.assertEqual(len(data['topics']), 14)
         self.assertEqual({t['id']: t['query'] for t in data['topics']}, {t['id']: t['query'] for t in config['topics']})
         self.assertEqual(len(data['papers']), len({p['id'] for p in data['papers']}))
@@ -31,6 +35,9 @@ class LongevityContract(unittest.TestCase):
                 if 'latest' in lanes:
                     self.assertLessEqual(data['period']['recentStart'], paper['date'])
         for topic in data['topics']:
+            self.assertEqual(topic['group'], next(t for t in config['topics'] if t['id'] == topic['id'])['group'])
+            if topic.get('subgroup'):
+                self.assertEqual(next(g for g in data['subgroups'] if g['id'] == topic['subgroup'])['group'], topic['group'])
             self.assertEqual(len(topic['monthly']), 12)
             self.assertEqual(len({m['month'] for m in topic['monthly']}), 12)
             self.assertTrue(all(m['count'] >= 0 for m in topic['monthly']))
@@ -39,12 +46,30 @@ class LongevityContract(unittest.TestCase):
             for lane, cap in [('latest', 20), ('impact', 10), ('review', 5)]:
                 self.assertLessEqual(sum(lane in p['topicLanes'].get(topic['id'], []) for p in data['papers']), cap)
 
+    def test_taxonomy_migration_keeps_observations_and_dates_and_rejects_different_queries(self):
+        data = read('longevity.json')
+        old = json.loads(json.dumps(data))
+        old['groups'] = [{'id': 'reprogramming', 'name': 'Old sibling category'}]
+        old.pop('subgroups')
+        for topic in old['topics']:
+            topic['name'] = 'Old label'
+            topic['group'] = 'reprogramming'
+        updated = apply_taxonomy(old)
+        self.assertEqual(updated, data)
+        self.assertNotIn('subgroups', old)
+        old['topics'][0]['query'] += ' OR TITLE:unrelated'
+        with self.assertRaises(ValueError):
+            apply_taxonomy(old)
+
     def test_company_events_keep_date_source_and_registry_plans_separate(self):
         companies, trials = read('longevity-companies.json'), read('longevity-trials.json')
         company_ids = {c['id'] for c in companies['companies']}
         group_ids = {g['id'] for g in read('longevity.json')['groups']}
+        subgroups = {g['id']: g['group'] for g in read('longevity.json')['subgroups']}
         for company in companies['companies']:
             self.assertTrue(set(company['groupIds']) <= group_ids)
+            for subgroup in company.get('subgroupIds', []):
+                self.assertIn(subgroups[subgroup], company['groupIds'])
             for program in company['programs']:
                 for nct in program['nctIds']:
                     self.assertEqual(trials['trials'][nct]['sourceUrl'], 'https://clinicaltrials.gov/study/' + nct)
