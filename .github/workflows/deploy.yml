@@ -83,6 +83,15 @@ jobs:
         run: python scripts/refresh_longevity_trials.py
       - name: Verify longevity data contracts
         run: python scripts/test_longevity.py
+      - name: Refresh official Nobel award records
+        id: nobel
+        continue-on-error: true
+        run: python scripts/refresh_nobel.py
+      - name: Report retained Nobel snapshot
+        if: steps.nobel.outcome == 'failure'
+        run: echo '::warning::Nobel API refresh failed. Retaining the checked-in award index and its original date; the sourced bibliography remains available.'
+      - name: Verify Nobel award and bibliography contracts
+        run: python scripts/test_nobel.py
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
